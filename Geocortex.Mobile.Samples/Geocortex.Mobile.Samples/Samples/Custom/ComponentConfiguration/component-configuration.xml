@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<layout
+    xmlns="https://geocortex.com/layout/v1"
+    xmlns:gxm="https://geocortex.com/layout/mobile/v1"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="https://geocortex.com/layout/v1 ../../../../../ViewerFramework/layout/layout-mobile.xsd
+    https://geocortex.com/layout/v1 ../../../layout-custom.xsd"
+    xmlns:custom="https://geocortex/layout/samples">
+
+  <split>
+
+    <stack>
+      <panel>
+        <custom:component-config title="Fallback Configuration" config="component-config-default"/>
+      </panel>
+      <panel>
+        <custom:component-config title="User Configuration" config="component-config"/>
+      </panel>
+    </stack>
+
+    <map/>
+
+  </split>
+
+</layout>

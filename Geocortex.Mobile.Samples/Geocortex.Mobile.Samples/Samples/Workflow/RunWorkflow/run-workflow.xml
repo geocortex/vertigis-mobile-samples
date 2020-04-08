@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<layout
+    xmlns="https://geocortex.com/layout/v1"
+    xmlns:gxm="https://geocortex.com/layout/mobile/v1"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="https://geocortex.com/layout/v1 ../../../../../ViewerFramework/layout/layout-mobile.xsd
+    https://geocortex.com/layout/v1 ../../../layout-custom.xsd"
+    xmlns:custom="https://geocortex/layout/samples">
+
+  <gxm:taskbar id="taskbar" orientation="vertical">
+
+    <map config="map1" slot="main">
+      <stack margin="0.8" slot="top-right" halign="end">
+        <iwtm config="iwtm" id="IWTM">
+          <user slot="bottom"/>
+        </iwtm>
+      </stack>
+      <stack margin="0.8" slot="bottom-right" halign="end">
+        <button style="map-widget" config="launchWorkflow" />
+      </stack>
+    </map>
+
+    <panel>
+      <workflow title="Run Workflow" config="workflow" icon="workflow"/>
+    </panel>
+    
+  </gxm:taskbar>
+
+</layout>

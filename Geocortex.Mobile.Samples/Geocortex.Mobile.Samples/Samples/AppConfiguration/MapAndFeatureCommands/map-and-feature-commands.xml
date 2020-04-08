@@ -1,0 +1,135 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<layout
+    xmlns="https://geocortex.com/layout/v1"
+    xmlns:gxm="https://geocortex.com/layout/mobile/v1"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="https://geocortex.com/layout/v1 ../../../../../ViewerFramework/layout/layout-mobile.xsd
+    https://geocortex.com/layout/v1 ../../../layout-custom.xsd"
+    xmlns:custom="https://geocortex/layout/samples">
+
+  <split>
+
+    <panel title="Map / Feature Commands" grow="1">
+      <gxm:scroll>
+        <stack margin="1">
+          <text>Try clicking a feature or selecting a search result.</text>
+          <text>Feature commands are configured as "feature actions" in a feature details panel.</text>
+
+          <text> Removes highlighting from all features on the given map(s). </text>
+          <stack margin="0.5">
+            <button config="highlightsClear">highlights.clear</button>
+          </stack>
+
+          <text>Removes focused-state highlighting from all features.</text>
+          <stack margin="0.5">
+            <button config="highlightsClearFocus">highlights.clear-focus</button>
+          </stack>
+
+          <text>Refreshes highlighting for one or many features.</text>
+          <stack margin="0.5">
+            <button config="highlightsRefresh">highlights.refresh</button>
+          </stack>
+
+          <text>Disables the click event handler on the map. If a user clicks on the map, the configured handler will not be invoked.</text>
+          <stack margin="0.5">
+            <button config="mapDisableMapClick">map.disable-map-click</button>
+          </stack>
+
+          <text>Enables the click event handler on the map. If a user clicks on the map, the configured handler will be invoked.</text>
+          <stack margin="0.5">
+            <button config="mapEnableMapClick">map.enable-map-click</button>
+          </stack>
+
+          <text>Hides the map.</text>
+          <stack margin="0.5">
+            <button config="mapHide">map.hide</button>
+          </stack>
+
+          <text>Shows the map if it is hidden.</text>
+          <stack margin="0.5">
+            <button config="mapShow">map.show</button>
+          </stack>
+
+          <text>Refreshes / Reloads the map.</text>
+          <stack margin="0.5">
+            <button config="mapRefresh">map.refresh</button>
+          </stack>
+
+          <text>Rotates the map by the specified amount (degrees).</text>
+          <stack margin="0.5">
+            <button config="rotateBy">map.rotate-by</button>
+          </stack>
+
+          <text>Rotates the map to the specified angle.</text>
+          <stack margin="0.5">
+            <button config="rotateTo">map.rotate-to</button>
+          </stack>
+
+          <text>Zooms the map to its initial viewpoint.</text>
+          <stack margin="0.5">
+            <button config="mapZoomToInitialViewpoint">map.zoom-to-initial-viewpoint</button>
+          </stack>
+
+          <text>Zoom to the given viewpoint.</text>
+          <stack margin="0.5">
+            <button config="mapZoomToViewpoint">map.zoom-to-viewpoint</button>
+          </stack>
+
+          <text>Starts drawing a meansurement on the map.</text>
+          <stack margin="0.5">
+            <button config="measurementStart">measurement.start</button>
+          </stack>
+
+          <text>Stops drawing a measurement on the map.</text>
+          <stack margin="0.5">
+            <button config="measurementStop">measurement.stop</button>
+          </stack>
+
+          <text>Stops drawing and clears graphics from the map.</text>
+          <stack margin="0.5">
+            <button config="measurementClear">measurement.clear</button>
+          </stack>
+
+          <text>Clear features from the results list.</text>
+          <stack margin="0.5">
+            <button config="resultsClear">results.clear</button>
+          </stack>
+
+          <text>Clears the feature details so that no feature data is shown.</text>
+          <stack margin="0.5">
+            <button config="resultsClearDetails">results.clear-details</button>
+          </stack>
+
+          <!--<button config="resultsDisplay">results.display</button>-->
+
+        </stack>
+      </gxm:scroll>
+    </panel>
+
+    <gxm:taskbar grow="3">
+
+      <map config="map1" slot="main">
+        <stack margin="0.8" slot="top-right" halign="end">
+        </stack>
+        <stack margin="0.5" width="10" slot="bottom-right" halign="end">
+          <compass id="compass" margin="0.3"/>
+          <geolocate id="geolocator" margin="0.3" config="geolocate" />
+        </stack>
+      </map>
+
+      <!-- Taskbar / search -->
+      <panel id="search-panel">
+        <stack id="search">
+          <search config="search"/>
+          <results-list config="results" active="false" />
+        </stack>
+        <feature-details id="feature-details" config="feature-details"/>
+        <custom:custom-details id="custom-details"></custom:custom-details>
+        <gxm:update-feature/>
+        <gxm:add-related-feature />
+      </panel>
+
+    </gxm:taskbar>
+  </split>
+
+</layout>

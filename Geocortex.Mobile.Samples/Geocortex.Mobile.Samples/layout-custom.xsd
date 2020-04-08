@@ -1,0 +1,222 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<schema
+    xmlns="http://www.w3.org/2001/XMLSchema"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:base="https://geocortex.com/layout/v1"
+    xmlns:tns="https://geocortex/layout/samples"
+    targetNamespace="https://geocortex/layout/samples"
+    elementFormDefault="qualified"
+    xmlns:xs="http://www.w3.org/2001/XMLSchema">
+
+  <import namespace="https://geocortex.com/layout/v1" schemaLocation="../../ViewerFramework/layout/layout-common.xsd" />
+
+
+  <element name="activate-deactivate" substitutionGroup="base:component">
+    <annotation>
+      <documentation xml:lang="en">
+        A custom component that takes some action when a component is activated or deactivated.
+      </documentation>
+    </annotation>
+    <complexType>
+      <complexContent mixed="true">
+        <extension base="base:Component" />
+      </complexContent>
+    </complexType>
+  </element>
+
+  <element name="activate-deactivate-children" substitutionGroup="base:component">
+    <annotation>
+      <documentation xml:lang="en">
+        A custom component that takes manages the activation and deactivation of child components.
+      </documentation>
+    </annotation>
+    <complexType>
+      <complexContent mixed="true">
+        <extension base="base:ComponentWithChildren" />
+      </complexContent>
+    </complexType>
+  </element>
+
+  <element name="basemap-toggle" substitutionGroup="base:component">
+    <annotation>
+      <documentation xml:lang="en">
+        A custom component that displays a switch, allowing the user to toggle the basemap.
+      </documentation>
+    </annotation>
+    <complexType>
+      <complexContent mixed="true">
+        <extension base="base:Component" />
+      </complexContent>
+    </complexType>
+  </element>
+
+  <element name="breadcrumb-location-tracker" substitutionGroup="base:component">
+    <annotation>
+      <documentation xml:lang="en">
+        A custom component that draws symbols on the map at the user's location.
+      </documentation>
+    </annotation>
+    <complexType>
+      <complexContent mixed="true">
+        <extension base="base:Component" />
+      </complexContent>
+    </complexType>
+  </element>
+
+  <element name="component" substitutionGroup="base:component">
+    <annotation>
+      <documentation xml:lang="en">
+        A basic custom component.
+      </documentation>
+    </annotation>
+    <complexType>
+      <complexContent mixed="true">
+        <extension base="base:Component" />
+      </complexContent>
+    </complexType>
+  </element>
+
+  <element name="component-config" substitutionGroup="base:component">
+    <annotation>
+      <documentation xml:lang="en">
+        A custom component that takes configuration.
+      </documentation>
+    </annotation>
+    <complexType>
+      <complexContent mixed="true">
+        <extension base="base:Component" />
+      </complexContent>
+    </complexType>
+  </element>
+
+  <element name="custom-details" substitutionGroup="base:component">
+    <annotation>
+      <documentation xml:lang="en">
+        A custom component that displays a custom feature details form.
+      </documentation>
+    </annotation>
+    <complexType>
+      <complexContent mixed="true">
+        <extension base="base:Component" />
+      </complexContent>
+    </complexType>
+  </element>
+
+  <element name="dependency-injection" substitutionGroup="base:component">
+    <annotation>
+      <documentation xml:lang="en">
+        A custom component that uses dependency injection.
+      </documentation>
+    </annotation>
+    <complexType>
+      <complexContent mixed="true">
+        <extension base="base:Component" />
+      </complexContent>
+    </complexType>
+  </element>
+
+  <element name="dispose" substitutionGroup="base:component">
+    <annotation>
+      <documentation xml:lang="en">
+        A custom component that handles the disposal of a component's managed and unmanaged resources.
+      </documentation>
+    </annotation>
+    <complexType>
+      <complexContent mixed="true">
+        <extension base="base:Component" />
+      </complexContent>
+    </complexType>
+  </element>
+
+  <element name="geocortex-mobile-elements" substitutionGroup="base:component">
+    <annotation>
+      <documentation xml:lang="en">
+        A custom component that uses Geocortex Mobile elements.
+      </documentation>
+    </annotation>
+    <complexType>
+      <complexContent mixed="true">
+        <extension base="base:Component" />
+      </complexContent>
+    </complexType>
+  </element>
+
+  <element name="geocortex-mobile-elements-xaml" substitutionGroup="base:component">
+    <annotation>
+      <documentation xml:lang="en">
+        A custom component that uses Geocortex Mobile XAML elements.
+      </documentation>
+    </annotation>
+    <complexType>
+      <complexContent mixed="true">
+        <extension base="base:Component" />
+      </complexContent>
+    </complexType>
+  </element>
+
+  <element name="i18n" substitutionGroup="base:component">
+    <annotation>
+      <documentation xml:lang="en">
+        A custom component that uses internationalization and string resources.
+      </documentation>
+    </annotation>
+    <complexType>
+      <complexContent mixed="true">
+        <extension base="base:Component" />
+      </complexContent>
+    </complexType>
+  </element>
+
+  <element name="location" substitutionGroup="base:component">
+    <annotation>
+      <documentation xml:lang="en">
+        A custom component that displays a string according to its app.json configuration.
+      </documentation>
+    </annotation>
+    <complexType>
+      <complexContent mixed="true">
+        <extension base="base:Component" />
+      </complexContent>
+    </complexType>
+  </element>
+
+  <element name="logging" substitutionGroup="base:component">
+    <annotation>
+      <documentation xml:lang="en">
+        A custom component that demonstrates logging in a Geocortex Mobile app.
+      </documentation>
+    </annotation>
+    <complexType>
+      <complexContent mixed="true">
+        <extension base="base:Component" />
+      </complexContent>
+    </complexType>
+  </element>
+
+  <element name="operation" substitutionGroup="base:component">
+    <annotation>
+      <documentation xml:lang="en">
+        A custom component that registers an operation.
+      </documentation>
+    </annotation>
+    <complexType>
+      <complexContent mixed="true">
+        <extension base="base:Component" />
+      </complexContent>
+    </complexType>
+  </element>
+
+  <element name="xaml-component" substitutionGroup="base:component">
+    <annotation>
+      <documentation xml:lang="en">
+        A custom component is defined in a XAML View.
+      </documentation>
+    </annotation>
+    <complexType>
+      <complexContent mixed="true">
+        <extension base="base:Component" />
+      </complexContent>
+    </complexType>
+  </element>
+
+</schema>

@@ -1,0 +1,118 @@
+{
+  "components": [
+    {
+      "id": 2,
+      "steps": [
+        {
+          "id": 3,
+          "inputs": {},
+          "position": "0,0",
+          "purpose": "start",
+          "title": "Start",
+          "transitions": [
+            {
+              "id": 5,
+              "inputs": {},
+              "position": "90,60 90,120",
+              "target": { "id": 4 },
+              "targetConnector": "top"
+            }
+          ]
+        },
+        {
+          "action": "gcx:wf:core::RunActivity",
+          "id": 4,
+          "inputs": {
+            "action": "CustomComponent"
+          },
+          "name": "customComponent1",
+          "position": "-30,120",
+          "title": "Run Activity",
+          "transitions": [
+            {
+              "id": 22,
+              "inputs": {},
+              "position": "90,190 90,260",
+              "sourceConnector": "bottom",
+              "target": { "id": 7 },
+              "targetConnector": "top"
+            }
+          ]
+        },
+        {
+          "action": "gcx:wf:forms:form:DisplayForm",
+          "id": 7,
+          "inputs": {
+            "form": {
+              "accessors": [],
+              "code": "resources.forms[values.id]",
+              "values": { "id": 8 }
+            }
+          },
+          "name": "form1",
+          "position": "-30,260",
+          "title": "Display Form",
+          "transitions": [
+            {
+              "id": 16,
+              "inputs": {},
+              "position": "90,380 90,470",
+              "sourceConnector": "bottom",
+              "target": { "id": 15 },
+              "targetConnector": "top"
+            }
+          ]
+        },
+        {
+          "action": "gcx:wf:core::Exit",
+          "id": 15,
+          "inputs": {},
+          "position": "30,470",
+          "title": "Exit"
+        }
+      ]
+    }
+  ],
+  "designerVersion": "5.14.0+24",
+  "forms": [
+    {
+      "defaults": {},
+      "elements": {
+        "custom1": {
+          "customType": "CustomComponent",
+          "enabled": true,
+          "index": 0,
+          "title": { "markdown": "" },
+          "type": "Custom"
+        },
+        "footer": {
+          "enabled": true,
+          "items": {
+            "0": {
+              "default": true,
+              "index": 0,
+              "label": { "markdown": "Submit" },
+              "validates": true,
+              "value": "submit"
+            },
+            "1": {
+              "index": 1,
+              "label": { "markdown": "Cancel" },
+              "validates": false,
+              "value": "cancel"
+            }
+          },
+          "section": "footer",
+          "type": "ButtonBar"
+        },
+        "header": {
+          "section": "header",
+          "title": { "markdown": "Custom Component" },
+          "type": "Header"
+        }
+      },
+      "id": 8
+    }
+  ],
+  "start": { "id": 3 }
+}

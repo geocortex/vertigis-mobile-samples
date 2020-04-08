@@ -1,0 +1,384 @@
+﻿{
+  "$schema": "..\\..\\..\\..\\..\\ViewerFramework\\app-config\\mobile\\mobile-app-config.schema.json",
+
+  "schemaVersion": "1.0",
+
+  "items": [
+    {
+      "$type": "region",
+      "id": "region"
+    },
+    {
+      "id": "coordinate",
+      "transformations": [
+        {
+          "inSpatialReference": {
+            "wkid": 3467
+          },
+          "outSpatialReference": {
+            "wkid": 102100
+          },
+          "transformation": {
+            "steps": [
+              {
+                "wkid": 108149,
+                "wkt": null
+              },
+              {
+                "wkid": 108151,
+                "wkt": null
+              }
+            ]
+          }
+        }
+      ],
+      "canOverride": true,
+      "$type": "coordinate-settings"
+    },
+    {
+      "$type": "map-extension",
+      "id": "map1",
+      "webMap": "https://latitudegeo.maps.arcgis.com/home/item.html?id=c6008288a95247428fc55d9aaa72b670",
+      "onClick": [ "tasks.identify", "highlights.pulse", "results.display" ]
+
+    },
+    {
+      "$type": "portal-extension",
+      "id": "latitudegeo",
+      "appId": "Xn2yFLHGmsXdYZ3D",
+      "isDefault": true,
+      "portal": {
+        "url": "https://www.arcgis.com/"
+      }
+    },
+    {
+      "$type": "menu-item",
+      "id": "highlightsClear",
+      "title": "highlights.clear",
+      "isEnabled": true,
+      "iconId": "highlight-clear",
+      "action": {
+        "name": "highlights.clear"
+      }
+    },
+    {
+      "$type": "menu-item",
+      "id": "highlightsClearFocus",
+      "title": "highlights.clear-focus",
+      "isEnabled": true,
+      "iconId": "highlight-focus-clear",
+      "action": {
+        "name": "highlights.clear-focus"
+      }
+    },
+    {
+      "$type": "menu-item",
+      "id": "highlightsRefresh",
+      "title": "highlights.refresh",
+      "isEnabled": true,
+      "iconId": "refresh",
+      "action": "highlights.refresh"
+    },
+    {
+      "$type": "menu-item",
+      "id": "mapDisableMapClick",
+      "title": "map.disable-map-click",
+      "isEnabled": true,
+      "iconId": "clear",
+      "action": "map.disable-map-click"
+    },
+    {
+      "$type": "menu-item",
+      "id": "mapEnableMapClick",
+      "title": "map.enable-map-click",
+      "isEnabled": true,
+      "iconId": "check",
+      "action": "map.enable-map-click"
+    },
+    {
+      "$type": "menu-item",
+      "id": "mapHide",
+      "title": "map.hide",
+      "isEnabled": true,
+      "iconId": "visible-off",
+      "action": "map.hide"
+    },
+    {
+      "$type": "menu-item",
+      "id": "mapShow",
+      "title": "map.show",
+      "isEnabled": true,
+      "iconId": "visible",
+      "action": "map.show"
+    },
+    {
+      "$type": "menu-item",
+      "id": "mapRefresh",
+      "title": "map.refresh",
+      "isEnabled": true,
+      "iconId": "map-refresh",
+      "action": "map.refresh"
+    },
+    {
+      "$type": "menu-item",
+      "id": "mapZoomToInitialViewpoint",
+      "title": "map.zoom-to-initial-viewpoint",
+      "isEnabled": true,
+      "iconId": "zoom_initial",
+      "action": "map.zoom-to-initial-viewpoint"
+    },
+    {
+      "$type": "menu-item",
+      "id": "mapZoomToViewpoint",
+      "title": "map.zoom-to-viewpoint",
+      "isEnabled": true,
+      "iconId": "zoom-extent",
+      "action": {
+        "name": "map.zoom-to-viewpoint",
+        "arguments": {
+          "viewpoint": {
+            "targetGeometry": {
+              "xmin": "-13134178.43",
+              "ymin": "4034708.1906000003",
+              "xmax": "-13194178.43",
+              "ymax": "4041708.1906000003",
+              "spatialReference": {
+                "wkid": 102100,
+                "latestWkid": 3857
+              }
+            }
+          },
+          "maps": "item://map-extension/map1"
+        }
+      }
+    },
+    {
+      "$type": "menu-item",
+      "id": "measurementStart",
+      "title": "measurement.start",
+      "isEnabled": true,
+      "iconId": "measure",
+      "action": "measurement.start"
+    },
+    {
+      "$type": "menu-item",
+      "id": "measurementStop",
+      "title": "measurement.stop",
+      "isEnabled": true,
+      "iconId": "measure",
+      "action": "measurement.stop"
+    },
+    {
+      "$type": "menu-item",
+      "id": "measurementClear",
+      "title": "measurement.clear",
+      "isEnabled": true,
+      "iconId": "measure",
+      "action": "measurement.clear"
+    },
+    {
+      "$type": "menu-item",
+      "id": "resultsClear",
+      "title": "results.clear",
+      "isEnabled": true,
+      "iconId": "result-clear",
+      "action": "results.clear"
+    },
+    {
+      "$type": "menu-item",
+      "id": "resultsClearDetails",
+      "title": "results.clear-details",
+      "isEnabled": true,
+      "iconId": "result-clear-all",
+      "action": "results.clear-details"
+    },
+    {
+      "$type": "menu-item",
+      "id": "resultsDisplay",
+      "title": "results.display",
+      "isEnabled": true,
+      "iconId": "result-display",
+      "action": {
+        "name": "results.display"
+      }
+    },
+    {
+      "$type": "menu-item",
+      "id": "rotateBy",
+      "title": "rotate.by",
+      "iconId": "directions-turn-right",
+      "action": {
+        "name": "map.rotate-by",
+        "arguments": {
+          "rotation": 90
+        }
+      }
+    },
+    {
+      "$type": "menu-item",
+      "id": "rotateTo",
+      "title": "rotate.to",
+      "iconId": "directions-u-turn",
+      "action": {
+        "name": "map.rotate-to",
+        "arguments": {
+          "rotation": 180
+        }
+      }
+    },
+    {
+      "$type": "menu",
+      "id": "feature-actions",
+      "items": [
+        {
+          "title": "Add Highlights",
+          "iconId": "highlight",
+          "action": [
+            "map.pan-to-features",
+            "highlights.add"
+          ]
+        },
+        {
+          "title": "Add Focus",
+          "iconId": "highlight-focus",
+          "action": [
+            "map.pan-to-features",
+            "highlights.add-focus"
+          ]
+        },
+        {
+          "title": "Pulse Highlights",
+          "iconId": "highlight-pulse",
+          "action": [
+            "map.pan-to-features",
+            "highlights.pulse"
+          ]
+        },
+        {
+          "title": "Remove Highlights",
+          "iconId": "highlight-clear",
+          "action": [
+            "map.pan-to-features",
+            "highlights.remove"
+          ]
+        },
+        {
+          "title": "Remove Focus",
+          "iconId": "highlight-focus-clear",
+          "action": [
+            "map.pan-to-features",
+            "highlights.remove-focus"
+          ]
+        },
+        {
+          "title": "Zoom To Features",
+          "iconId": "zoom-feature",
+          "action": "map.zoom-to-features"
+        },
+        //{
+        //  "title": "Display Results",
+        //  "iconId": "result-display",
+        //  "action": "results.display"
+        //},
+        {
+          "title": "Display Details",
+          "iconId": "details",
+          "action": "results.display-details"
+        },
+        {
+          "title": "Display New Details",
+          "iconId": "details",
+          "action": "results.display-new-details"
+        },
+        {
+          "title": "Remove Details",
+          "iconId": "result-clear",
+          "action": [
+            {
+              "name": "results.remove"
+            },
+            {
+              "name": "ui.deactivate",
+              "arguments": "feature-details"
+            }
+
+          ]
+        },
+        {
+          "title": "Hide Details",
+          "iconId": "result-clear-all",
+          "action": "results.hide-details"
+        },
+        {
+          "title": "Get Directions",
+          "iconId": "map_default",
+          "action": {
+            "name": "system.open-url",
+            "arguments": {
+              "url": "https://www.google.com/maps/dir/?api=1&origin={Location.Geolocation.Latitude},{Location.Geolocation.Longitude}&destination={Location.Feature.Latitude},{Location.Feature.Longitude}"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "$type": "geolocate",
+      "id": "geolocate",
+      "onAccuracyClick": "geolocation.display-device-metadata",
+      "onAccuracyClickWithErrorState": "geolocation.display-device-selection"
+    },
+    {
+      "$type": "search",
+      "id": "search",
+      "onSearch": [ "tasks.search", "results.display" ],
+      "onClear": [ "search.clear", "results.clear" ],
+      "maxResults": 50
+    },
+    {
+      "$type": "results",
+      "id": "results",
+      "onFeatureShow": [
+        "highlights.add",
+        {
+          "name": "panel.snap-host-panel",
+          "arguments": {
+            "userSet": true
+          }
+        }
+      ],
+      "onFeatureHide": null,
+      "onFeatureRemove": "highlights.remove",
+      "onAllFeaturesRemoved": [ "panel.close-host-panel", "search.clear", "results.clear" ],
+      "onFeatureClick": [
+        "results.display-details",
+        {
+          "name": "panel.snap-host-panel",
+          "arguments": {
+            "snapPosition": "middle"
+          }
+        },
+        "map.zoom-to-features",
+        "highlights.pulse"
+      ],
+      "onFeatureLocate": [
+        {
+          "name": "panel.snap-host-panel",
+          "arguments": {
+            "snapPosition": "middle"
+          }
+        },
+        "map.pan-to-features",
+        "highlights.pulse"
+      ],
+      "onClear": [ "highlights.clear", "highlights.clear-focus" ]
+    },
+    {
+      "$type": "feature-details",
+      "id": "feature-details",
+      "featureActions": "item://menu/feature-actions",
+      "onFeatureShow": "highlights.add-focus",
+      "onFeatureHide": "highlights.remove-focus",
+      "onFeatureDelete": [ "highlights.remove-focus", "highlights.remove", "edit.delete-features", "results.hide-details", "results.remove" ]
+    }
+  ]
+}

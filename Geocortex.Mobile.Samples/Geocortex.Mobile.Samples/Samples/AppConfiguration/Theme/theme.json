@@ -1,0 +1,392 @@
+﻿{
+  "$schema": "..\\..\\..\\..\\..\\ViewerFramework\\app-config\\mobile\\mobile-app-config.schema.json",
+
+  "schemaVersion": "1.0",
+  
+  "items": [
+    {
+      "$type": "region",
+      "id": "region",
+      "measurementSystem": "metric"
+    },
+    {
+      "id": "coordinate",
+      "transformations": [
+        {
+          "inSpatialReference": {
+            "wkid": 3467
+          },
+          "outSpatialReference": {
+            "wkid": 102100
+          },
+          "transformation": {
+            "steps": [
+              {
+                "wkid": 108149,
+                "wkt": null
+              },
+              {
+                "wkid": 108151,
+                "wkt": null
+              }
+            ]
+          }
+        }
+      ],
+      "canOverride": true,
+      "$type": "coordinate-settings"
+    },
+    {
+      "$type": "geocortex-mobile-viewer",
+      "id": "gmv",
+      "version": "1.0.0"
+    },
+    {
+      "$type": "layout",
+      "id": "desktop-layout",
+      "url": "resource://layout-large.xml",
+      "tags": [ "mobile", "large" ]
+    },
+    {
+      "$type": "layout",
+      "id": "handheld-layout",
+      "url": "resource://layout-small.xml",
+      "tags": [ "mobile", "small" ]
+    },
+    {
+      "$type": "select-layer-settings",
+      "id": "edit"
+    },
+    {
+      "$type": "highlight-settings",
+      "id": "highlight-settings",
+      "focusColor": [ 0, 255, 255, 255 ],
+      "highlightColor": [ 255, 137, 245, 255 ],
+      "highlightMarkerSymbol": null,
+      "highlightLabelTextSymbol": {
+        "type": "esriTS",
+        "color": [ 0, 0, 0, 255 ],
+        "haloSize": 1,
+        "haloColor": [ 255, 255, 255, 255 ],
+        "font": {
+          "family": "Arial",
+          "size": 10,
+          "weight": "bold"
+        }
+      },
+      "focusLabelTextSymbol": {
+        "type": "esriTS",
+        "color": [ 0, 0, 0, 255 ],
+        "haloSize": 1,
+        "haloColor": [ 255, 255, 255, 255 ],
+        "font": {
+          "family": "Arial",
+          "size": 10,
+          "weight": "bold"
+        }
+      }
+    },
+    {
+      "$type": "search",
+      "id": "search",
+      "onSearch": [ "tasks.search", "results.display" ],
+      "onClear": [ "search.clear", "results.clear" ],
+      "maxResults": 50
+    },
+    {
+      "$type": "offline",
+      "id": "offline",
+      "onDownloadArea": "offline.download-area",
+      "onDeleteArea": "offline.delete-area",
+      "onGoOnline": "offline.go-online",
+      "onActivateArea": "offline.activate-area",
+      "onGetAreas": "offline.get-areas",
+      "onCancelDownload": "offline.cancel-download",
+      "onDisplayCreateArea": [
+        "offline.display-create-area",
+        {
+          "name": "panel.snap-host-panel",
+          "arguments": {
+            "snapPosition": "middle"
+          }
+        }
+      ],
+      "onCreateArea": [ "offline.create-area", "offline.cancel-create-area" ]
+    },
+    {
+      "$type": "map-extension",
+      "id": "map1",
+      "webMap": "https://latitudegeo.maps.arcgis.com/home/item.html?id=c6008288a95247428fc55d9aaa72b670",
+      "onClick": [ "tasks.identify", "highlights.pulse", "results.display" ]
+    },
+    {
+      "$type": "menu",
+      "id": "iwtm",
+      "items": [
+        {
+          "title": "Rotate and Zoom to Viewpoint",
+          "isEnabled": true,
+          "iconId": "directions-roundabout",
+          "action": [
+            {
+              "name": "panel.snap-host-panel",
+              "arguments": {
+                "snapPosition": "middle"
+              }
+            },
+            {
+              "name": "map.rotate-by",
+              "arguments": {
+                "rotation": 45
+              }
+            },
+            {
+              "name": "map.zoom-to-viewpoint",
+              "arguments": {
+                "viewpoint": {
+                  "scale": 30000,
+                  "targetGeometry": {
+                    "x": -13164178.43,
+                    "y": 4037708.1906000003,
+                    "spatialReference": {
+                      "wkid": 102100,
+                      "latestWkid": 3857
+                    }
+                  }
+                }
+              }
+            }
+          ]
+        },
+        {
+          "title": "Return to Default Map View",
+          "isEnabled": true,
+          "iconId": "zoom_initial",
+          "action": [
+            {
+              "name": "panel.snap-host-panel",
+              "arguments": {
+                "snapPosition": "middle"
+              }
+            },
+            "map.zoom-to-initial-viewpoint"
+          ]
+        }
+      ]
+    },
+    {
+      "$type": "menu",
+      "id": "feature-actions",
+      "items": [
+        {
+          "title": "Pan To",
+          "iconId": "map_pin",
+          "action": [
+            {
+              "name": "panel.snap-host-panel",
+              "arguments": {
+                "snapPosition": "middle"
+              }
+            },
+            "map.pan-to-features",
+            "highlights.pulse"
+          ]
+        },
+        {
+          "title": "Zoom To",
+          "iconId": "search",
+          "action": [
+            {
+              "name": "panel.snap-host-panel",
+              "arguments": {
+                "snapPosition": "middle"
+              }
+            },
+            "map.zoom-to-features",
+            "highlights.pulse"
+          ]
+        }
+      ]
+    },
+    {
+      "$type": "portal-extension",
+      "id": "latitudegeo",
+      "appId": "Xn2yFLHGmsXdYZ3D",
+      "isDefault": true,
+      "portal": {
+        "url": "https://www.arcgis.com/"
+      }
+    },
+    {
+      "$type": "branding",
+      "id": "branding",
+      "activeTheme": "custom",
+      "themes": [
+        {
+          "id": "custom",
+          "colors": {
+            "emphasizedButtonBackground": [ 0, 150, 154, 255 ],
+            "emphasizedButtonBackgroundDisabled": [ 137, 184, 228, 255 ],
+            "emphasizedButtonBackgroundHover": [ 227, 239, 249, 255 ],
+            "emphasizedButtonBorder": [ 181, 211, 238, 255 ],
+            "emphasizedButtonBorderDisabled": [ 19, 85, 147, 255 ],
+            "emphasizedButtonBorderHover": [ 26, 114, 196, 255 ],
+            "emphasizedButtonForeground": [ 243, 242, 241, 255 ],
+            "emphasizedButtonForegroundDisabled": [ 72, 70, 68, 255 ],
+            "emphasizedButtonForegroundHover": [ 0, 150, 154, 255 ],
+            "emphasizedButtonIcon": [ 243, 242, 241, 255 ],
+            "emphasizedButtonIconDisabled": [ 72, 70, 68, 255 ],
+            "emphasizedButtonIconHover": [ 26, 114, 196, 255 ],
+            "buttonBackground": [ 32, 31, 30, 255 ],
+            "buttonBackgroundDisabled": [ 72, 70, 68, 255 ],
+            "buttonBackgroundHover": [ 196, 196, 201, 255 ],
+            "buttonBorder": [ 196, 196, 201, 255 ],
+            "buttonBorderDisabled": [ 72, 70, 68, 255 ],
+            "buttonBorderHover": [ 97, 97, 103, 255 ],
+            "buttonForeground": [ 255, 255, 255, 255 ],
+            "buttonForegroundDisabled": [ 196, 196, 201, 255 ],
+            "buttonForegroundHover": [ 64, 64, 68, 255 ],
+            "buttonIcon": [ 255, 255, 255, 255 ],
+            "buttonIconDisabled": [ 72, 70, 68, 255 ],
+            "buttonIconHover": [ 32, 31, 30, 255 ],
+            "inputBorder": [ 196, 196, 201, 255 ],
+            "mapWidgetBackground": [ 243, 242, 241, 255 ],
+            "mapWidgetBackgroundDisabled": [ 72, 70, 68, 255 ],
+            "mapWidgetBackgroundHover": [ 32, 31, 30, 255 ],
+            "mapWidgetBorder": [ 243, 242, 241, 255 ],
+            "mapWidgetBorderDisabled": [ 72, 70, 68, 255 ],
+            "mapWidgetBorderHover": [ 26, 114, 196, 255 ],
+            "mapWidgetForeground": [ 26, 114, 196, 255 ],
+            "mapWidgetForegroundDisabled": [ 72, 70, 68, 255 ],
+            "mapWidgetForegroundHover": [ 243, 242, 241, 255 ],
+            "mapWidgetIcon": [ 32, 31, 30, 255 ],
+            "mapWidgetIconDisabled": [ 130, 130, 138, 255 ],
+            "mapWidgetIconHover": [ 243, 242, 241, 255 ],
+            "primaryAccent": [ 0, 150, 154, 255 ],
+            "primaryAccentDisabled": [ 143, 188, 143, 255 ],
+            "primaryAccentHover": [ 196, 196, 201, 255 ],
+            "primaryAccentLarge": [ 0, 150, 154, 255 ],
+            "primaryBackground": [ 17, 16, 15, 255 ],
+            "primaryBorder": [ 114, 114, 121, 255 ],
+            "primaryForeground": [ 243, 242, 241, 255 ],
+            "primaryForegroundDisabled": [ 130, 130, 138, 255 ],
+            "secondaryBackground": [ 32, 31, 30, 255 ],
+            "secondaryBorder": [ 97, 97, 103, 255 ],
+            "secondaryForeground": [ 196, 196, 201, 255 ],
+            "tabPrimaryForeground": [ 196, 196, 201, 255 ],
+            "tabSecondaryForeground": [ 255, 255, 255, 255 ],
+            "inlineTableHeaderBackground": [ 64, 64, 68, 255 ],
+            "inlineTableRowBackground": [ 97, 97, 103, 255 ],
+            "inlineTableBorder": [ 130, 130, 138, 255 ],
+            "accentIconBackground": [ 255, 255, 255, 255 ],
+            "accentIconForeground": [ 0, 150, 154, 255 ],
+            "accentIconBackgroundHover": [ 255, 255, 255, 255 ],
+            "accentIconBorder": [ 255, 255, 255, 255 ],
+            "accentIconBorderHover": [ 255, 255, 255, 255 ],
+            "accentIconForegroundHover": [ 0, 150, 154, 255 ],
+            "disabledIconFill": [ 130, 130, 138, 255 ],
+            "alertAmberBackground": [ 191, 83, 0, 255 ],
+            "alertAmberBackgroundHover": [ 255, 255, 255, 255 ],
+            "alertAmberBorder": [ 191, 83, 0, 255 ],
+            "alertAmberBorderHover": [ 191, 83, 0, 255 ],
+            "alertAmberForeground": [ 255, 255, 255, 255 ],
+            "alertAmberForegroundHover": [ 191, 83, 0, 255 ],
+            "alertAmberIcon": [ 255, 255, 255, 255 ],
+            "alertAmberIconHover": [ 191, 83, 0, 255 ],
+            "alertBackgroundDisabled": [ 114, 114, 121, 255 ],
+            "alertBorderDisabled": [ 114, 114, 121, 255 ],
+            "alertForegroundDisabled": [ 196, 196, 201, 255 ],
+            "alertIconDisabled": [ 196, 196, 201, 255 ],
+            "alertGreenBackground": [ 0, 128, 64, 255 ],
+            "alertGreenBackgroundHover": [ 255, 255, 255, 255 ],
+            "alertGreenBorder": [ 0, 128, 64, 255 ],
+            "alertGreenBorderHover": [ 0, 128, 64, 255 ],
+            "alertGreenForeground": [ 255, 255, 255, 255 ],
+            "alertGreenForegroundHover": [ 0, 128, 64, 255 ],
+            "alertGreenIcon": [ 255, 255, 255, 255 ],
+            "alertGreenIconHover": [ 0, 128, 64, 255 ],
+            "alertRedBackground": [ 178, 34, 34, 255 ],
+            "alertRedBackgroundHover": [ 255, 255, 255, 255 ],
+            "alertRedBorder": [ 178, 34, 34, 255 ],
+            "alertRedBorderHover": [ 178, 34, 34, 255 ],
+            "alertRedForeground": [ 255, 255, 255, 255 ],
+            "alertRedForegroundHover": [ 178, 34, 34, 255 ],
+            "alertRedIcon": [ 255, 255, 255, 255 ],
+            "alertRedIconHover": [ 178, 34, 34, 255 ],
+            "itemSelectedBackground": [ 16, 71, 122, 255 ],
+            "itemHoverBackground": [ 0, 150, 154, 255 ]
+          }
+        }
+      ]
+    },
+    {
+      "$type": "feature-details",
+      "id": "feature-details",
+      "featureActions": "item://menu/feature-actions",
+      "onFeatureShow": "highlights.add-focus",
+      "onFeatureHide": "highlights.remove-focus",
+      "onFeatureDelete": [ "highlights.remove-focus", "highlights.remove", "edit.delete-features", "results.hide-details", "results.remove" ]
+    },
+    {
+      "$type": "geolocate",
+      "id": "geolocate",
+      "onAccuracyClick": "geolocation.display-device-metadata",
+      "onAccuracyClickWithErrorState": "geolocation.display-device-selection"
+    },
+    {
+      "$type": "gnss-metadata",
+      "id": "gnss-metadata"
+    },
+    {
+      "$type": "gnss-device-selection",
+      "id": "gnss-device-selection"
+    },
+    {
+      "$type": "gnss-device-settings",
+      "id": "gnss-device-settings"
+    },
+    {
+      "$type": "results",
+      "id": "results",
+      "onFeatureShow": [
+        "highlights.add",
+        {
+          "name": "panel.snap-host-panel",
+          "arguments": {
+            "userSet": true
+          }
+        }
+      ],
+      "onFeatureHide": null,
+      "onFeatureRemove": "highlights.remove",
+      "onAllFeaturesRemoved": [ "panel.close-host-panel", "search.clear", "results.clear" ],
+      "onFeatureClick": [
+        "results.display-details",
+        {
+          "name": "panel.snap-host-panel",
+          "arguments": {
+            "snapPosition": "middle"
+          }
+        },
+        "map.zoom-to-features",
+        "highlights.pulse"
+      ],
+      "onFeatureLocate": [
+        {
+          "name": "panel.snap-host-panel",
+          "arguments": {
+            "snapPosition": "middle"
+          }
+        },
+        "map.pan-to-features",
+        "highlights.pulse"
+      ],
+      "onClear": [ "highlights.clear", "highlights.clear-focus" ]
+    },
+    {
+      "id": "licensing",
+      "accountId": "001f200001acimzAAA", // No license
+      "$type": "licensing"
+    }
+  ]
+}

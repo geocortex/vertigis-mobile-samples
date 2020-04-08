@@ -1,0 +1,92 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:theme="clr-namespace:Geocortex.Mobile.Infrastructure.Styles;assembly=Geocortex.Mobile"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="Geocortex.Mobile.Samples.SampleSelector.Selector"
+             Title="Samples">
+    <ContentPage.Resources>
+        <ResourceDictionary>
+            <ResourceDictionary.MergedDictionaries>
+                <theme:GenericAppStyles/>
+            </ResourceDictionary.MergedDictionaries>
+        </ResourceDictionary>
+    </ContentPage.Resources>
+
+    <StackLayout Padding="10" HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand">
+        <CollectionView 
+            x:Name="collectionList"
+            ItemsSource="{Binding Samples}" 
+            IsGrouped="true" 
+            SelectionMode="Single"
+            SelectionChanged="OnCollectionViewSelectionChanged"
+            HorizontalOptions="CenterAndExpand"
+            VerticalOptions="CenterAndExpand">
+            <CollectionView.GroupHeaderTemplate>
+                <DataTemplate>
+                    <Frame CornerRadius="5"
+                           Padding="0"
+                           BackgroundColor="{StaticResource GenericApp_PrimaryColor}"
+                           Margin="15"
+                           HasShadow="False">
+                        <Label Text="{Binding Name}"
+                               Margin="20, 5"
+                               BackgroundColor="Transparent"
+                               FontSize="Medium"
+                               VerticalOptions="Center" />
+                    </Frame>
+                </DataTemplate>
+            </CollectionView.GroupHeaderTemplate>
+
+            <!--iOS has a default footer - override it-->
+            <CollectionView.GroupFooterTemplate>
+                <OnPlatform x:TypeArguments="DataTemplate">
+                    <On Platform="iOS">
+                        <DataTemplate>
+                            <StackLayout />
+                        </DataTemplate>
+                    </On>
+                </OnPlatform>
+            </CollectionView.GroupFooterTemplate>
+
+            <CollectionView.ItemsLayout>
+                <OnIdiom x:TypeArguments="GridItemsLayout">
+                    <OnIdiom.Phone>
+                        <GridItemsLayout Orientation="Vertical" Span="1" />
+                    </OnIdiom.Phone>
+                    <OnIdiom.Tablet>
+                        <GridItemsLayout Orientation="Vertical" Span="2" />
+                    </OnIdiom.Tablet>
+                    <OnIdiom.Desktop>
+                        <GridItemsLayout Orientation="Vertical" Span="3" />
+                    </OnIdiom.Desktop>
+                </OnIdiom>
+            </CollectionView.ItemsLayout>
+
+            <CollectionView.ItemTemplate>
+                <DataTemplate>
+
+                    <StackLayout Margin="30, 0" Padding="30, 15">
+                        <Label Text="{Binding Name}"
+                               FontSize="Small"
+                               FontAttributes="Bold"
+                               TextColor="Black" />
+                        <Label Text="{Binding Description}"
+                               FontSize="Micro"
+                               TextColor="Black"
+                               MaxLines="1"                              
+                               LineBreakMode="TailTruncation" />
+                        <Label Text="{Binding Platform}"
+                               FontSize="Micro"
+                               TextColor="Black"
+                               FontAttributes="Italic"
+                               MaxLines="1"                              
+                               LineBreakMode="TailTruncation" />
+                    </StackLayout>
+                </DataTemplate>
+            </CollectionView.ItemTemplate>
+        </CollectionView>
+    </StackLayout>
+</ContentPage>

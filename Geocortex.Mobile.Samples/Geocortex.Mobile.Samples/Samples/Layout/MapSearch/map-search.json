@@ -1,0 +1,29 @@
+﻿{
+  "$schema": "..\\..\\..\\..\\..\\ViewerFramework\\app-config\\mobile\\mobile-app-config.schema.json",
+
+  "schemaVersion": "1.0",
+  "items": [
+    {
+      "$type": "map-extension",
+      "id": "map1",
+      "webMap": "https://latitudegeo.maps.arcgis.com/home/item.html?id=c6008288a95247428fc55d9aaa72b670",
+      "onClick": [ "tasks.identify", "highlights.pulse", "results.display" ]
+    },
+    {
+      "$type": "portal-extension",
+      "id": "latitudegeo",
+      "appId": "Xn2yFLHGmsXdYZ3D",
+      "isDefault": true,
+      "portal": {
+        "url": "https://www.arcgis.com/"
+      }
+    },
+    {
+      "$type": "search",
+      "id": "search",
+      "onSearch": [ "tasks.search", "results.display" ],
+      "onClear": [ "search.clear", "results.clear" ],
+      "maxResults": 50
+    }
+  ]
+}

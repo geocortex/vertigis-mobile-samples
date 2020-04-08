@@ -1,0 +1,40 @@
+﻿<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6245" systemVersion="13F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="X5k-f2-b5h">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6238"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="gAE-YM-kbH">
+            <objects>
+                <viewController id="X5k-f2-b5h" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Y8P-hJ-Z43"/>
+                        <viewControllerLayoutGuide type="bottom" id="9ZL-r4-8FZ"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="yd7-JS-zBw">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" colorSpace="calibratedRGB" red="0" green="0.46666666666666667" blue="0.47843137254901963" alpha="1"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" id="270" translatesAutoresizingMaskIntoConstraints="NO" image="SplashScreenIcon-256.png" misplaced="YES">
+                                <rect key="frame" x="40" y="164" width="60" height="60"/>
+                            </imageView>
+                        </subviews>
+                        <constraints>
+                            <constraint id="271" firstItem="yd7-JS-zBw" firstAttribute="centerX" secondItem="270" secondAttribute="centerX"/>
+                            <constraint id="272" firstItem="yd7-JS-zBw" firstAttribute="centerY" secondItem="270" secondAttribute="centerY"/>
+                            <constraint id="722" firstItem="yd7-JS-zBw" firstAttribute="width" secondItem="270" secondAttribute="width" constant="1" multiplier="4"/>
+                            <constraint id="724" firstItem="270" firstAttribute="height" secondItem="yd7-JS-zBw" secondAttribute="height"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="XAI-xm-WK6" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="349" y="339"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="SplashScreenIcon-256.png" width="256" height="256"/>
+    </resources>
+</document>

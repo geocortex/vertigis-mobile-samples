@@ -1,0 +1,310 @@
+﻿{
+  "$schema": "..\\..\\..\\..\\..\\ViewerFramework\\app-config\\mobile\\mobile-app-config.schema.json",
+
+  "schemaVersion": "1.0",
+
+  "items": [
+    {
+      "$type": "region",
+      "id": "region"
+    },
+    {
+      "id": "coordinate",
+      "transformations": [
+        {
+          "inSpatialReference": {
+            "wkid": 3467
+          },
+          "outSpatialReference": {
+            "wkid": 102100
+          },
+          "transformation": {
+            "steps": [
+              {
+                "wkid": 108149,
+                "wkt": null
+              },
+              {
+                "wkid": 108151,
+                "wkt": null
+              }
+            ]
+          }
+        }
+      ],
+      "canOverride": true,
+      "$type": "coordinate-settings"
+    },
+    {
+      "$type": "map-extension",
+      "id": "map1",
+      "webMap": "https://latitudegeo.maps.arcgis.com/home/item.html?id=c6008288a95247428fc55d9aaa72b670"
+    },
+    {
+      "$type": "portal-extension",
+      "id": "latitudegeo",
+      "appId": "Xn2yFLHGmsXdYZ3D",
+      "isDefault": true,
+      "portal": {
+        "url": "https://www.arcgis.com/"
+      }
+    },
+    {
+      "$type": "geocortex-mobile-viewer",
+      "id": "gmv",
+      "version": "1.0.0"
+    },
+    {
+      "$type": "menu-item",
+      "id": "appRefresh",
+      "title": "app.refresh",
+      "isEnabled": true,
+      "iconId": "refresh",
+      "action": "app.refresh"
+    },
+    {
+      "$type": "menu-item",
+      "id": "authGetCurrentUser",
+      "title": "auth.get-current-user",
+      "isEnabled": true,
+      "iconId": "users-manage",
+      "action": "auth.get-current-user"
+    },
+    {
+      "$type": "menu-item",
+      "id": "authSignIn",
+      "title": "auth.sign-in",
+      "isEnabled": true,
+      "iconId": "authentication",
+      "action": {
+        "name": "auth.sign-in",
+        "arguments": true
+      }
+    },
+    {
+      "$type": "menu-item",
+      "id": "authSignOut",
+      "title": "auth.sign-out",
+      "isEnabled": true,
+      "iconId": "work-order-close",
+      "action": {
+        "name": "auth.sign-out",
+        "arguments": true
+      }
+    },
+    {
+      "$type": "menu-item",
+      "id": "debugConsoleDisplay",
+      "title": "debug-console.display",
+      "isEnabled": true,
+      "iconId": "close",
+      "action": "debug-console.display"
+    },
+    {
+      "$type": "menu-item",
+      "id": "geolocationAutoRecenter",
+      "title": "geolocation.auto-recenter",
+      "isEnabled": true,
+      "iconId": "geolocate-centered",
+      "action": {
+        "name": "geolocation.auto-recenter",
+        "arguments": "item://map-extension/map1"
+      }
+    },
+    {
+      "$type": "menu-item",
+      "id": "geolocationDisplayLocation",
+      "title": "geolocation.display-location",
+      "isEnabled": true,
+      "iconId": "geolocate-centered",
+      "action": "geolocation.display-location"
+    },
+    {
+      "$type": "menu-item",
+      "id": "iwtmOpen",
+      "title": "iwtm.open",
+      "isEnabled": true,
+      "iconId": "iwtm",
+      "action": {
+        "name": "iwtm.open",
+        "arguments": "iwtm"
+      }
+    },
+    {
+      "$type": "menu-item",
+      "id": "geolocationTurnOffGeolocation",
+      "title": "geolocation.turn-off-geolocation",
+      "isEnabled": true,
+      "iconId": "geolocate-centered",
+      "action": "geolocation.turn-off-geolocation"
+    },
+    {
+      "$type": "menu-item",
+      "id": "panelOpenHostPanel",
+      "title": "panel.open-host-panel",
+      "isEnabled": true,
+      "iconId": "open",
+      "action": {
+        "name": "panel.open-host-panel",
+        "arguments": "empty-panel"
+      }
+    },
+    {
+      "$type": "menu-item",
+      "id": "panelCloseHostPanel",
+      "title": "panel.close-host-panel",
+      "isEnabled": true,
+      "iconId": "close",
+      "action": "panel.close-host-panel"
+    },
+    {
+      "$type": "menu-item",
+      "id": "sketchingCaptureGeometry",
+      "title": "sketching.capture-geometry",
+      "isEnabled": true,
+      "iconId": "draw",
+      "action": "sketching.capture-geometry"
+    },
+    {
+      "$type": "menu-item",
+      "id": "openUrlAction",
+      "title": "Open www.geocortex.com",
+      "isEnabled": true,
+      "iconId": "link_external",
+      "action": {
+        "name": "system.open-url",
+        "arguments": {
+          "url": "http://www.geocortex.com"
+        }
+      }
+    },
+    {
+      "$type": "menu-item",
+      "id": "openExtentInBing",
+      "title": "Open Current Extent in Bing Maps",
+      "isEnabled": true,
+      "iconId": "map_bing",
+      "action": {
+        "name": "system.open-url",
+        "arguments": {
+          "url": "https://bing.com/maps?cp={Location.Map.Center.Latitude}~{Location.Map.Center.Longitude}&lvl={Location.Map.Level}"
+        }
+      }
+    },
+    {
+      "$type": "menu-item",
+      "id": "uiActivate",
+      "title": "ui.activate",
+      "isEnabled": true,
+      "iconId": "activate",
+      "action": {
+        "name": "ui.activate",
+        "arguments": "toggleButton"
+      }
+    },
+    {
+      "$type": "menu-item",
+      "id": "uiDeactivate",
+      "title": "ui.deactivate",
+      "isEnabled": true,
+      "iconId": "activate",
+      "action": {
+        "name": "ui.deactivate",
+        "arguments": "toggleButton"
+      }
+    },
+    {
+      "$type": "menu-item",
+      "id": "uiActiveToggle",
+      "title": "ui.active-toggle",
+      "isEnabled": true,
+      "iconId": "return-arrow",
+      "action": {
+        "name": "ui.active-toggle",
+        "arguments": "toggleButton"
+      }
+    },
+    {
+      "$type": "menu-item",
+      "id": "uiAlert",
+      "title": "ui.alert",
+      "isEnabled": true,
+      "iconId": "dialog",
+      "action": {
+        "name": "ui.alert",
+        "arguments": {
+          "title": "My Alert Title",
+          "message": "This is my alert message!",
+          "buttonText": "My Button Text"
+        }
+      }
+    },
+    {
+      "$type": "menu-item",
+      "id": "toggleButton",
+      "title": "ui.alert",
+      "isEnabled": true,
+      "iconId": "warning",
+      "action": {
+        "name": "ui.alert",
+        "arguments": {
+          "title": "Toggle",
+          "message": "Toggle this button visibility using commands available in the `Geocortex Mobile Commands` panel.",
+          "buttonText": "OK"
+        }
+      }
+    },
+    {
+      "$type": "menu-item",
+      "id": "uiAwait",
+      "title": "ui.await",
+      "isEnabled": true,
+      "iconId": "help",
+      "action": [
+        {
+          "name": "ui.alert",
+          "arguments": {
+            "title": "Alert",
+            "message": "After clicking `OK`, another alert will be displayed after a delay of 5 seconds.",
+            "buttonText": "OK"
+          }
+        },
+        {
+          "name": "ui.await",
+          "arguments": 5000
+        },
+        {
+          "name": "ui.alert",
+          "arguments": {
+            "title": "Delayed Alert",
+            "message": "Here's the delayed alert.",
+            "buttonText": "OK"
+          }
+        }
+      ]
+    },
+    {
+      "$type": "menu-item",
+      "id": "uiDisplayNotification",
+      "title": "ui.display-notification",
+      "isEnabled": true,
+      "iconId": "info",
+      "action": {
+        "name": "ui.display-notification",
+        "arguments": {
+          "message": "This is my display notification message!"
+        }
+      }
+    },
+    {
+      "$type": "geolocate",
+      "id": "geolocate",
+      "onAccuracyClick": "geolocation.display-device-metadata",
+      "onAccuracyClickWithErrorState": "geolocation.display-device-selection"
+    },
+    {
+      "$type": "menu",
+      "id": "iwtm"
+    }
+  ]
+}

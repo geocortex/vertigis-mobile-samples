@@ -1,0 +1,67 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<layout
+    xmlns="https://geocortex.com/layout/v1"
+    xmlns:gxm="https://geocortex.com/layout/mobile/v1"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="https://geocortex.com/layout/v1 ../../../../../ViewerFramework/layout/layout-mobile.xsd
+    https://geocortex.com/layout/v1 ../../../layout-custom.xsd">
+
+  <gxm:taskbar id="taskbar" orientation="vertical">
+
+    <!-- Taskbar main content -->
+    <map config="map1" slot="main" />
+
+    <panel>
+      <stack title="First" icon="info" >
+        <text margin="1"> Here's some text for my first panel!</text>
+        <text margin="1">It's first because it's really important!</text>
+      </stack>
+    </panel>
+
+    <panel>
+      <split title="Split" icon="action-menu">
+        <text margin="1" grow="1">Here's some text on the left.</text>
+        <text margin="1" grow="1">Here's some text on the right.</text>
+      </split>
+    </panel>
+
+    <!-- Taskbar / layers -->
+    <panel>
+      <layer-list/>
+    </panel>
+
+    <!-- Taskbar / search -->
+    <panel>
+      <stack>
+        <search/>
+        <results-list active="false" />
+      </stack>
+      <feature-details/>
+      <gxm:update-feature/>
+      <gxm:add-related-feature />
+    </panel>
+
+    <panel>
+      <stack title="Search again!" icon="searchable">
+        <text margin="1">Another Search panel, but this one has text!</text>
+        <search/>
+        <results-list active="false" />
+      </stack>
+      <feature-details/>
+      <gxm:update-feature/>
+      <gxm:add-related-feature />
+    </panel>
+
+    <!-- Taskbar / layers -->
+    <panel>
+      <layer-list title="Layers again!"/>
+    </panel>
+
+    <!-- Taskbar / map areas -->
+    <panel>
+      <gxm:offline-areas/>
+      <gxm:create-offline-area/>
+    </panel>
+  </gxm:taskbar>
+
+</layout>

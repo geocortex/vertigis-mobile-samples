@@ -1,0 +1,227 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|AnyCPU'">
+    <CodeAnalysisRuleSet />
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
+    <CodeAnalysisRuleSet />
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="Samples\AppConfiguration\Commands\README.md" />
+    <None Remove="Samples\AppConfiguration\MapAndFeatureCommands\README.md" />
+    <None Remove="Samples\AppConfiguration\MapConfiguration\README.md" />
+    <None Remove="Samples\AppConfiguration\Theme\README.md" />
+    <None Remove="Samples\App\README.md" />
+    <None Remove="Samples\Conceptual\ActivateDeactivateChildren\README.md" />
+    <None Remove="Samples\Conceptual\ActivateDeactivate\README.md" />
+    <None Remove="Samples\Conceptual\Disposal\README.md" />
+    <None Remove="Samples\Conceptual\Internationalization\README.md" />
+    <None Remove="Samples\Conceptual\Logging\README.md" />
+    <None Remove="Samples\Conceptual\OrientationLock\README.md" />
+    <None Remove="Samples\Conceptual\PhoneVsDesktop\README.md" />
+    <None Remove="Samples\CustomSamples\BasemapToggle\README.md" />
+    <None Remove="Samples\CustomSamples\BreadCrumbs\README.md" />
+    <None Remove="Samples\CustomSamples\CustomDetails\README.md" />
+    <None Remove="Samples\CustomSamples\Location\README.md" />
+    <None Remove="Samples\Custom\ComponentConfiguration\README.md" />
+    <None Remove="Samples\Custom\Component\README.md" />
+    <None Remove="Samples\Conceptual\DependencyInjection\README.md" />
+    <None Remove="Samples\Custom\GeocortexMobileElements\README.md" />
+    <None Remove="Samples\Custom\Service\README.md" />
+    <None Remove="Samples\Custom\XamlComponent\README.md" />
+    <None Remove="Samples\Custom\Operation\README.md" />
+    <None Remove="Samples\Layout\ButtonStyles\README.md" />
+    <None Remove="Samples\Layout\Dialog\README.md" />
+    <None Remove="Samples\Layout\HierarchicalPanelNavigation\README.md" />
+    <None Remove="Samples\Layout\LayoutProperties\README.md" />
+    <None Remove="Samples\Layout\MapPanel\README.md" />
+    <None Remove="Samples\Layout\MapSearch\README.md" />
+    <None Remove="Samples\Layout\Split\README.md" />
+    <None Remove="Samples\Layout\Stack\README.md" />
+    <None Remove="Samples\Layout\Taskbar\README.md" />
+    <None Remove="Samples\Workflow\CustomActivity\custom-activity-workflow.json" />
+    <None Remove="Samples\Workflow\CustomActivity\README.md" />
+    <None Remove="Samples\Workflow\CustomFormComponent\custom-form-component-workflow.json" />
+    <None Remove="Samples\Workflow\CustomFormComponent\CustomWorkflowComponent.json" />
+    <None Remove="Samples\Workflow\CustomFormComponent\README.md" />
+    <None Remove="Samples\Workflow\RunWorkflow\README.md" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Include="Samples\AppConfiguration\Commands\README.md">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Samples\AppConfiguration\MapAndFeatureCommands\README.md">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Samples\AppConfiguration\MapConfiguration\README.md">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Samples\AppConfiguration\Theme\README.md">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Samples\App\GeocortexMobileViewer\README.md">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Samples\Conceptual\ActivateDeactivateChildren\README.md">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Samples\Conceptual\ActivateDeactivate\README.md">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Samples\Conceptual\Disposal\README.md">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Samples\Conceptual\Internationalization\README.md">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Samples\Conceptual\Logging\README.md">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Samples\Conceptual\OrientationLock\README.md">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Samples\Conceptual\PhoneVsDesktop\README.md">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Samples\CustomSamples\BasemapToggle\README.md">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Samples\CustomSamples\BreadCrumbs\README.md">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Samples\CustomSamples\CustomDetails\README.md">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Samples\CustomSamples\Location\README.md">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Samples\Custom\ComponentConfiguration\README.md">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Samples\Custom\Component\README.md">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Samples\Conceptual\DependencyInjection\README.md">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Samples\Custom\GeocortexMobileElements\README.md">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Samples\Custom\Service\README.md">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Samples\Custom\XamlComponent\README.md">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Samples\Custom\Operation\README.md">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Samples\Layout\ButtonStyles\README.md">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Samples\Layout\Dialog\README.md">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Samples\Layout\HierarchicalPanelNavigation\README.md">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Samples\Layout\LayoutProperties\README.md">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Samples\Layout\MapPanel\README.md">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Samples\Layout\MapSearch\README.md">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Samples\Layout\Split\README.md">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Samples\Layout\Stack\README.md">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Samples\Layout\Taskbar\README.md">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </EmbeddedResource>
+  </ItemGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Include="Samples\Workflow\CustomActivity\custom-activity-workflow.json" />
+    <EmbeddedResource Include="Samples\Workflow\CustomActivity\README.md">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Samples\Workflow\CustomFormComponent\custom-form-component-workflow.json" />
+    <EmbeddedResource Include="Samples\Workflow\CustomFormComponent\README.md">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Samples\Workflow\RunWorkflow\README.md">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </EmbeddedResource>
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Esri.ArcGISRuntime" Version="100.7.0" />
+    <PackageReference Include="Esri.ArcGISRuntime.Xamarin.Forms" Version="100.7.0" />
+    <PackageReference Include="Geocortex.Mobile" Version="5.6.0" />
+    <PackageReference Include="Geocortex.Workflow.Activities.Image" Version="5.14.2.184" />
+    <PackageReference Include="Geocortex.Workflow.Forms" Version="5.14.2.184" />
+    <PackageReference Include="MarkedNet" Version="2.1.2" />
+    <PackageReference Include="Microsoft.CSharp" Version="4.6.0" />
+    <PackageReference Include="Newtonsoft.Json" Version="12.0.3" />
+    <PackageReference Include="Xam.Forms.MarkdownView" Version="0.6.1-pre" />
+    <PackageReference Include="Xamarin.Forms" Version="4.3.0.991221" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Compile Update="AppResources.Designer.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>AppResources.resx</DependentUpon>
+    </Compile>
+    <Compile Update="Samples\Conceptual\Internationalization\AppResources.Designer.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>AppResources.resx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Update="AppResources.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>AppResources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Samples\Conceptual\Internationalization\AppResources.en-US.resx">
+      <Generator></Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="MasterDetailPage1Detail.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="SampleSelector\Selector.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Samples\Conceptual\Internationalization\AppResources.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>AppResources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Samples\CustomSamples\BasemapToggle\BasemapToggleView.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Samples\CustomSamples\BreadCrumbs\BreadcrumbLocationTrackerView.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Samples\Custom\GeocortexMobileElements\GeocortexMobileElementsXamlView.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Samples\Custom\XamlComponent\XamlComponentView.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+  </ItemGroup>
+
+</Project>

@@ -1,0 +1,36 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ContentView xmlns="http://xamarin.com/schemas/2014/forms" 
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:ui="clr-namespace:Geocortex.Mobile.Infrastructure.UI;assembly=Geocortex.Mobile"
+             x:Class="Geocortex.Mobile.Samples.Samples.CustomSamples.Breadcrumbs.BreadcrumbLocationTrackerView">
+    <ContentView.Resources>
+        <Style x:Key="BreadcrumbButton" TargetType="ui:EnhancedButton" BasedOn="{StaticResource MapWidgetButton}">
+            <Setter Property="HeightRequest" Value="44"/>
+            <Setter Property="CornerRadius2" Value="0"/>
+            <Setter Property="BorderWidth" Value="0"/>
+
+            <Setter Property="VerticalOptions" Value="Center"/>
+            <Setter Property="HorizontalOptions" Value="Center"/>
+
+            <Setter Property="VerticalContentAlignment" Value="Center"/>
+            <Setter Property="HorizontalContentAlignment" Value="Center"/>
+            <Setter Property="ImagePadding" Value="0" />
+        </Style>
+        <Style x:Key="BreadcrumbCircleMapWidgetButton" TargetType="ui:EnhancedButton" BasedOn="{StaticResource BreadcrumbButton}">
+            <Setter Property="WidthRequest" Value="44"/>
+            <Setter Property="ImageHeight" Value="24" />
+            <Setter Property="ImageWidth" Value="24" />
+        </Style>
+    </ContentView.Resources>
+    <ContentView.Content>
+        <ui:RoundedShadowContent CornerRadius="21">
+            <StackLayout Orientation="Horizontal" BackgroundColor="LightGray" Spacing="1" Padding="0" Margin="0">
+                <ui:EnhancedButton
+                    x:Name="BreadcrumbButton"
+                    Image="gcx_ui_map_pin"
+                    Style="{StaticResource BreadcrumbCircleMapWidgetButton}"
+                    Command="{Binding BreadcrumbLocationTrackerCommand}"/>
+            </StackLayout>
+        </ui:RoundedShadowContent>
+    </ContentView.Content>
+</ContentView>

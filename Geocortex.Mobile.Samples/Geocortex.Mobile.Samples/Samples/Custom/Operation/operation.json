@@ -1,0 +1,44 @@
+﻿{
+  "$schema": "..\\..\\..\\..\\..\\ViewerFramework\\app-config\\mobile\\mobile-app-config.schema.json",
+
+  "schemaVersion": "1.0",
+
+  "items": [
+    {
+      "$type": "map-extension",
+      "id": "map1",
+      "webMap": "https://latitudegeo.maps.arcgis.com/home/item.html?id=c6008288a95247428fc55d9aaa72b670",
+      "onClick": [ "custom.operation" ]
+    },
+    {
+      "$type": "portal-extension",
+      "id": "latitudegeo",
+      "appId": "Xn2yFLHGmsXdYZ3D",
+      "isDefault": true,
+      "portal": {
+        "url": "https://www.arcgis.com/"
+      }
+    },
+    {
+      "$type": "menu-item",
+      "id": "displayMapInfo",
+      "title": "custom.operation",
+      "isEnabled": true,
+      "iconId": "info",
+      "action": "custom.operation"
+    },
+    {
+      "$type": "menu-item",
+      "id": "displayMapInfoConfig",
+      "title": "custom.operation",
+      "isEnabled": true,
+      "iconId": "info",
+      "action": {
+        "name": "custom.operation",
+        "arguments": {
+          "arguments": "This is an operation alert message provided from the app's json configuration."
+        }
+      }
+    }
+  ]
+}

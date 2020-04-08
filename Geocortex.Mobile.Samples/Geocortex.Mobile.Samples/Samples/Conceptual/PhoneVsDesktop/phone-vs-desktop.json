@@ -1,0 +1,133 @@
+﻿{
+  "$schema": "..\\..\\..\\..\\..\\ViewerFramework\\app-config\\mobile\\mobile-app-config.schema.json",
+
+  "schemaVersion": "1.0",
+  
+  "items": [
+    {
+      "$type": "map-extension",
+      "id": "map1",
+      "webMap": "https://latitudegeo.maps.arcgis.com/home/item.html?id=c6008288a95247428fc55d9aaa72b670",
+      "onClick": [ "custom.operation" ]
+    },
+    {
+      "$type": "portal-extension",
+      "id": "latitudegeo",
+      "appId": "Xn2yFLHGmsXdYZ3D",
+      "isDefault": true,
+      "portal": {
+        "url": "https://www.arcgis.com/"
+      }
+    },
+    {
+      "$type": "layout",
+      "id": "desktop-layout",
+      "url": "resource://desktop.xml",
+      "tags": [ "mobile", "large" ]
+    },
+    {
+      "$type": "layout",
+      "id": "handheld-layout",
+      "url": "resource://phone.xml",
+      "tags": [ "mobile", "small" ]
+    },
+    {
+      "$type": "geocortex-mobile-viewer",
+      "id": "gmv",
+      "version": "1.0.0"
+    },
+    {
+      "$type": "menu",
+      "id": "iwtm",
+      "items": [
+        {
+          "title": "Return to Default Map View",
+          "isEnabled": true,
+          "iconId": "zoom_initial",
+          "action": [
+            {
+              "name": "panel.snap-host-panel",
+              "arguments": {
+                "snapPosition": "middle"
+              }
+            },
+            "map.zoom-to-initial-viewpoint"
+          ]
+        }
+      ]
+    },
+    {
+      "$type": "search",
+      "id": "search",
+      "onSearch": [ "tasks.search", "results.display" ],
+      "onClear": [ "search.clear", "results.clear" ],
+      "maxResults": 50
+    },
+    {
+      "$type": "feature-details",
+      "id": "feature-details",
+      "featureActions": "item://menu/feature-actions",
+      "onFeatureShow": "highlights.add-focus",
+      "onFeatureHide": "highlights.remove-focus",
+      "onFeatureDelete": [ "highlights.remove-focus", "highlights.remove", "edit.delete-features", "results.hide-details", "results.remove" ]
+    },
+    {
+      "$type": "results",
+      "id": "results",
+      "onFeatureShow": [
+        "highlights.add",
+        {
+          "name": "panel.snap-host-panel",
+          "arguments": {
+            "userSet": true
+          }
+        }
+      ],
+      "onFeatureHide": null,
+      "onFeatureRemove": "highlights.remove",
+      "onAllFeaturesRemoved": [ "panel.close-host-panel", "search.clear", "results.clear" ],
+      "onFeatureClick": [
+        "results.display-details",
+        {
+          "name": "panel.snap-host-panel",
+          "arguments": {
+            "snapPosition": "middle"
+          }
+        },
+        "map.zoom-to-features",
+        "highlights.pulse"
+      ],
+      "onFeatureLocate": [
+        {
+          "name": "panel.snap-host-panel",
+          "arguments": {
+            "snapPosition": "middle"
+          }
+        },
+        "map.pan-to-features",
+        "highlights.pulse"
+      ],
+      "onClear": [ "highlights.clear", "highlights.clear-focus" ]
+    },
+    {
+      "$type": "menu",
+      "id": "feature-actions",
+      "items": [
+        {
+          "title": "Pan To",
+          "iconId": "map_pin",
+          "action": [
+            {
+              "name": "panel.snap-host-panel",
+              "arguments": {
+                "snapPosition": "middle"
+              }
+            },
+            "map.pan-to-features",
+            "highlights.pulse"
+          ]
+        }
+      ]
+    }
+  ]
+}

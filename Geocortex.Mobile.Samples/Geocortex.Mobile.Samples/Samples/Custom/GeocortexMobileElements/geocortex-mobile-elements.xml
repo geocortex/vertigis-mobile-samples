@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<layout
+    xmlns="https://geocortex.com/layout/v1"
+    xmlns:gxm="https://geocortex.com/layout/mobile/v1"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="https://geocortex.com/layout/v1 ../../../../../ViewerFramework/layout/layout-mobile.xsd
+    https://geocortex.com/layout/v1 ../../../layout-custom.xsd"
+    xmlns:custom="https://geocortex/layout/samples">
+
+  <split>
+    
+    <panel>
+      <custom:geocortex-mobile-elements title="Mobile Code"/>
+    </panel>
+
+    <panel>
+      <custom:geocortex-mobile-elements-xaml title="Mobile Xaml" />
+    </panel>
+    
+  </split>
+  
+</layout>
