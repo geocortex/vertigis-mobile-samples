@@ -1,0 +1,57 @@
+﻿{
+  "$schema": "..\\..\\..\\..\\..\\ViewerFramework\\app-config\\mobile\\mobile-app-config.schema.json",
+
+  "schemaVersion": "1.0",
+  
+  "items": [
+    {
+      "$type": "map-extension",
+      "id": "map1",
+      "webMap": "https://latitudegeo.maps.arcgis.com/home/item.html?id=c6008288a95247428fc55d9aaa72b670"
+    },
+    {
+      "$type": "portal-extension",
+      "id": "latitudegeo",
+      "appId": "Xn2yFLHGmsXdYZ3D",
+      "isDefault": true,
+      "portal": {
+        "url": "https://www.arcgis.com/"
+      }
+    },
+    {
+      "$type": "workflow",
+      "id": "workflow",
+      "target": "#taskbar",
+      "portalItem": "725c71a8a4e7456faa6ca12e48ffe73a"
+    },
+    {
+      "$type": "menu",
+      "id": "iwtm",
+      "items": [
+        {
+          "title": "Run Workflow in Taskbar",
+          "isEnabled": true,
+          "iconId": "workflow",
+          "action": {
+            "name": "workflow.run",
+            "arguments": {
+              "id": "workflow"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "$type": "menu-item",
+      "id": "launchWorkflow",
+      "isEnabled": true,
+      "iconId": "workflow",
+      "action": {
+        "name": "workflow.run",
+        "arguments": {
+          "id": "workflow"
+        }
+      }
+    }
+  ]
+}

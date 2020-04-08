@@ -1,0 +1,22 @@
+﻿{
+  "$schema": "..\\..\\..\\..\\..\\ViewerFramework\\app-config\\mobile\\mobile-app-config.schema.json",
+
+  "schemaVersion": "1.0",
+
+  "items": [
+    {
+      "$type": "component-config",
+      "id": "component-config-default",
+      "title": null,
+      "text": null,
+      "boolean": null
+    },
+    {
+      "$type": "component-config",
+      "id": "component-config",
+      "title": "My Title",
+      "text": "Configuration text is set in `component-configuration.json`.",
+      "boolean": true
+    }
+  ]
+}

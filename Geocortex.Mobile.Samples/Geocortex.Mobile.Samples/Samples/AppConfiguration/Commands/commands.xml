@@ -1,0 +1,123 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<layout
+    xmlns="https://geocortex.com/layout/v1"
+    xmlns:gxm="https://geocortex.com/layout/mobile/v1"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="https://geocortex.com/layout/v1 ../../../../../ViewerFramework/layout/layout-mobile.xsd
+    https://geocortex.com/layout/v1 ../../../layout-custom.xsd"
+    xmlns:custom="https://geocortex/layout/samples">
+
+  <gxm:taskbar>
+
+    <panel title="Commands" icon="more" grow="1">
+      <gxm:scroll>
+        <stack margin="0.5">
+
+          <!--<stack margin="1">
+            <text>Get information about the currently signed in user.</text>
+            <button config="authGetCurrentUser">auth.get-current-user</button>
+          </stack>-->
+
+          <text>Initiates user sign-in if they aren't already signed in.</text>
+          <stack margin="0.5">
+            <button config="authSignIn">auth.sign-in</button>
+          </stack>
+
+          <text>Signs the user out.</text>
+          <stack margin="0.5">
+            <button config="authSignOut">auth.sign-out</button>
+          </stack>
+
+          <!--<button margin="1" config="debugConsoleClose">debug-console.close</button>-->
+
+          <text>Display the debug console.</text>
+          <stack margin="0.5">
+            <button config="debugConsoleDisplay">debug-console.display</button>
+          </stack>
+
+          <text>Centers the map on the user's curent location and keeps the location centered as it moves around.</text>
+          <stack margin="0.5">
+            <button config="geolocationAutoRecenter">geolocation.auto-recenter</button>
+          </stack>
+
+          <text>Shows the user's location while the location is in the map's extent.</text>
+          <stack margin="0.5">
+            <button config="geolocationDisplayLocation">geolocation.display-location</button>
+          </stack>
+
+          <text>Turns off geolocation.</text>
+          <stack margin="0.5">
+            <button config="geolocationTurnOffGeolocation">geolocation.turn-off-geolocation</button>
+          </stack>
+
+          <text>Displays the I Want To Menu with the given ID.</text>
+          <stack margin="0.5">
+            <button config="iwtmOpen">iwtm.open</button>
+          </stack>
+
+          <!--<button config="panelOpenHostPanel">panel.open-host-panel</button>-->
+
+          <text>Closes the host panel.</text>
+          <stack margin="0.5">
+            <button config="panelCloseHostPanel">panel.close-host-panel</button>
+          </stack>
+
+          <text>Opens a url in the system browser.</text>
+          <stack margin="0.5">
+            <button config="openUrlAction">system.open-url</button>
+          </stack>
+
+          <text>Opens a url using user location and feature location tokens.</text>
+          <stack margin="0.5">
+            <button config="openExtentInBing">system.open-url with tokens</button>
+          </stack>
+
+          <!--<button config="sketchingCaptureGeometry">sketching.capture-geometry</button>-->
+
+          <text>Activates a component with the given ID, causing it to become visible.</text>
+          <stack margin="0.5">
+            <button config="uiActivate">ui.activate</button>
+          </stack>
+
+          <text>Deactivates a component, causing it to disappear.</text>
+          <stack margin="0.5">
+            <button config="uiDeactivate">ui.deactivate</button>
+          </stack>
+
+          <text>Shows an alert ot the user.</text>
+          <stack margin="0.5">
+            <button config="uiAlert">ui.alert</button>
+          </stack>
+
+          <text>Toggles the active state on a component with the given ID.</text>
+          <stack margin="0.5">
+            <button config="uiActiveToggle">ui.active-toggle</button>
+          </stack>
+
+          <text>Waits (does nothing) for the specified period (ms).</text>
+          <stack margin="0.5">
+            <button config="uiAwait">ui.await</button>
+          </stack>
+
+          <!--<button config="uiDisplayNotification">ui.display-notification</button>-->
+        </stack>
+      </gxm:scroll>
+    </panel>
+
+    <map config="map1" slot="main">
+      <stack margin="0.8" slot="top-right" halign="end">
+        <iwtm config="iwtm" id="iwtm">
+          <user slot="bottom"/>
+        </iwtm>
+      </stack>
+      <stack margin="0.5" width="10" slot="bottom-right" halign="end">
+        <compass id="compass" margin="0.3"/>
+        <geolocate id="geolocator" margin="0.3" config="geolocate" />
+      </stack>
+      <user slot="bottom-right" margin="0.5" width="10" height="3.5"/>
+      <button icon="warning" config="toggleButton" id="toggleButton" slot="top-center-visible" margin="0.5">Toggle me!</button>
+    </map>
+
+  </gxm:taskbar>
+
+</layout>

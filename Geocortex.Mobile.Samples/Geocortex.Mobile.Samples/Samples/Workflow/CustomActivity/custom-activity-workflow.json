@@ -1,0 +1,233 @@
+{
+  "components": [
+    {
+      "id": 2,
+      "steps": [
+        {
+          "id": 3,
+          "inputs": {
+          },
+          "position": "0,0",
+          "purpose": "start",
+          "title": "Start",
+          "transitions": [
+            {
+              "id": 5,
+              "inputs": {
+              },
+              "position": "90,60 90,120",
+              "target": {
+                "id": 4
+              },
+              "targetConnector": "top"
+            }
+          ]
+        },
+        {
+          "action": "gcx:wf:core::RunActivity",
+          "id": 4,
+          "inputs": {
+            "action": "custom:wf:app::Hello",
+            "arguments": {
+              "accessors": [
+              ],
+              "annotations": [
+              ],
+              "code": "{\n    \"name\": \"Custom Activity!\"\n}",
+              "source": " {\n    \"name\": \"Custom Activity!\"\n  }"
+            }
+          },
+          "name": "customActivity1",
+          "position": "-30,120",
+          "title": "Run Activity",
+          "transitions": [
+            {
+              "id": 9,
+              "inputs": {
+              },
+              "position": "90,190 90,250",
+              "sourceConnector": "bottom",
+              "target": {
+                "id": 7
+              },
+              "targetConnector": "top"
+            }
+          ]
+        },
+        {
+          "action": "gcx:wf:forms:form:DisplayForm",
+          "id": 7,
+          "inputs": {
+            "form": {
+              "accessors": [
+              ],
+              "code": "resources.forms[values.id]",
+              "values": {
+                "id": 8
+              }
+            }
+          },
+          "name": "form1",
+          "position": "-30,250",
+          "title": "Display Form",
+          "transitions": [
+            {
+              "id": 16,
+              "inputs": {
+              },
+              "position": "90,370 90,440",
+              "sourceConnector": "bottom",
+              "target": {
+                "id": 15
+              },
+              "targetConnector": "top"
+            }
+          ]
+        },
+        {
+          "action": "gcx:wf:core::Exit",
+          "id": 15,
+          "inputs": {
+          },
+          "position": "30,440",
+          "title": "Exit"
+        }
+      ]
+    },
+    {
+      "id": 10,
+      "steps": [
+        {
+          "id": 11,
+          "inputs": {
+          },
+          "position": "0,0",
+          "purpose": "start",
+          "title": "Event",
+          "transitions": [
+            {
+              "id": 14,
+              "inputs": {
+              },
+              "position": "90,60 90,140",
+              "target": {
+                "id": 13
+              }
+            }
+          ]
+        },
+        {
+          "action": "gcx:wf:forms::SetFormElementProperty",
+          "id": 13,
+          "inputs": {
+            "elementName": {
+              "accessors": [
+                "$form1"
+              ],
+              "annotations": [
+                {
+                  "count": 6,
+                  "index": 0,
+                  "kind": "idref"
+                }
+              ],
+              "code": "$form1.state.text1",
+              "source": "$form1.state.text1"
+            },
+            "form": {
+              "accessors": [
+                "$$form"
+              ],
+              "code": "$$form",
+              "source": "$$form"
+            },
+            "propertyName": "description",
+            "propertyValue": {
+              "accessors": [
+                "$customActivity1"
+              ],
+              "annotations": [
+                {
+                  "count": 16,
+                  "index": 0,
+                  "kind": "idref"
+                }
+              ],
+              "code": "$customActivity1.hello",
+              "source": "$customActivity1.hello"
+            }
+          },
+          "position": "-30,140",
+          "title": "Set Form Element Property"
+        }
+      ],
+      "title": "load-header"
+    }
+  ],
+  "designerVersion": "5.14.0+23",
+  "forms": [
+    {
+      "defaults": {
+      },
+      "elements": {
+        "footer": {
+          "enabled": true,
+          "items": {
+            "0": {
+              "default": true,
+              "index": 0,
+              "label": {
+                "markdown": "Submit"
+              },
+              "validates": true,
+              "value": "submit"
+            },
+            "1": {
+              "index": 1,
+              "label": {
+                "markdown": "Cancel"
+              },
+              "validates": false,
+              "value": "cancel"
+            }
+          },
+          "section": "footer",
+          "type": "ButtonBar"
+        },
+        "header": {
+          "section": "header",
+          "title": {
+            "markdown": "Custom Activity"
+          },
+          "type": "Header"
+        },
+        "text1": {
+          "description": {
+            "markdown": "Text"
+          },
+          "enabled": true,
+          "index": 0,
+          "type": "Text"
+        }
+      },
+      "id": 8
+    }
+  ],
+  "start": {
+    "id": 3
+  },
+  "transitions": [
+    {
+      "branch": "load$header",
+      "id": 12,
+      "inputs": {
+      },
+      "source": {
+        "id": 7
+      },
+      "target": {
+        "id": 11
+      }
+    }
+  ]
+}

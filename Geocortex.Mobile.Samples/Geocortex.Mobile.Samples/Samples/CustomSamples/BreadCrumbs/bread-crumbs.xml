@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<layout
+    xmlns="https://geocortex.com/layout/v1"
+    xmlns:gxm="https://geocortex.com/layout/mobile/v1"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="https://geocortex.com/layout/v1 ../../../../../ViewerFramework/layout/layout-mobile.xsd
+    https://geocortex.com/layout/v1 ../../../layout-custom.xsd"
+    xmlns:custom="https://geocortex/layout/samples">
+
+  <map id="page1-map1" slot="main">
+    <stack margin="0.5" width="10" slot="bottom-right" halign="end">
+      <custom:breadcrumb-location-tracker id="breadcrumb-location-tracker" margin="0.3" config="breadcrumb-location-tracker-config" />
+    </stack>
+  </map>
+
+</layout>

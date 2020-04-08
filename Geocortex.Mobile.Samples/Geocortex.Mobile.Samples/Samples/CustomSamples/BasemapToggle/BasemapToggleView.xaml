@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ContentView xmlns="http://xamarin.com/schemas/2014/forms" 
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="Geocortex.Mobile.Samples.Samples.CustomSamples.BasemapToggle.BasemapToggleView">
+    <ContentView.Content>
+        <StackLayout>
+            <StackLayout Orientation="Horizontal">
+                <Label Text="Show basemap" VerticalOptions="Center"></Label>
+                <Switch Toggled="Switch_Toggled" IsToggled="True" BackgroundColor="Transparent" VerticalOptions="Center"></Switch>
+            </StackLayout>
+            <Button Clicked="OnButtonClicked" Text="Switch Basemap"/>
+        </StackLayout>
+    </ContentView.Content>
+</ContentView>

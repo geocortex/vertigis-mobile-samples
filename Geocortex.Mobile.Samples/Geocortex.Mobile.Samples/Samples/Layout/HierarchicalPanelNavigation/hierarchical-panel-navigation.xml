@@ -1,0 +1,41 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<layout
+    xmlns="https://geocortex.com/layout/v1"
+    xmlns:gxm="https://geocortex.com/layout/mobile/v1"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="https://geocortex.com/layout/v1 ../../../../../ViewerFramework/layout/layout-mobile.xsd
+    https://geocortex.com/layout/v1 ../../../layout-custom.xsd"
+    xmlns:custom="https://geocortex/layout/samples">
+
+  <panel title="panel-5" id="panel-5">
+    <stack id="panel-1" title="Panel 1">
+      <stack halign="center" valign="center">
+        <text>Here's some Panel 1 content.</text>
+      </stack>
+      <stack halign="center" valign="end">
+        <button command="ui.activate" arguments="panel-2" margin="1">Navigate to Panel 2</button>
+      </stack>
+    </stack>
+    <stack></stack>
+    <stack id="panel-2" title="Panel 2">
+      <stack halign="center" valign="center">
+        <text>Here's some Panel 2 content.</text>
+      </stack>
+      <split halign="center" valign="end">
+        <button command="ui.activate" arguments="panel-1" margin="1">Return to Panel 1</button>
+        <button command="ui.activate" arguments="panel-3" margin="1">Navigate to Panel 3</button>
+      </split>
+    </stack>
+    <stack id="panel-3" title="Panel 3">
+      <stack halign="center" valign="center">
+        <text>
+          Here's some Panel 3 content.
+        </text>
+      </stack>
+      <stack halign="center" valign="end">
+        <button command="ui.activate" arguments="panel-1" margin="1">Return to Panel 1</button>
+      </stack>
+    </stack>
+  </panel>
+
+</layout>

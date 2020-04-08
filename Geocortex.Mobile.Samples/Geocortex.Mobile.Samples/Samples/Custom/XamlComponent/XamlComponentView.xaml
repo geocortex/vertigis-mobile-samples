@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ContentView xmlns="http://xamarin.com/schemas/2014/forms" 
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="Geocortex.Mobile.Samples.Samples.Custom.XamlComponent.XamlComponentView">
+    <ContentView.Content>
+        <StackLayout Margin="5">
+            <Label Text="Hello XAML Component!" />
+            <Label Text="This component view is created using a XAML view." />
+        </StackLayout>
+    </ContentView.Content>
+</ContentView>

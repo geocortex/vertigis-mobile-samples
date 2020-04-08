@@ -1,0 +1,46 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<layout
+    xmlns="https://geocortex.com/layout/v1"
+    xmlns:gxm="https://geocortex.com/layout/mobile/v1"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="https://geocortex.com/layout/v1 ../../../../../ViewerFramework/layout/layout-mobile.xsd
+    https://geocortex.com/layout/v1 ../../../layout-custom.xsd"
+    xmlns:custom="https://geocortex/layout/samples">
+
+  <stack>
+    <panel grow="2">
+      <stack>
+        <text margin="0.5">Click buttons to activate and deactivate them.</text>
+        <text margin="0.5">The parent `activate-deactive-children` component handles the adding and removal of its children.</text>
+        <text margin="0.5">When child components are activated, they are added to the bottom of the group.</text>
+      </stack>
+    </panel>
+
+    <split grow="3">
+
+      <panel>
+        <stack>
+          <stack halign="center">
+            <button margin="1" command="ui.active-toggle" arguments="button-1">Toggle Button 1</button>
+            <button margin="1" command="ui.active-toggle" arguments="button-2">Toggle Button 2</button>
+            <button margin="1" command="ui.active-toggle" arguments="button-3">Toggle Button 3</button>
+            <button margin="1" command="ui.active-toggle" arguments="button-4">Toggle Button 4</button>
+          </stack>
+        </stack>
+      </panel>
+
+      <panel>
+        <stack title="Children Component" halign="center">
+          <custom:activate-deactivate-children>
+            <button id="button-1" margin="1" command="ui.deactivate" arguments="button-1">Button 1</button>
+            <button id="button-2" margin="1" command="ui.deactivate" arguments="button-2">Button 2</button>
+            <button id="button-3" margin="1" command="ui.deactivate" arguments="button-3">Button 3</button>
+            <button id="button-4" margin="1" command="ui.deactivate" arguments="button-4">Button 4</button>
+          </custom:activate-deactivate-children>
+        </stack>
+      </panel>
+
+    </split>
+  </stack>
+
+</layout>

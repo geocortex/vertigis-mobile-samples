@@ -1,0 +1,106 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<layout
+    xmlns="https://geocortex.com/layout/v1"
+    xmlns:gxm="https://geocortex.com/layout/mobile/v1"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="https://geocortex.com/layout/v1 ../../../../../ViewerFramework/layout/layout-mobile.xsd
+    https://geocortex.com/layout/v1 ../../../layout-custom.xsd"
+    xmlns:custom="https://geocortex/layout/samples">
+
+  <split>
+    <stack grow="1">
+      <panel title="Horizontal Align">
+        <stack>
+          <stack halign="start">
+            <button>halign="start"</button>
+          </stack>
+          <stack halign="center">
+            <button>halign="center"</button>
+          </stack>
+          <stack halign="end">
+            <button>halign="end"</button>
+          </stack>
+        </stack>
+      </panel>
+
+      <panel title ="Vertical Align">
+        <split>
+          <stack valign="end">
+            <button>valign="end"</button>
+          </stack>
+          <stack valign="center">
+            <button>valign="center"</button>
+          </stack>
+          <stack valign="start">
+            <button>valign="start"</button>
+          </stack>
+        </split>
+      </panel>
+
+      <panel title="Set Width/Height">
+        <stack>
+          <button height="1" width="1" />
+          <button height="2" width="2" />
+          <button height="4" width="4" />
+          <button height="8" width="8" />
+        </stack>
+      </panel>
+
+    </stack>
+
+    <map grow="2">
+      <button margin="5" slot="top-left" style="map-widget" icon="check"/>
+      <button margin="5" slot="top-right" style="map-widget" icon="check"/>
+      <button margin="5" slot="top-center-visible" style="map-widget" icon="check"/>
+      <button margin="5" slot="bottom-left" style="map-widget" icon="check" height="2" width="2"/>
+      <button margin="5" slot="bottom-center-visible" style="map-widget" icon="check" height="4" width="4"/>
+      <button margin="5" slot="bottom-right" style="map-widget" icon="check" height="8" width="8" />
+    </map>
+
+    <stack grow="1">
+      <panel title="Grow = 5" grow ="5">
+        <stack>
+          <stack halign="start">
+            <text halign="start">Start horizontal aligned text.</text>
+          </stack>
+          <stack halign="center">
+            <text>Center horizontal aligned text.</text>
+          </stack>
+          <stack halign="end">
+            <text>End horizontal aligned text.</text>
+          </stack>
+        </stack>
+      </panel>
+      
+      <panel title="Grow = 3" grow ="3">
+        <stack>
+          <stack halign="start">
+            <text halign="start">Start horizontal aligned text.</text>
+          </stack>
+          <stack halign="center">
+            <text>Center horizontal aligned text.</text>
+          </stack>
+          <stack halign="end">
+            <text>End horizontal aligned text.</text>
+          </stack>
+        </stack>
+      </panel>
+      
+      <panel title="Grow = 1" grow ="1">
+        <stack>
+          <stack halign="start">
+            <text halign="start">Start horizontal aligned text.</text>
+          </stack>
+          <stack halign="center">
+            <text>Center horizontal aligned text.</text>
+          </stack>
+          <stack halign="end">
+            <text>End horizontal aligned text.</text>
+          </stack>
+        </stack>
+      </panel>
+    </stack>
+
+  </split>
+
+</layout>

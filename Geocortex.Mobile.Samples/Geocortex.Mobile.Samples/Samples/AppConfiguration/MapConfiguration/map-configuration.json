@@ -1,0 +1,54 @@
+﻿{
+  "$schema": "..\\..\\..\\..\\..\\ViewerFramework\\app-config\\mobile\\mobile-app-config.schema.json",
+
+  "schemaVersion": "1.0",
+
+  "items": [
+    {
+      "$type": "region",
+      "id": "region"
+    },
+    {
+      "id": "coordinate",
+      "transformations": [
+        {
+          "inSpatialReference": {
+            "wkid": 3467
+          },
+          "outSpatialReference": {
+            "wkid": 102100
+          },
+          "transformation": {
+            "steps": [
+              {
+                "wkid": 108149,
+                "wkt": null
+              },
+              {
+                "wkid": 108151,
+                "wkt": null
+              }
+            ]
+          }
+        }
+      ],
+      "canOverride": true,
+      "$type": "coordinate-settings"
+    },
+    {
+      "$type": "map-extension",
+      "id": "map1",
+      "webMap": "https://latitudegeo.maps.arcgis.com/home/item.html?id=c6008288a95247428fc55d9aaa72b670",
+      "onClick": [ "highlights.pulse" ]
+    },
+    {
+      "$type": "portal-extension",
+      "id": "latitudegeo",
+      "appId": "Xn2yFLHGmsXdYZ3D",
+      "isDefault": true,
+      "portal": {
+        "url": "https://www.arcgis.com/"
+      }
+    }
+  ]
+}
