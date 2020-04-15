@@ -1,7 +1,7 @@
 # Geocortex Mobile SDK Samples
 A collection of samples that demonstrates how to configure and customize [Geocortex Mobile](https://www.geocortex.com/products/gxm/) apps.
 
-## The Quickstart
+## Running the Samples
 - Open the **Geocortex.Mobile.Samples** solution in Visual Studio.
 - Set **Geocortex.Mobile.Samples.UWP** as your startup project.
 - Change the architecture from _Any CPU_ to _x86_ or _x64_.
