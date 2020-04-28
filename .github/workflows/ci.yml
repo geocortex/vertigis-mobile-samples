@@ -54,5 +54,6 @@ jobs:
               run: msbuild -t:restore
               working-directory: Geocortex.Mobile.Samples/Geocortex.Mobile.Samples.UWP
 
-            - run: msbuild -warnAsError
+            - name: msbuild
+              run: msbuild -warnAsError
               working-directory: Geocortex.Mobile.Samples/Geocortex.Mobile.Samples.UWP
