@@ -19,7 +19,9 @@ jobs:
               run: msbuild -t:restore
               working-directory: Geocortex.Mobile.Samples/Geocortex.Mobile.Samples.Android
 
-            - run: msbuild
+            - name: msbuild
+              # TODO: Enable `-warnAsError` flag once package conflicts are resolved.
+              run: msbuild
               working-directory: Geocortex.Mobile.Samples/Geocortex.Mobile.Samples.Android
     iOS:
         runs-on: macos-latest
@@ -36,7 +38,9 @@ jobs:
               run: msbuild -t:restore
               working-directory: Geocortex.Mobile.Samples/Geocortex.Mobile.Samples.iOS
 
-            - run: msbuild
+            - name: msbuild
+              # TODO: Enable `-warnAsError` flag once package conflicts are resolved.
+              run: msbuild
               working-directory: Geocortex.Mobile.Samples/Geocortex.Mobile.Samples.iOS
     Windows:
         runs-on: windows-latest
@@ -50,5 +54,5 @@ jobs:
               run: msbuild -t:restore
               working-directory: Geocortex.Mobile.Samples/Geocortex.Mobile.Samples.UWP
 
-            - run: msbuild
+            - run: msbuild -warnAsError
               working-directory: Geocortex.Mobile.Samples/Geocortex.Mobile.Samples.UWP
