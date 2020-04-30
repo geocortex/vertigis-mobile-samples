@@ -1,0 +1,59 @@
+name: CI
+
+on:
+    push:
+        branches: [master]
+    pull_request:
+        branches: [master]
+
+jobs:
+    Android:
+        runs-on: windows-latest
+        steps:
+            - uses: actions/checkout@v2
+
+            - name: Setup msbuild
+              uses: microsoft/setup-msbuild@v1
+
+            - name: Restore NuGet packages
+              run: msbuild -t:restore
+              working-directory: Geocortex.Mobile.Samples/Geocortex.Mobile.Samples.Android
+
+            - name: msbuild
+              # TODO: Enable `-warnAsError` flag once package conflicts are resolved.
+              run: msbuild
+              working-directory: Geocortex.Mobile.Samples/Geocortex.Mobile.Samples.Android
+    iOS:
+        runs-on: macos-latest
+        steps:
+            - uses: actions/checkout@v2
+
+            # Fixes error when using newer NuGet packages that require a minimum version of Xcode
+            - name: Use latest Xcode
+              uses: maxim-lobanov/setup-xamarin@v1.1
+              with:
+                  xcode-version: latest
+
+            - name: Restore NuGet packages
+              run: msbuild -t:restore
+              working-directory: Geocortex.Mobile.Samples/Geocortex.Mobile.Samples.iOS
+
+            - name: msbuild
+              # TODO: Enable `-warnAsError` flag once package conflicts are resolved.
+              run: msbuild
+              working-directory: Geocortex.Mobile.Samples/Geocortex.Mobile.Samples.iOS
+    Windows:
+        runs-on: windows-latest
+        steps:
+            - uses: actions/checkout@v2
+
+            - name: Setup msbuild
+              uses: microsoft/setup-msbuild@v1
+
+            - name: Restore NuGet packages
+              run: msbuild -t:restore
+              working-directory: Geocortex.Mobile.Samples/Geocortex.Mobile.Samples.UWP
+
+            - name: msbuild
+              run: msbuild -warnAsError
+              working-directory: Geocortex.Mobile.Samples/Geocortex.Mobile.Samples.UWP
