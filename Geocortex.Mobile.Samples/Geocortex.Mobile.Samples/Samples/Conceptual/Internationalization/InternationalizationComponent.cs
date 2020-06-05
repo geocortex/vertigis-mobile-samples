@@ -1,12 +1,12 @@
-﻿using Geocortex.Mobile.Samples;
-using Geocortex.Mobile.Samples.Samples.Conceptual.Internationalization;
+﻿using VertiGIS.Mobile.Samples;
+using VertiGIS.Mobile.Samples.Samples.Conceptual.Internationalization;
 
-using Geocortex.Mobile.Composition.Layout;
+using VertiGIS.Mobile.Composition.Layout;
 using System.Xml.Linq;
 using Xamarin.Forms;
 
 [assembly: Component(typeof(InternationalizationComponent), "i18n", XmlNamespace = XmlNamespaces.SamplesNamespace)]
-namespace Geocortex.Mobile.Samples.Samples.Conceptual.Internationalization
+namespace VertiGIS.Mobile.Samples.Samples.Conceptual.Internationalization
 {
     internal class InternationalizationComponent : ComponentBase
     {

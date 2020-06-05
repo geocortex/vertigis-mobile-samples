@@ -15,7 +15,7 @@ using System.Linq;
 using System.Threading.Tasks;
 using System.Timers;
 
-namespace Geocortex.Mobile.Samples.Samples.CustomSamples.Breadcrumbs
+namespace VertiGIS.Mobile.Samples.Samples.CustomSamples.Breadcrumbs
 {
     class FakeLocationDataSource : LocationDataSource
     {

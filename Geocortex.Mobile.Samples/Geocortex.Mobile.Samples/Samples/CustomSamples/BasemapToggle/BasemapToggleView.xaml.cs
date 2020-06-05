@@ -1,12 +1,12 @@
 ﻿using Esri.ArcGISRuntime.Xamarin.Forms;
-using Geocortex.Mobile.Composition;
-using Geocortex.Mobile.Composition.Layout;
-using Geocortex.Mobile.Samples.Samples.CustomSamples.BasemapToggle;
+using VertiGIS.Mobile.Composition;
+using VertiGIS.Mobile.Composition.Layout;
+using VertiGIS.Mobile.Samples.Samples.CustomSamples.BasemapToggle;
 using System;
 using Xamarin.Forms;
 
 [assembly: View(typeof(BasemapToggleView))]
-namespace Geocortex.Mobile.Samples.Samples.CustomSamples.BasemapToggle
+namespace VertiGIS.Mobile.Samples.Samples.CustomSamples.BasemapToggle
 {
     public partial class BasemapToggleView : ContentView
     {

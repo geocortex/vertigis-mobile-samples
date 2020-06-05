@@ -1,12 +1,12 @@
-﻿using Geocortex.Mobile.Samples.Samples.Custom.ComponentConfiguration;
-using Geocortex.API;
-using Geocortex.Mobile.Infrastructure.App;
+﻿using VertiGIS.Mobile.Samples.Samples.Custom.ComponentConfiguration;
+using VertiGIS.ArcGISExtensions;
+using VertiGIS.Mobile.Infrastructure.App;
 using System;
 using System.Collections.Generic;
 using System.Text;
 
 [assembly: AppItem(AppItemConfiguration.ConfigItemtype, typeof(AppItemConfiguration))]
-namespace Geocortex.Mobile.Samples.Samples.Custom.ComponentConfiguration
+namespace VertiGIS.Mobile.Samples.Samples.Custom.ComponentConfiguration
 {
     public class AppItemConfiguration : VisualAppItem
     {

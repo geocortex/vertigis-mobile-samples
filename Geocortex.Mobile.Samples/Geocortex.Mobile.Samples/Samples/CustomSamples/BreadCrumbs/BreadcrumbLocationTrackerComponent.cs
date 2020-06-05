@@ -1,11 +1,11 @@
-﻿using Geocortex.Mobile.Composition.Layout;
-using Geocortex.Mobile.Samples;
-using Geocortex.Mobile.Samples.Samples.CustomSamples.Breadcrumbs;
+﻿using VertiGIS.Mobile.Composition.Layout;
+using VertiGIS.Mobile.Samples;
+using VertiGIS.Mobile.Samples.Samples.CustomSamples.Breadcrumbs;
 using System.Xml.Linq;
 using Xamarin.Forms;
 
 [assembly: Component(typeof(BreadcrumbLocationTrackerComponent), "breadcrumb-location-tracker", XmlNamespace = XmlNamespaces.SamplesNamespace)]
-namespace Geocortex.Mobile.Samples.Samples.CustomSamples.Breadcrumbs
+namespace VertiGIS.Mobile.Samples.Samples.CustomSamples.Breadcrumbs
 {
     public class BreadcrumbLocationTrackerComponent : ComponentBase
     {

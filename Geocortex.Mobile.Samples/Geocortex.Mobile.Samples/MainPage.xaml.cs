@@ -5,7 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 using Xamarin.Forms;
 
-namespace Geocortex.Mobile.Samples
+namespace VertiGIS.Mobile.Samples
 {
     public partial class MainPage : ContentPage
     {

@@ -3,7 +3,7 @@ using Geocortex.Workflow.Runtime.Activities.App;
 using System.Collections.Generic;
 using System.Threading.Tasks;
 
-namespace Geocortex.Mobile.Samples.Samples.Workflow.CustomFormComponent
+namespace VertiGIS.Mobile.Samples.Samples.Workflow.CustomFormComponent
 {
     class RegisterComponent : RegisterCustomFormElementBase
     {

@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Threading.Tasks;
 
-namespace Geocortex.Mobile.Samples.Samples.Workflow.CustomActivity
+namespace VertiGIS.Mobile.Samples.Samples.Workflow.CustomActivity
 {
     public class CustomActivity : IActivityHandler
     {

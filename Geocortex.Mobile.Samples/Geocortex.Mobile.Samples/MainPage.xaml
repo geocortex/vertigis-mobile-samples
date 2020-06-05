@@ -1,8 +1,8 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             xmlns:local="clr-namespace:Geocortex.Mobile.Samples"
-             x:Class="Geocortex.Mobile.Samples.MainPage">
+             xmlns:local="clr-namespace:VertiGIS.Mobile.Samples"
+             x:Class="VertiGIS.Mobile.Samples.MainPage">
 
     <StackLayout>
         <!-- Place new controls here -->

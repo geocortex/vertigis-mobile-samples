@@ -1,7 +1,7 @@
-﻿using Geocortex.Mobile.Samples.Samples.CustomSamples.Location;
-using Geocortex.Mobile.Samples;
-using Geocortex.Mobile.Samples.Location;
-using Geocortex.Mobile.Composition.Layout;
+﻿using VertiGIS.Mobile.Samples.Samples.CustomSamples.Location;
+using VertiGIS.Mobile.Samples;
+using VertiGIS.Mobile.Samples.Location;
+using VertiGIS.Mobile.Composition.Layout;
 using System.Threading.Tasks;
 using System.Xml.Linq;
 using Xamarin.Forms;
@@ -10,7 +10,7 @@ using Xamarin.Forms;
  * This is not the recommended pattern for accessing location in a Geocortex Mobile application.
  * This component is used to demonstrate platform specific implementations and api/method calls. */
 [assembly: Component(typeof(LocationComponent), "location", XmlNamespace = XmlNamespaces.SamplesNamespace)]
-namespace Geocortex.Mobile.Samples.Samples.CustomSamples.Location
+namespace VertiGIS.Mobile.Samples.Samples.CustomSamples.Location
 {
     internal class LocationComponent : ComponentBase
     {

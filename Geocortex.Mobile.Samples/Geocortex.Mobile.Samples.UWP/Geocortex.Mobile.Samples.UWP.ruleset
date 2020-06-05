@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<RuleSet Name="Rules for Geocortex.Mobile.Samples.UWP" Description="Code analysis rules for Geocortex.Mobile.Samples.UWP.csproj." ToolsVersion="16.0">
+<RuleSet Name="Rules for VertiGIS.Mobile.Samples.UWP" Description="Code analysis rules for VertiGIS.Mobile.Samples.UWP.csproj." ToolsVersion="16.0">
   <Include Path="minimumrecommendedrules.ruleset" Action="Default" />
   <Rules AnalyzerId="Microsoft.Analyzers.ManagedCodeAnalysis" RuleNamespace="Microsoft.Rules.Managed">
     <Rule Id="CA1008" Action="Warning" />

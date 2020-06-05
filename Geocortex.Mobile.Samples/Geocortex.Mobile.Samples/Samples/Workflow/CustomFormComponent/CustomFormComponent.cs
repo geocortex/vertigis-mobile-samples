@@ -1,7 +1,7 @@
-﻿using Geocortex.Mobile.Infrastructure.UI;
+﻿using VertiGIS.Mobile.Infrastructure.UI;
 using Geocortex.Workflow.Forms.Components;
 
-namespace Geocortex.Mobile.Samples.Samples.Workflow.CustomFormComponent
+namespace VertiGIS.Mobile.Samples.Samples.Workflow.CustomFormComponent
 {
     class CustomFormComponent : FormComponent
     {

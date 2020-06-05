@@ -1,5 +1,5 @@
 {
-  "$schema": "..\\..\\..\\..\\..\\ViewerFramework\\app-config\\mobile\\mobile-app-config.schema.json",
+  "$schema": "..\\..\\..\\..\\..\\ViewerSpec\\app-config\\mobile\\mobile-app-config.schema.json",
 
   "schemaVersion": "1.0",
 

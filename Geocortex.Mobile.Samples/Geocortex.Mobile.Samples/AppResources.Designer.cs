@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace VertiGIS.Mobile.Samples.Samples.Conceptual.Internationalization {
+namespace VertiGIS.Mobile.Samples {
     using System;
     
     
@@ -39,7 +39,7 @@ namespace VertiGIS.Mobile.Samples.Samples.Conceptual.Internationalization {
         public static global::System.Resources.ResourceManager ResourceManager {
             get {
                 if (object.ReferenceEquals(resourceMan, null)) {
-                    global::System.Resources.ResourceManager temp = new global::System.Resources.ResourceManager("VertiGIS.Mobile.Samples.Samples.Conceptual.Internationalization.AppResources", typeof(AppResources).Assembly);
+                    global::System.Resources.ResourceManager temp = new global::System.Resources.ResourceManager("VertiGIS.Mobile.Samples.AppResources", typeof(AppResources).Assembly);
                     resourceMan = temp;
                 }
                 return resourceMan;
@@ -61,29 +61,47 @@ namespace VertiGIS.Mobile.Samples.Samples.Conceptual.Internationalization {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to This is a translated message string!.
+        ///   Looks up a localized string similar to Unhandled exception:.
         /// </summary>
-        public static string Custom_Translated_Message {
+        public static string Bootstrapper_UnhandledException {
             get {
-                return ResourceManager.GetString("Custom_Translated_Message", resourceCulture);
+                return ResourceManager.GetString("Bootstrapper_UnhandledException", resourceCulture);
             }
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Translated Title.
+        ///   Looks up a localized string similar to Unobserved task exception:.
         /// </summary>
-        public static string Custom_Translated_Title {
+        public static string Bootstrapper_UnobservedTaskException {
             get {
-                return ResourceManager.GetString("Custom_Translated_Title", resourceCulture);
+                return ResourceManager.GetString("Bootstrapper_UnobservedTaskException", resourceCulture);
             }
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Here&apos;s a fallback string!.
+        ///   Looks up a localized string similar to Error.
         /// </summary>
-        public static string Fallback_String {
+        public static string Dialog_ErrorTitle {
             get {
-                return ResourceManager.GetString("Fallback_String", resourceCulture);
+                return ResourceManager.GetString("Dialog_ErrorTitle", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to OK.
+        /// </summary>
+        public static string Dialog_OK {
+            get {
+                return ResourceManager.GetString("Dialog_OK", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to This start-up URL is invalid. Please check the formatting..
+        /// </summary>
+        public static string LaunchUrl_InvalidUrl {
+            get {
+                return ResourceManager.GetString("LaunchUrl_InvalidUrl", resourceCulture);
             }
         }
     }

@@ -1,9 +1,9 @@
-﻿using Geocortex.Mobile.Samples.SampleSelector;
-using Geocortex.Mobile;
-using Geocortex.Mobile.Infrastructure.App;
-using Geocortex.Mobile.Infrastructure.Configuration;
-using Geocortex.Mobile.Infrastructure.UI;
-using Geocortex.Mobile.Samples;
+﻿using VertiGIS.Mobile.Samples.SampleSelector;
+using VertiGIS.Mobile;
+using VertiGIS.Mobile.Infrastructure.App;
+using VertiGIS.Mobile.Infrastructure.Configuration;
+using VertiGIS.Mobile.Infrastructure.UI;
+using VertiGIS.Mobile.Samples;
 using System;
 using System.IO;
 using System.Reflection;
@@ -11,17 +11,17 @@ using System.Threading.Tasks;
 using Xamarin.Forms;
 using Xam.Forms.Markdown;
 
-namespace Geocortex.Mobile.Samples
+namespace VertiGIS.Mobile.Samples
 {
-    public class App : Geocortex.Mobile.App
+    public class App : VertiGIS.Mobile.App
     {
         public static App SamplesInstance;
         public LoadAppResult LoadResult;
 
         public App()
-            : base(new Uri("resource://app.json"))
+            : base()
         {
-            // Add the styles from this page to the application - overrides styles from Geocortex.Mobile
+            // Add the styles from this page to the application - overrides styles from VertiGIS.Mobile
             var res = new Styles().Resources;
             this.Resources.MergedDictionaries.Add(res);
 
@@ -55,7 +55,7 @@ namespace Geocortex.Mobile.Samples
             // Push a loading spinner.
             if (Device.RuntimePlatform != Device.iOS)
             {
-                await Geocortex.Mobile.App.Instance.MainPage.Navigation.PushModalAsync(new ContentPage()
+                await VertiGIS.Mobile.App.Instance.MainPage.Navigation.PushModalAsync(new ContentPage()
                 {
                     Content = GetContent()
                 });
@@ -64,7 +64,7 @@ namespace Geocortex.Mobile.Samples
             // Configure some paths.
             var app = new Uri("resource://" + sample?.App);
             var layout = string.IsNullOrEmpty(sample?.Layout) ? null : new Uri("resource://" + sample?.Layout);
-            var readme = $"Geocortex.Mobile.Samples.Samples.{sample.PathFragment}.README.md";
+            var readme = $"VertiGIS.Mobile.Samples.Samples.{sample.PathFragment}.README.md";
 
             if (layout == null)
             {

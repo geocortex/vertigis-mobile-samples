@@ -1,16 +1,16 @@
 ﻿using Esri.ArcGISRuntime.Xamarin.Forms;
-using Geocortex.Mobile.Composition;
-using Geocortex.Mobile.Composition.Layout;
-using Geocortex.Mobile.Composition.Utilities;
-using Geocortex.Mobile.Composition.Views;
-using Geocortex.Mobile.Samples.Samples.CustomSamples.Breadcrumbs;
+using VertiGIS.Mobile.Composition;
+using VertiGIS.Mobile.Composition.Layout;
+using VertiGIS.Mobile.Composition.Utilities;
+using VertiGIS.Mobile.Composition.Views;
+using VertiGIS.Mobile.Samples.Samples.CustomSamples.Breadcrumbs;
 using System;
 using System.Collections.Generic;
 using System.Windows.Input;
 using Xamarin.Forms;
 
 [assembly: ViewModel(typeof(BreadcrumbLocationTrackerViewModel))]
-namespace Geocortex.Mobile.Samples.Samples.CustomSamples.Breadcrumbs
+namespace VertiGIS.Mobile.Samples.Samples.CustomSamples.Breadcrumbs
 {
     public sealed class BreadcrumbLocationTrackerViewModel : NotifyPropertyBase, IDisposable, IDisposableTracker
     {

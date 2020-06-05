@@ -1,11 +1,11 @@
 ﻿using System;
 using System.Reflection;
-using Geocortex.Mobile.Platform;
+using VertiGIS.Mobile.Platform;
 using Windows.ApplicationModel;
 using Windows.ApplicationModel.Activation;
 using Windows.UI.Xaml;
 
-namespace Geocortex.Mobile.Samples.UWP
+namespace VertiGIS.Mobile.Samples.UWP
 {
     /// <summary>
     /// Provides application-specific behavior to supplement the default Application class.

@@ -1,4 +1,4 @@
-﻿namespace Geocortex.Mobile.Samples
+﻿namespace VertiGIS.Mobile.Samples
 {
     internal static class XmlNamespaces
     {

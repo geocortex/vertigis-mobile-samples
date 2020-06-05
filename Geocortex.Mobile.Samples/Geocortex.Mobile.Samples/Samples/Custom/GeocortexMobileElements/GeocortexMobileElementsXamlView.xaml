@@ -3,9 +3,9 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              xmlns:d="http://xamarin.com/schemas/2014/forms/design"
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-             xmlns:ui="clr-namespace:Geocortex.Mobile.Infrastructure.UI;assembly=Geocortex.Mobile"
+             xmlns:ui="clr-namespace:VertiGIS.Mobile.Infrastructure.UI;assembly=VertiGIS.Mobile"
              mc:Ignorable="d"
-             x:Class="Geocortex.Mobile.Samples.Samples.Custom.GeocortexMobileElements.GeocortexMobileElementsXamlView">
+             x:Class="VertiGIS.Mobile.Samples.Samples.Custom.GeocortexMobileElements.GeocortexMobileElementsXamlView">
     <ContentView.Content>
         <StackLayout>
             <Label Text="This is a Geocortex Mobile enhanced activity indicator."

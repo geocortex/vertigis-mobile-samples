@@ -2,14 +2,14 @@
 using System.Collections.Generic;
 using System.Threading;
 using System.Threading.Tasks;
-using Geocortex.Mobile.Samples.Samples.Workflow.CustomFormComponent;
-using Geocortex.Mobile.Composition;
+using VertiGIS.Mobile.Samples.Samples.Workflow.CustomFormComponent;
+using VertiGIS.Mobile.Composition;
 using Geocortex.Workflow.Runtime;
 using Geocortex.Workflow.Runtime.Definition;
 using Geocortex.Workflow.Runtime.Execution;
 
 [assembly: Export(typeof(FormLoader), SingleInstance = true, AsImplementedInterfaces = true)]
-namespace Geocortex.Mobile.Samples.Samples.Workflow.CustomFormComponent
+namespace VertiGIS.Mobile.Samples.Samples.Workflow.CustomFormComponent
 {
     class FormLoader : IActivityHandlerFactory
     {

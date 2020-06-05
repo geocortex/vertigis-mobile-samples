@@ -1,13 +1,13 @@
 ﻿using System;
 using CoreLocation;
-using Geocortex.Mobile.Samples.Location;
-using Geocortex.Mobile.Samples.iOS.Location;
+using VertiGIS.Mobile.Samples.Location;
+using VertiGIS.Mobile.Samples.iOS.Location;
 
 /* NOTE: This sample component is for demonstrative purposes only.
  * This is not the recommended pattern for accessing location in a Geocortex Mobile application.
  * This component is used to demonstrate platform specific implementations and api/method calls. */
 [assembly: Xamarin.Forms.Dependency(typeof(IOSLocation))]
-namespace Geocortex.Mobile.Samples.iOS.Location
+namespace VertiGIS.Mobile.Samples.iOS.Location
 {
     public class IOSLocation : ILocation
     {
