@@ -40,9 +40,10 @@
     </panel>
 
     <!-- Taskbar / layers -->
-    <panel id="layers">
-      <layer-list />
-    </panel>
+    <layer-list id="layers"/>
+
+    <!-- Taskbar / legend -->
+    <legend id="legend"/>
 
     <!-- Taskbar / map areas -->
     <panel>
