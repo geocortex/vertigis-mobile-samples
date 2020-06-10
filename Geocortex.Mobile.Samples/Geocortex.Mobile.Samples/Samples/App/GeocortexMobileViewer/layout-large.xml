@@ -8,8 +8,8 @@
 
     <!-- Taskbar main content -->
     <map id="page1-map1" config="map1" slot="main">
-      <gxm:geometry-toolbar slot="top" id="geometry-toolbar" config="geometry" active="false" />
-      <search-new-extent config="search" margin="0.8" slot="bottom-center-visible" />
+      <gxm:geometry-toolbar slot="top-center-visible" id="geometry-toolbar" config="geometry" margin="0.8" style="map-widget" active="false" />
+      <search-new-extent config="search" margin="0.8" slot="top-center-visible" active="false" />
       <stack margin="0.8" slot="top-right" halign="end">
         <iwtm config="iwtm" id="IWTM">
           <user slot="bottom"/>
