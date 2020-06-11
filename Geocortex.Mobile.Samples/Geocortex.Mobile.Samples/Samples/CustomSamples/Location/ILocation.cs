@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace Geocortex.Mobile.Samples.Location
+namespace VertiGIS.Mobile.Samples.Location
 {
     public interface ILocation
     {

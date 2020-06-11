@@ -1,9 +1,9 @@
-﻿using Geocortex.Mobile.Composition;
-using Geocortex.Mobile.Composition.Messaging;
-using Geocortex.Mobile.Infrastructure.Messaging;
+﻿using VertiGIS.Mobile.Composition;
+using VertiGIS.Mobile.Composition.Messaging;
+using VertiGIS.Mobile.Infrastructure.Messaging;
 
-[assembly: Export(typeof(Geocortex.Mobile.Samples.Samples.CustomSamples.CustomDetails.CustomDetailsOperations), SingleInstance = true)]
-namespace Geocortex.Mobile.Samples.Samples.CustomSamples.CustomDetails
+[assembly: Export(typeof(VertiGIS.Mobile.Samples.Samples.CustomSamples.CustomDetails.CustomDetailsOperations), SingleInstance = true)]
+namespace VertiGIS.Mobile.Samples.Samples.CustomSamples.CustomDetails
 {
     class CustomDetailsOperations : OperationsBase
     {

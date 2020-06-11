@@ -5,7 +5,7 @@ using System.Linq;
 using Foundation;
 using UIKit;
 
-namespace Geocortex.Mobile.Samples.iOS
+namespace VertiGIS.Mobile.Samples.iOS
 {
     public class Application
     {

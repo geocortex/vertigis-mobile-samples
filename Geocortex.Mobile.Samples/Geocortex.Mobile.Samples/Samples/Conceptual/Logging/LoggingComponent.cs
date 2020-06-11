@@ -1,13 +1,13 @@
-﻿using Geocortex.Mobile.Samples;
-using Geocortex.Mobile.Samples.Samples.Conceptual.Logging;
-using Geocortex.Mobile.Composition.Layout;
-using Geocortex.Mobile.Composition.Logging;
+﻿using VertiGIS.Mobile.Samples;
+using VertiGIS.Mobile.Samples.Samples.Conceptual.Logging;
+using VertiGIS.Mobile.Composition.Layout;
+using VertiGIS.Mobile.Composition.Logging;
 using System.Threading.Tasks;
 using System.Xml.Linq;
 using Xamarin.Forms;
 
 [assembly: Component(typeof(LoggingComponent), "logging", XmlNamespace = XmlNamespaces.SamplesNamespace)]
-namespace Geocortex.Mobile.Samples.Samples.Conceptual.Logging
+namespace VertiGIS.Mobile.Samples.Samples.Conceptual.Logging
 {
     internal class LoggingComponent : ComponentBase
     {

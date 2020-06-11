@@ -1,6 +1,6 @@
 ﻿using System;
-using Geocortex.Mobile.Samples.Location;
-using Geocortex.Mobile.Samples.Droid.Location;
+using VertiGIS.Mobile.Samples.Location;
+using VertiGIS.Mobile.Samples.Droid.Location;
 using Android.Content;
 using Android.Locations;
 
@@ -8,7 +8,7 @@ using Android.Locations;
  * This is not the recommended pattern for accessing location in a Geocortex Mobile application.
  * This component is used to demonstrate platform specific implementations and api/method calls. */
 [assembly: Xamarin.Forms.Dependency(typeof(AndroidLocation))]
-namespace Geocortex.Mobile.Samples.Droid.Location
+namespace VertiGIS.Mobile.Samples.Droid.Location
 {
     public class AndroidLocation : Java.Lang.Object, ILocation, ILocationListener
     {

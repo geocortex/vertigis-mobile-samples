@@ -1,15 +1,15 @@
-﻿using Geocortex.Mobile.Samples;
-using Geocortex.Mobile.Samples.Samples.Custom.Operation;
-using Geocortex.Mobile.Composition.Layout;
-using Geocortex.Mobile.Composition.Messaging;
-using Geocortex.Mobile.Infrastructure.Messaging;
+﻿using VertiGIS.Mobile.Samples;
+using VertiGIS.Mobile.Samples.Samples.Custom.Operation;
+using VertiGIS.Mobile.Composition.Layout;
+using VertiGIS.Mobile.Composition.Messaging;
+using VertiGIS.Mobile.Infrastructure.Messaging;
 using System.Threading.Tasks;
 using System.Xml.Linq;
 using Xamarin.Forms;
 using Newtonsoft.Json;
 
 [assembly: Component(typeof(OperationComponent), "operation", XmlNamespace = XmlNamespaces.SamplesNamespace)]
-namespace Geocortex.Mobile.Samples.Samples.Custom.Operation
+namespace VertiGIS.Mobile.Samples.Samples.Custom.Operation
 {
     class OperationComponent : ComponentBase
     {

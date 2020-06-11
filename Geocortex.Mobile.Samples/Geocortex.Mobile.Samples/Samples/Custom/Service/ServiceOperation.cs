@@ -1,10 +1,10 @@
-﻿using Geocortex.Mobile.Composition;
-using Geocortex.Mobile.Composition.Messaging;
-using Geocortex.Mobile.Infrastructure.Messaging;
-using Geocortex.Mobile.Samples.Samples.Custom.Service;
+﻿using VertiGIS.Mobile.Composition;
+using VertiGIS.Mobile.Composition.Messaging;
+using VertiGIS.Mobile.Infrastructure.Messaging;
+using VertiGIS.Mobile.Samples.Samples.Custom.Service;
 
 [assembly: Export(typeof(ServiceOperation), SingleInstance = true)]
-namespace Geocortex.Mobile.Samples.Samples.Custom.Service
+namespace VertiGIS.Mobile.Samples.Samples.Custom.Service
 {
     class ServiceOperation : OperationsBase
     {

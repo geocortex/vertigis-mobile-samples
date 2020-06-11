@@ -1,9 +1,9 @@
-﻿using Geocortex.Mobile.Samples;
-using Geocortex.Mobile.Samples.Samples.Conceptual.DependencyInjection;
+﻿using VertiGIS.Mobile.Samples;
+using VertiGIS.Mobile.Samples.Samples.Conceptual.DependencyInjection;
 using Esri.ArcGISRuntime.Geometry;
-using Geocortex.Mobile.Composition.Layout;
-using Geocortex.Mobile.Infrastructure.Maps;
-using Geocortex.Mobile.Infrastructure.UI;
+using VertiGIS.Mobile.Composition.Layout;
+using VertiGIS.Mobile.Infrastructure.Maps;
+using VertiGIS.Mobile.Infrastructure.UI;
 using System;
 using System.Text;
 using System.Xml.Linq;
@@ -11,7 +11,7 @@ using Xamarin.Forms;
 using System.Reactive.Linq;
 
 [assembly: Component(typeof(DependencyInjectionComponent), "dependency-injection", XmlNamespace = XmlNamespaces.SamplesNamespace)]
-namespace Geocortex.Mobile.Samples.Samples.Conceptual.DependencyInjection
+namespace VertiGIS.Mobile.Samples.Samples.Conceptual.DependencyInjection
 {
     class DependencyInjectionComponent : ComponentBase
     {

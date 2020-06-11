@@ -1,11 +1,11 @@
-﻿using Geocortex.Mobile.Composition.Layout;
-using Geocortex.Mobile.Samples;
-using Geocortex.Mobile.Samples.Samples.Custom.XamlComponent;
+﻿using VertiGIS.Mobile.Composition.Layout;
+using VertiGIS.Mobile.Samples;
+using VertiGIS.Mobile.Samples.Samples.Custom.XamlComponent;
 using System.Xml.Linq;
 using Xamarin.Forms;
 
 [assembly: Component(typeof(XamlComponent), "xaml-component", XmlNamespace = XmlNamespaces.SamplesNamespace)]
-namespace Geocortex.Mobile.Samples.Samples.Custom.XamlComponent
+namespace VertiGIS.Mobile.Samples.Samples.Custom.XamlComponent
 {
     class XamlComponent : ComponentBase
     {

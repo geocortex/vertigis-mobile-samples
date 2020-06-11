@@ -1,7 +1,7 @@
 ﻿using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 
-namespace Geocortex.Mobile.Samples.Samples.CustomSamples.CustomDetails
+namespace VertiGIS.Mobile.Samples.Samples.CustomSamples.CustomDetails
 {
     [XamlCompilation(XamlCompilationOptions.Compile)]
     public partial class CustomDetailsView : ContentView

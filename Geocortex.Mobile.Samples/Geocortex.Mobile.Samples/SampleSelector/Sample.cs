@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace Geocortex.Mobile.Samples.SampleSelector
+namespace VertiGIS.Mobile.Samples.SampleSelector
 {
     public class Sample
     {

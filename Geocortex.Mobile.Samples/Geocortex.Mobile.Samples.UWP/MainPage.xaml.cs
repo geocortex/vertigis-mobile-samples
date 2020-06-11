@@ -13,7 +13,7 @@ using Windows.UI.Xaml.Input;
 using Windows.UI.Xaml.Media;
 using Windows.UI.Xaml.Navigation;
 
-namespace Geocortex.Mobile.Samples.UWP
+namespace VertiGIS.Mobile.Samples.UWP
 {
     /// <summary>
     /// The main entry point for the Windows App.
@@ -24,7 +24,7 @@ namespace Geocortex.Mobile.Samples.UWP
         {
             this.InitializeComponent();
 
-            LoadApplication(new Geocortex.Mobile.Samples.App());
+            LoadApplication(new VertiGIS.Mobile.Samples.App());
         }
     }
 }

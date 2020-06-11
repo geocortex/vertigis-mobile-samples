@@ -1,12 +1,12 @@
 ﻿using Esri.ArcGISRuntime.Mapping;
-using Geocortex.Mobile.Composition;
-using Geocortex.Mobile.Composition.Messaging;
-using Geocortex.Mobile.Composition.Services;
-using Geocortex.Mobile.Samples.Samples.CustomSamples.BasemapToggle;
+using VertiGIS.Mobile.Composition;
+using VertiGIS.Mobile.Composition.Messaging;
+using VertiGIS.Mobile.Composition.Services;
+using VertiGIS.Mobile.Samples.Samples.CustomSamples.BasemapToggle;
 using System.Threading.Tasks;
 
 [assembly: Service(typeof(BasemapToggleService), PropertiesAutowired = true)]
-namespace Geocortex.Mobile.Samples.Samples.CustomSamples.BasemapToggle
+namespace VertiGIS.Mobile.Samples.Samples.CustomSamples.BasemapToggle
 {
     public class BasemapToggleService : ServiceBase
     {

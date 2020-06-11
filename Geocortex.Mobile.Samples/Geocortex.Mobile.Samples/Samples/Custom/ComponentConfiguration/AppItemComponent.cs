@@ -1,13 +1,13 @@
-﻿using Geocortex.Mobile.Samples;
-using Geocortex.Mobile.Samples.Samples.Custom.ComponentConfiguration;
-using Geocortex.Mobile.Infrastructure.App;
-using Geocortex.Mobile.Infrastructure.Layout;
+﻿using VertiGIS.Mobile.Samples;
+using VertiGIS.Mobile.Samples.Samples.Custom.ComponentConfiguration;
+using VertiGIS.Mobile.Infrastructure.App;
+using VertiGIS.Mobile.Infrastructure.Layout;
 using System.Threading.Tasks;
 using System.Xml.Linq;
 using Xamarin.Forms;
 
 [assembly: AppItemComponent(typeof(AppItemComponent), "component-config", AppItemConfiguration.ConfigItemtype, XmlNamespace = XmlNamespaces.SamplesNamespace)]
-namespace Geocortex.Mobile.Samples.Samples.Custom.ComponentConfiguration
+namespace VertiGIS.Mobile.Samples.Samples.Custom.ComponentConfiguration
 {
     internal class AppItemComponent : AppItemComponentBase<AppItemConfiguration>
     {

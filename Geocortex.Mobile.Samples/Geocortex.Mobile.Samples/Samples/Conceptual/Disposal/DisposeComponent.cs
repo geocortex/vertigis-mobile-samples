@@ -1,6 +1,6 @@
-﻿using Geocortex.Mobile.Samples;
-using Geocortex.Mobile.Samples.Samples.Conceptual.DisposeComponent;
-using Geocortex.Mobile.Composition.Layout;
+﻿using VertiGIS.Mobile.Samples;
+using VertiGIS.Mobile.Samples.Samples.Conceptual.DisposeComponent;
+using VertiGIS.Mobile.Composition.Layout;
 using Microsoft.Win32.SafeHandles;
 using System;
 using System.ComponentModel;
@@ -8,7 +8,7 @@ using System.Xml.Linq;
 using Xamarin.Forms;
 
 [assembly: Component(typeof(DisposeComponent), "dispose", XmlNamespace = XmlNamespaces.SamplesNamespace)]
-namespace Geocortex.Mobile.Samples.Samples.Conceptual.DisposeComponent
+namespace VertiGIS.Mobile.Samples.Samples.Conceptual.DisposeComponent
 {
     internal class DisposeComponent : ComponentBase
     {

@@ -2,15 +2,15 @@
 using Esri.ArcGISRuntime.Symbology;
 using Esri.ArcGISRuntime.UI;
 using Esri.ArcGISRuntime.Xamarin.Forms;
-using Geocortex.Mobile.Composition;
-using Geocortex.Mobile.Composition.Messaging;
-using Geocortex.Mobile.Composition.Services;
-using Geocortex.Mobile.Samples.Samples.CustomSamples.Breadcrumbs;
+using VertiGIS.Mobile.Composition;
+using VertiGIS.Mobile.Composition.Messaging;
+using VertiGIS.Mobile.Composition.Services;
+using VertiGIS.Mobile.Samples.Samples.CustomSamples.Breadcrumbs;
 using System;
 using System.Threading.Tasks;
 
 [assembly: Service(typeof(BreadcrumbLocationTrackerService), PropertiesAutowired = true)]
-namespace Geocortex.Mobile.Samples.Samples.CustomSamples.Breadcrumbs
+namespace VertiGIS.Mobile.Samples.Samples.CustomSamples.Breadcrumbs
 {
     internal class BreadcrumbLocationTrackerService : ServiceBase
     {

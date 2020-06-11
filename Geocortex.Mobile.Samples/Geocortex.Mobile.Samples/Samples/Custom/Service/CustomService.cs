@@ -1,12 +1,12 @@
-﻿using Geocortex.Mobile.Samples.Samples.Custom.Service;
-using Geocortex.Mobile.Composition;
-using Geocortex.Mobile.Composition.Messaging;
-using Geocortex.Mobile.Composition.Services;
+﻿using VertiGIS.Mobile.Samples.Samples.Custom.Service;
+using VertiGIS.Mobile.Composition;
+using VertiGIS.Mobile.Composition.Messaging;
+using VertiGIS.Mobile.Composition.Services;
 using System.Threading.Tasks;
 using Xamarin.Forms;
 
 [assembly: Service(typeof(CustomService), PropertiesAutowired = true)]
-namespace Geocortex.Mobile.Samples.Samples.Custom.Service
+namespace VertiGIS.Mobile.Samples.Samples.Custom.Service
 {
     class CustomService : ServiceBase
     {

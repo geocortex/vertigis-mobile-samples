@@ -4,7 +4,7 @@
              xmlns:d="http://xamarin.com/schemas/2014/forms/design"
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
              mc:Ignorable="d"
-             x:Class="Geocortex.Mobile.Samples.Samples.Custom.XamlComponent.XamlComponentView">
+             x:Class="VertiGIS.Mobile.Samples.Samples.Custom.XamlComponent.XamlComponentView">
     <ContentView.Content>
         <StackLayout Margin="5">
             <Label Text="Hello XAML Component!" />

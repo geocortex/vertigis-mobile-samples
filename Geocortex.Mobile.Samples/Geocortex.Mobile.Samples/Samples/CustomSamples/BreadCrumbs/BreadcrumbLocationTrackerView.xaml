@@ -1,8 +1,8 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
 <ContentView xmlns="http://xamarin.com/schemas/2014/forms" 
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             xmlns:ui="clr-namespace:Geocortex.Mobile.Infrastructure.UI;assembly=Geocortex.Mobile"
-             x:Class="Geocortex.Mobile.Samples.Samples.CustomSamples.Breadcrumbs.BreadcrumbLocationTrackerView">
+             xmlns:ui="clr-namespace:VertiGIS.Mobile.Infrastructure.UI;assembly=VertiGIS.Mobile"
+             x:Class="VertiGIS.Mobile.Samples.Samples.CustomSamples.Breadcrumbs.BreadcrumbLocationTrackerView">
     <ContentView.Resources>
         <Style x:Key="BreadcrumbButton" TargetType="ui:EnhancedButton" BasedOn="{StaticResource MapWidgetButton}">
             <Setter Property="HeightRequest" Value="44"/>

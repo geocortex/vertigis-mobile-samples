@@ -1,15 +1,15 @@
-﻿using Geocortex.Mobile.Composition.Layout;
-using Geocortex.Mobile.Composition.Messaging;
-using Geocortex.Mobile.Infrastructure.Messaging;
-using Geocortex.Mobile.Samples;
-using Geocortex.Mobile.Samples.Samples.CustomSamples.CustomDetails;
+﻿using VertiGIS.Mobile.Composition.Layout;
+using VertiGIS.Mobile.Composition.Messaging;
+using VertiGIS.Mobile.Infrastructure.Messaging;
+using VertiGIS.Mobile.Samples;
+using VertiGIS.Mobile.Samples.Samples.CustomSamples.CustomDetails;
 using System.Linq;
 using System.Threading.Tasks;
 using System.Xml.Linq;
 using Xamarin.Forms;
 
 [assembly:Component(typeof(CustomDetailsComponent), "custom-details", XmlNamespace = XmlNamespaces.SamplesNamespace)]
-namespace Geocortex.Mobile.Samples.Samples.CustomSamples.CustomDetails
+namespace VertiGIS.Mobile.Samples.Samples.CustomSamples.CustomDetails
 {
     class CustomDetailsComponent : ComponentBase
     {

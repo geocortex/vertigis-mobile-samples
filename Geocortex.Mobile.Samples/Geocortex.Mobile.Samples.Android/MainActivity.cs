@@ -6,12 +6,12 @@ using Android.OS;
 using Android.Runtime;
 using Android.Views;
 using CarouselView.FormsPlugin.Android;
-using Geocortex.Mobile;
-using Geocortex.Mobile.Composition.Logging;
-using Geocortex.Mobile.Infrastructure.App;
-using Geocortex.Mobile.Infrastructure.Configuration;
-using Geocortex.Mobile.Infrastructure.Internationalization;
-using Geocortex.Mobile.Platform;
+using VertiGIS.Mobile;
+using VertiGIS.Mobile.Composition.Logging;
+using VertiGIS.Mobile.Infrastructure.App;
+using VertiGIS.Mobile.Infrastructure.Configuration;
+using VertiGIS.Mobile.Infrastructure.Internationalization;
+using VertiGIS.Mobile.Platform;
 using Geocortex.Workflow.Forms.Android;
 using Java.Lang;
 using Plugin.CurrentActivity;
@@ -24,10 +24,10 @@ using Xamarin.Forms;
 using static Android.Views.View;
 using static Java.Lang.Thread;
 
-namespace Geocortex.Mobile.Samples.Droid
+namespace VertiGIS.Mobile.Samples.Droid
 {
     [Activity(Name = "samples.mainactivity", Label = "Samples", Icon = "@drawable/icon", Theme = "@style/MainTheme", MainLauncher = true, ConfigurationChanges = ConfigChanges.ScreenSize | ConfigChanges.Orientation)]
-    public class MainActivity : GeocortexMobileActivity, IUncaughtExceptionHandler
+    public class MainActivity : VertiGISMobileActivity, IUncaughtExceptionHandler
     {
         protected override void OnCreate(Bundle bundle)
         {

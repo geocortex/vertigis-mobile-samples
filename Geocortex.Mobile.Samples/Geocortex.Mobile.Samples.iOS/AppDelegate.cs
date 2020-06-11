@@ -7,26 +7,26 @@ using System.Threading.Tasks;
 using CarouselView.FormsPlugin.iOS;
 using FFImageLoading.Forms.Platform;
 using Foundation;
-using Geocortex.Mobile;
-using Geocortex.Mobile.Composition.Logging;
-using Geocortex.Mobile.Infrastructure.App;
-using Geocortex.Mobile.Infrastructure.Configuration;
-using Geocortex.Mobile.Infrastructure.Internationalization;
-using Geocortex.Mobile.Infrastructure.Platform;
-using Geocortex.Mobile.Platform;
-using Geocortex.Mobile.Utilities;
+using VertiGIS.Mobile;
+using VertiGIS.Mobile.Composition.Logging;
+using VertiGIS.Mobile.Infrastructure.App;
+using VertiGIS.Mobile.Infrastructure.Configuration;
+using VertiGIS.Mobile.Infrastructure.Internationalization;
+using VertiGIS.Mobile.Infrastructure.Platform;
+using VertiGIS.Mobile.Platform;
+using VertiGIS.Mobile.Utilities;
 using Geocortex.Workflow.Forms.IOS;
 using Rg.Plugins.Popup;
 using UIKit;
 using Xamarin.Forms;
 
-namespace Geocortex.Mobile.Samples.iOS
+namespace VertiGIS.Mobile.Samples.iOS
 {
     // The UIApplicationDelegate for the application. This class is responsible for launching the 
     // User Interface of the application, as well as listening (and optionally responding) to 
     // application events from iOS.
     [Register("AppDelegate")]
-    public partial class AppDelegate : GeocortexAppDelegate
+    public partial class AppDelegate : VertiGISAppDelegate
     {
         //
         // This method is invoked when the application has loaded and is ready to run. In this 

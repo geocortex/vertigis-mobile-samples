@@ -8,7 +8,7 @@
     elementFormDefault="qualified"
     xmlns:xs="http://www.w3.org/2001/XMLSchema">
 
-  <import namespace="https://geocortex.com/layout/v1" schemaLocation="../../ViewerFramework/layout/layout-common.xsd" />
+  <import namespace="https://geocortex.com/layout/v1" schemaLocation="../../ViewerSpec/layout/layout-common.xsd" />
 
 
   <element name="activate-deactivate" substitutionGroup="base:component">

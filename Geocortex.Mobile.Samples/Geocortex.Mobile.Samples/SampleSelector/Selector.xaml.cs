@@ -4,7 +4,7 @@ using System.Linq;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 
-namespace Geocortex.Mobile.Samples.SampleSelector
+namespace VertiGIS.Mobile.Samples.SampleSelector
 {
     [XamlCompilation(XamlCompilationOptions.Compile)]
     public partial class Selector : ContentPage

@@ -1,10 +1,10 @@
 ﻿using Esri.ArcGISRuntime.Xamarin.Forms;
-using Geocortex.Mobile.Composition;
-using Geocortex.Mobile.Composition.Messaging;
-using Geocortex.Mobile.Samples.Samples.CustomSamples.Breadcrumbs;
+using VertiGIS.Mobile.Composition;
+using VertiGIS.Mobile.Composition.Messaging;
+using VertiGIS.Mobile.Samples.Samples.CustomSamples.Breadcrumbs;
 
 [assembly: Export(typeof(BreadcrumbLocationTrackerOperations), SingleInstance = true)]
-namespace Geocortex.Mobile.Samples.Samples.CustomSamples.Breadcrumbs
+namespace VertiGIS.Mobile.Samples.Samples.CustomSamples.Breadcrumbs
 {
     public class BreadcrumbLocationTrackerOperations
     {

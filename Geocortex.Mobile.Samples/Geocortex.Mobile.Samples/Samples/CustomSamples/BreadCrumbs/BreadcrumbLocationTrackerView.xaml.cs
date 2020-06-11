@@ -1,10 +1,10 @@
-﻿using Geocortex.Mobile.Composition;
-using Geocortex.Mobile.Samples.Samples.CustomSamples.Breadcrumbs;
+﻿using VertiGIS.Mobile.Composition;
+using VertiGIS.Mobile.Samples.Samples.CustomSamples.Breadcrumbs;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 
 [assembly: View(typeof(BreadcrumbLocationTrackerView))]
-namespace Geocortex.Mobile.Samples.Samples.CustomSamples.Breadcrumbs
+namespace VertiGIS.Mobile.Samples.Samples.CustomSamples.Breadcrumbs
 {
 	[XamlCompilation(XamlCompilationOptions.Compile)]
 	public partial class BreadcrumbLocationTrackerView : ContentView

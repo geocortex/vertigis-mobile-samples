@@ -3,8 +3,7 @@
     xmlns="https://geocortex.com/layout/v1"
     xmlns:gxm="https://geocortex.com/layout/mobile/v1"
     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-    xsi:schemaLocation="https://geocortex.com/layout/v1 ../../../../../ViewerFramework/layout/layout-mobile.xsd
-      https://geocortex.com/layout/v1 ../../../layout-custom.xsd"
+    xsi:schemaLocation="https://geocortex.com/layout/v1 ../../../../../ViewerSpec/layout/layout-mobile.xsd"
     orientations="portrait">
   <gxm:taskbar id="taskbar" orientation="horizontal">
 
@@ -19,11 +18,15 @@
       </stack>
       <stack margin="0.5" slot="bottom-right" halign="end">
         <compass id="compass" margin="0.5"/>
-        <button config="measureAction" icon="measure" style="map-widget" margin="0.5"/>
         <geolocate id="geolocator" margin="0.5" config="geolocate" />
       </stack>
       <zoom margin="0.8" slot="top-left"/>
-      <gxm:version slot="bottom-left" margin="0.8"/>
+      <stack margin="0.5" slot="bottom-left" halign="start">
+        <split valign="center">
+          <button config="measureAction" icon="measure" style="map-widget" margin="0.3"/>
+          <scalebar margin="0.3"/>
+        </split>
+      </stack>
     </map>
 
     <!-- Taskbar / search -->
@@ -38,9 +41,10 @@
     </panel>
 
     <!-- Taskbar / layers -->
-    <panel id="layers">
-      <layer-list />
-    </panel>
+    <layer-list id="layers"/>
+
+    <!-- Taskbar / legend -->
+    <legend id="legend"/>
 
     <!-- Taskbar / map areas -->
     <panel>
