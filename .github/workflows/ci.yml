@@ -29,10 +29,10 @@ jobs:
             - uses: actions/checkout@v2
 
             # Fixes error when using newer NuGet packages that require a minimum version of Xcode
-            - name: Use latest Xcode
+            - name: Use Xcode 11.x
               uses: maxim-lobanov/setup-xamarin@v1.1
               with:
-                  xcode-version: latest
+                  xcode-version: 11.x
 
             - name: Restore NuGet packages
               run: msbuild -t:restore
