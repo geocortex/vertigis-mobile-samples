@@ -1,23 +1,6 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Diagnostics;
-using System.Globalization;
-using System.Linq;
-using System.Threading.Tasks;
-using CarouselView.FormsPlugin.iOS;
-using FFImageLoading.Forms.Platform;
-using Foundation;
-using VertiGIS.Mobile;
-using VertiGIS.Mobile.Composition.Logging;
-using VertiGIS.Mobile.Infrastructure.App;
-using VertiGIS.Mobile.Infrastructure.Configuration;
-using VertiGIS.Mobile.Infrastructure.Internationalization;
-using VertiGIS.Mobile.Infrastructure.Platform;
-using VertiGIS.Mobile.Platform;
-using VertiGIS.Mobile.Utilities;
-using Geocortex.Workflow.Forms.IOS;
-using Rg.Plugins.Popup;
+﻿using Foundation;
 using UIKit;
+using VertiGIS.Mobile.Platform;
 using Xamarin.Forms;
 
 namespace VertiGIS.Mobile.Samples.iOS

@@ -1,27 +1,9 @@
-﻿using Android;
-using Android.App;
-using Android.Content;
+﻿using Android.App;
 using Android.Content.PM;
 using Android.OS;
-using Android.Runtime;
-using Android.Views;
-using CarouselView.FormsPlugin.Android;
-using VertiGIS.Mobile;
-using VertiGIS.Mobile.Composition.Logging;
-using VertiGIS.Mobile.Infrastructure.App;
-using VertiGIS.Mobile.Infrastructure.Configuration;
-using VertiGIS.Mobile.Infrastructure.Internationalization;
-using VertiGIS.Mobile.Platform;
-using Geocortex.Workflow.Forms.Android;
 using Java.Lang;
-using Plugin.CurrentActivity;
-using Rg.Plugins.Popup;
-using System;
-using System.Collections.Generic;
-using System.Diagnostics;
-using System.Threading.Tasks;
+using VertiGIS.Mobile.Platform;
 using Xamarin.Forms;
-using static Android.Views.View;
 using static Java.Lang.Thread;
 
 namespace VertiGIS.Mobile.Samples.Droid

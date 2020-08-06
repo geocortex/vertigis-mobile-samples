@@ -1,9 +1,7 @@
 ﻿using VertiGIS.Mobile.Samples.SampleSelector;
-using VertiGIS.Mobile;
 using VertiGIS.Mobile.Infrastructure.App;
 using VertiGIS.Mobile.Infrastructure.Configuration;
 using VertiGIS.Mobile.Infrastructure.UI;
-using VertiGIS.Mobile.Samples;
 using System;
 using System.IO;
 using System.Reflection;
