@@ -12,9 +12,9 @@
     <custom:operation slot="top-center-visible"/>
 
     <stack slot="bottom-center-visible">
-      <button margin="2" style="map-widget" icon="info" config="displayMapInfo">Operation from json app</button>
-      <button margin="2" style="map-widget" icon="warning" command="custom.operation">Operation from xml layout</button>
-      <button margin="2" style="map-widget" icon="error" config="displayMapInfoConfig">Operation with configuration</button>
+      <button margin="2" style="round" icon="info" config="displayMapInfo">Operation from json app</button>
+      <button margin="2" style="round" icon="warning" command="custom.operation">Operation from xml layout</button>
+      <button margin="2" style="round" icon="error" config="displayMapInfoConfig">Operation with configuration</button>
     </stack>
   </map>
 

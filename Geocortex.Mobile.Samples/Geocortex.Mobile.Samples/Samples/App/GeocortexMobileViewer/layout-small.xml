@@ -3,7 +3,7 @@
     xmlns="https://geocortex.com/layout/v1"
     xmlns:gxm="https://geocortex.com/layout/mobile/v1"
     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-    xsi:schemaLocation="https://geocortex.com/layout/v1 ../../../../../ViewerSpec/layout/layout-mobile.xsd"
+    xsi:schemaLocation="https://geocortex.com/layout/v1 ../../ViewerSpec/layout/layout-mobile.xsd"
     orientations="portrait">
   <gxm:taskbar id="taskbar" orientation="horizontal">
 
@@ -11,21 +11,29 @@
     <map id="page1-map1" config="map1" slot="main">
       <gxm:geometry-toolbar slot="top" id="geometry-toolbar" config="geometry" active="false" />
       <search-new-extent config="search" margin="0.8" slot="bottom-center-visible" />
+      <stack margin="0.5" slot="top-left">
+        <zoom margin="0.3"/>
+        <expand margin="0.3" style="round">
+          <legend/>
+        </expand>
+        <expand margin="0.3" style="round">
+          <basemap-picker/>
+        </expand>
+      </stack>
       <stack margin="0.8" slot="top-right" halign="end">
         <iwtm config="iwtm" id="IWTM">
           <user slot="bottom"/>
         </iwtm>
       </stack>
+      <stack margin="0.5" slot="bottom-left" halign="start">
+        <split valign="center">
+          <button config="measureAction" icon="measure" style="round" margin="0.3"/>
+          <scalebar margin="0.3"/>
+        </split>
+      </stack>
       <stack margin="0.5" slot="bottom-right" halign="end">
         <compass id="compass" margin="0.5"/>
         <geolocate id="geolocator" margin="0.5" config="geolocate" />
-      </stack>
-      <zoom margin="0.8" slot="top-left"/>
-      <stack margin="0.5" slot="bottom-left" halign="start">
-        <split valign="center">
-          <button config="measureAction" icon="measure" style="map-widget" margin="0.3"/>
-          <scalebar margin="0.3"/>
-        </split>
       </stack>
     </map>
 
@@ -43,9 +51,6 @@
     <!-- Taskbar / layers -->
     <layer-list id="layers"/>
 
-    <!-- Taskbar / legend -->
-    <legend id="legend"/>
-
     <!-- Taskbar / map areas -->
     <panel>
       <gxm:offline-areas config="offline"/>
@@ -62,6 +67,7 @@
     <panel>
       <workflow config="workflow" icon="workflow"/>
     </panel>
+
   </gxm:taskbar>
 
   <!-- GNSS metadata dialog and device selection-->

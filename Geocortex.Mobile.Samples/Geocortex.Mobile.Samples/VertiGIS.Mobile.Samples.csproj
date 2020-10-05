@@ -168,16 +168,15 @@
   </ItemGroup>
 
   <ItemGroup>
-    <PackageReference Include="Esri.ArcGISRuntime" Version="100.8.0" />
-    <PackageReference Include="Esri.ArcGISRuntime.Xamarin.Forms" Version="100.8.0" />
-    <PackageReference Include="Geocortex.Workflow.Activities.Image" Version="5.16.1.41" />
-    <PackageReference Include="Geocortex.Workflow.Forms.Xamarin" Version="5.16.1.490" />
+    <PackageReference Include="Esri.ArcGISRuntime" Version="100.9.0" />
+    <PackageReference Include="Esri.ArcGISRuntime.Xamarin.Forms" Version="100.9.0" />
+    <PackageReference Include="Geocortex.Workflow.Forms.Xamarin" Version="5.16.1.548" />
     <PackageReference Include="MarkedNet" Version="2.1.2" />
     <PackageReference Include="Microsoft.CSharp" Version="4.6.0" />
     <PackageReference Include="Newtonsoft.Json" Version="12.0.3" />
-    <PackageReference Include="VertiGIS.Mobile" Version="5.8.1" />
+    <PackageReference Include="VertiGIS.Mobile" Version="5.9.0-PullRequest13152.261" />
     <PackageReference Include="Xam.Forms.MarkdownView" Version="0.6.1-pre" />
-    <PackageReference Include="Xamarin.Forms" Version="4.5.0.617" />
+    <PackageReference Include="Xamarin.Forms" Version="4.7.0.1239" />
   </ItemGroup>
 
   <ItemGroup>

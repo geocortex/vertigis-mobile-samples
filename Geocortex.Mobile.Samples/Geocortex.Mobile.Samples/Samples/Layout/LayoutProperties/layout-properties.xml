@@ -49,12 +49,12 @@
     </stack>
 
     <map grow="2">
-      <button margin="5" slot="top-left" style="map-widget" icon="check"/>
-      <button margin="5" slot="top-right" style="map-widget" icon="check"/>
-      <button margin="5" slot="top-center-visible" style="map-widget" icon="check"/>
-      <button margin="5" slot="bottom-left" style="map-widget" icon="check" height="2" width="2"/>
-      <button margin="5" slot="bottom-center-visible" style="map-widget" icon="check" height="4" width="4"/>
-      <button margin="5" slot="bottom-right" style="map-widget" icon="check" height="8" width="8" />
+      <button margin="5" slot="top-left" style="round" icon="check"/>
+      <button margin="5" slot="top-right" style="round" icon="check"/>
+      <button margin="5" slot="top-center-visible" style="round" icon="check"/>
+      <button margin="5" slot="bottom-left" style="round" icon="check" height="2" width="2"/>
+      <button margin="5" slot="bottom-center-visible" style="round" icon="check" height="4" width="4"/>
+      <button margin="5" slot="bottom-right" style="round" icon="check" height="8" width="8" />
     </map>
 
     <stack grow="1">
