@@ -9,11 +9,11 @@
 
   <panel>
     <stack title="Button Styles" halign="start">
-      <text margin="1">Map Widget Buttons</text>
+      <text margin="1">Round Buttons</text>
       <button style="round" icon="check" margin="1"/>
       <button style="round" margin="1">Text</button>
       <button style="round" icon="check" margin="1">Text and Icon</button>
-      <text margin="1">Normal Buttons</text>
+      <text margin="1">Square (Default) Buttons</text>
       <button icon="check" margin="1"/>
       <button margin="1">Text</button>
       <button icon="check" margin="1">Text and Icon</button>

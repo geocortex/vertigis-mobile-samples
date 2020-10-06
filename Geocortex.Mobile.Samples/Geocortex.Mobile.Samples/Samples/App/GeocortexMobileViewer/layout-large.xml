@@ -47,7 +47,7 @@
     <!-- Taskbar / layers -->
     <layer-list id="layers"/>
     
-    <!-- Basmeap picker -->
+    <!-- Taskbar / basemap picker -->
     <basemap-picker/>
 
     <!-- Taskbar / map areas -->

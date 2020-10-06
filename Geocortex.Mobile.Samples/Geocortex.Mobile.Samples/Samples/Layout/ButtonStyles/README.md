@@ -11,4 +11,4 @@ This sample demonstrates the Geocortex Mobile button styles that are available.
   - round: text
   - square (default): icon and text
   - round: icon and text
-- Map Widget styles are commonly used for buttons placed on the map.
+- Round styles are commonly used for buttons placed on the map.
