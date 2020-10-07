@@ -3,12 +3,12 @@
     xmlns="https://geocortex.com/layout/v1"
     xmlns:gxm="https://geocortex.com/layout/mobile/v1"
     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-    xsi:schemaLocation="https://geocortex.com/layout/v1 ../../../../../ViewerSpec/layout/layout-mobile.xsd">
+    xsi:schemaLocation="https://geocortex.com/layout/v1 ../../ViewerSpec/layout/layout-mobile.xsd">
   <gxm:taskbar id="taskbar" orientation="vertical">
 
     <!-- Taskbar main content -->
     <map id="page1-map1" config="map1" slot="main">
-      <gxm:geometry-toolbar slot="top-center-visible" id="geometry-toolbar" config="geometry" margin="0.8" style="map-widget" active="false" />
+      <gxm:geometry-toolbar slot="top-center-visible" id="geometry-toolbar" config="geometry" margin="0.8" style="round" active="false" />
       <search-new-extent config="search" margin="0.8" slot="top-center-visible" active="false" />
       <stack margin="0.8" slot="top-right" halign="end">
         <iwtm config="iwtm" id="IWTM">
@@ -19,10 +19,15 @@
         <compass id="compass" margin="0.5"/>
         <geolocate id="geolocator" margin="0.5" config="geolocate" />
       </stack>
-      <zoom margin="0.8" slot="top-left"/>
+      <stack margin="0.5" slot="top-left">
+        <zoom margin="0.3"/>
+        <expand margin="0.3" style="round">
+          <legend/>
+        </expand>
+      </stack>
       <stack margin="0.5" slot="bottom-left" halign="start">
         <split valign="center">
-          <button config="measureAction" icon="measure" style="map-widget" margin="0.3"/>
+          <button config="measureAction" icon="measure" style="round" margin="0.3"/>
           <scalebar margin="0.3"/>
         </split>
       </stack>
@@ -41,9 +46,9 @@
 
     <!-- Taskbar / layers -->
     <layer-list id="layers"/>
-
-    <!-- Taskbar / legend -->
-    <legend id="legend"/>
+    
+    <!-- Taskbar / basemap picker -->
+    <basemap-picker/>
 
     <!-- Taskbar / map areas -->
     <panel>

@@ -16,7 +16,7 @@
         </iwtm>
       </stack>
       <stack margin="0.8" slot="bottom-right" halign="end">
-        <button style="map-widget" config="launchWorkflow" />
+        <button style="round" config="launchWorkflow" />
       </stack>
     </map>
 
