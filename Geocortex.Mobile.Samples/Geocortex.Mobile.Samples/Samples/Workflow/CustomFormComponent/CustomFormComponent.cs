@@ -1,5 +1,5 @@
 ﻿using VertiGIS.Mobile.Infrastructure.UI;
-using Geocortex.Workflow.Forms.Xamarin.Components;
+using VertiGIS.Mobile.Workflow.Components;
 
 namespace VertiGIS.Mobile.Samples.Samples.Workflow.CustomFormComponent
 {
