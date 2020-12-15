@@ -119,6 +119,7 @@ Global
 		{669E92CC-2CEF-4DED-87BF-5EAA6EF151F2}.Debug|ARM.ActiveCfg = Debug|iPhone
 		{669E92CC-2CEF-4DED-87BF-5EAA6EF151F2}.Debug|iPhone.ActiveCfg = Debug|iPhone
 		{669E92CC-2CEF-4DED-87BF-5EAA6EF151F2}.Debug|iPhone.Build.0 = Debug|iPhone
+		{669E92CC-2CEF-4DED-87BF-5EAA6EF151F2}.Debug|iPhone.Deploy.0 = Debug|iPhone
 		{669E92CC-2CEF-4DED-87BF-5EAA6EF151F2}.Debug|iPhoneSimulator.ActiveCfg = Debug|iPhoneSimulator
 		{669E92CC-2CEF-4DED-87BF-5EAA6EF151F2}.Debug|iPhoneSimulator.Build.0 = Debug|iPhoneSimulator
 		{669E92CC-2CEF-4DED-87BF-5EAA6EF151F2}.Debug|x64.ActiveCfg = Debug|iPhone

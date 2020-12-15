@@ -29,10 +29,10 @@ jobs:
             - uses: actions/checkout@v2
 
             # Fixes error when using newer NuGet packages that require a minimum version of Xcode
-            - name: Use Xcode 11.x
-              uses: maxim-lobanov/setup-xamarin@v1.1
+            - name: Use Xcode 12.x
+              uses: maxim-lobanov/setup-xamarin@v1
               with:
-                  xcode-version: 11.x
+                  xcode-version: 12.x
 
             - name: Restore NuGet packages
               run: msbuild -t:restore
@@ -55,5 +55,7 @@ jobs:
               working-directory: Geocortex.Mobile.Samples/Geocortex.Mobile.Samples.UWP
 
             - name: msbuild
-              run: msbuild -warnAsError
+              # TODO: Enable `-warnAsError` flag once XF is updated, and warnings aren't shown:
+              # https://developercommunity.visualstudio.com/content/problem/1251681/xamarinforms-application-warning.html
+              run: msbuild
               working-directory: Geocortex.Mobile.Samples/Geocortex.Mobile.Samples.UWP
