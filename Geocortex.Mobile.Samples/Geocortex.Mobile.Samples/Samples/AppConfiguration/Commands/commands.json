@@ -249,7 +249,7 @@
         "name": "ui.alert",
         "arguments": {
           "title": "Toggle",
-          "message": "Toggle this button visibility using commands available in the `Geocortex Mobile Commands` panel.",
+          "message": "Toggle this button visibility using commands available in the 'Geocortex Mobile Commands' panel.",
           "buttonText": "OK"
         }
       }
@@ -265,7 +265,7 @@
           "name": "ui.alert",
           "arguments": {
             "title": "Alert",
-            "message": "After clicking `OK`, another alert will be displayed after a delay of 5 seconds.",
+            "message": "After clicking 'OK', another alert will be displayed after a delay of 5 seconds.",
             "buttonText": "OK"
           }
         },

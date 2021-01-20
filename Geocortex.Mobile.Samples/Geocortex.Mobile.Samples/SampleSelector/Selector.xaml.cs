@@ -248,7 +248,7 @@ namespace VertiGIS.Mobile.Samples.SampleSelector
                     Name = "Bread Crumbs",
                     App = "bread-crumbs.json",
                     Layout = "bread-crumbs.xml",
-                    Description = "A location service that draws `bread crumbs` on the map.",
+                    Description = "A location service that draws 'bread crumbs' on the map.",
                     PathFragment = "CustomSamples.BreadCrumbs"
                 },
                 new Sample
@@ -256,7 +256,7 @@ namespace VertiGIS.Mobile.Samples.SampleSelector
                     Name = "Custom Details",
                     App = "custom-details.json",
                     Layout = "custom-details.xml",
-                    Description = "An operation to display content after an `identify` action.",
+                    Description = "An operation to display content after an 'identify' action.",
                     PathFragment = "CustomSamples.CustomDetails"
                 },
                 new Sample
