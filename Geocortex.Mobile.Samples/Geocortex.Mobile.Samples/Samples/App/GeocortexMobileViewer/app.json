@@ -53,6 +53,12 @@
       "tags": [ "mobile", "small" ]
     },
     {
+      "id": "esri-geocoder",
+      "title": "World Geocoder for ArcGIS",
+      "$type": "geocoder",
+      "url": "https://geocode.arcgis.com/arcgis/rest/services/World/GeocodeServer"
+    },
+    {
       "$type": "workflow",
       "id": "workflow",
       "title": "Hydrant Inspection",
