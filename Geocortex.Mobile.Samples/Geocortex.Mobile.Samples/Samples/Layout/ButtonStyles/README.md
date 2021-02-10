@@ -4,7 +4,7 @@
 This sample demonstrates the Geocortex Mobile button styles that are available.
 
 ### Tips
-- There a 6 basic styles:
+- There are 6 basic styles:
   - square (default): icon
   - round: icon
   - square (default): text

@@ -24,7 +24,7 @@ namespace VertiGIS.Mobile.Samples.Samples.Conceptual.Logging
 
             var settingMessage = new Label()
             {
-                Text = "Setting the log level determines which messages are logged. The default log level is `info`.",
+                Text = "Setting the log level determines which messages are logged. The default log level is 'info'.",
             };
 
             var debug = new Button()

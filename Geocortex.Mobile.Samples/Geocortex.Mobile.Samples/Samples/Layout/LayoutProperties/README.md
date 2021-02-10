@@ -16,11 +16,11 @@ Layout properties include:
 - width
   - The width of the component, in em units.
 - height
-  - the height of the component, in em units.
+  - The height of the component, in em units.
 - margin
-  - the margin around the component, in em units.
+  - The margin around the component, in em units.
 - padding
-  - the padding within the component, in em units.
+  - The padding within the component, in em units.
 - halign
   - Describes how the content of a component is horizontally aligned. For stacks and splits, the content is the child components. For a component like text, the content is the text itself.
   - Valid values are "start", "center", "end"
