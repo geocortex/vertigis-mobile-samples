@@ -7,7 +7,7 @@
     {
       "$type": "map-extension",
       "id": "map1",
-      "webMap": "c6008288a95247428fc55d9aaa72b670"
+      "webMap": "c27fa8668647489482dd418b0d765aec"
     },
     {
       "$type": "portal-extension",
@@ -22,7 +22,7 @@
       "$type": "workflow",
       "id": "workflow",
       "target": "#taskbar",
-      "portalItem": "725c71a8a4e7456faa6ca12e48ffe73a"
+      "portalItem": "1dfbdba7cd9b4453a8313cd9de0d1a70"
     },
     {
       "$type": "menu",

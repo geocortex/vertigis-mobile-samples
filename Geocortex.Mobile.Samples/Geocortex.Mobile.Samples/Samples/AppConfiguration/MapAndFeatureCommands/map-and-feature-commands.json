@@ -38,7 +38,7 @@
     {
       "$type": "map-extension",
       "id": "map1",
-      "webMap": "c6008288a95247428fc55d9aaa72b670",
+      "webMap": "c27fa8668647489482dd418b0d765aec",
       "onClick": [ "tasks.identify", "highlights.pulse", "results.display" ]
 
     },

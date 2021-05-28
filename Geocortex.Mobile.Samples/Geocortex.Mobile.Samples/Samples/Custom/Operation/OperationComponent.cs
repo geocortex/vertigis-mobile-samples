@@ -2,7 +2,7 @@
 using VertiGIS.Mobile.Samples.Samples.Custom.Operation;
 using VertiGIS.Mobile.Composition.Layout;
 using VertiGIS.Mobile.Composition.Messaging;
-using VertiGIS.Mobile.Infrastructure.Messaging;
+using VertiGIS.Mobile.Toolkit.Messaging;
 using System.Threading.Tasks;
 using System.Xml.Linq;
 using Xamarin.Forms;

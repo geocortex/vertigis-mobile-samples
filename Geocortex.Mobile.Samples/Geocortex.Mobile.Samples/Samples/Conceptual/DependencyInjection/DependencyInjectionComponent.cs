@@ -2,8 +2,8 @@
 using VertiGIS.Mobile.Samples.Samples.Conceptual.DependencyInjection;
 using Esri.ArcGISRuntime.Geometry;
 using VertiGIS.Mobile.Composition.Layout;
+using VertiGIS.Mobile.Infrastructure.Dialog;
 using VertiGIS.Mobile.Infrastructure.Maps;
-using VertiGIS.Mobile.Infrastructure.UI;
 using System;
 using System.Text;
 using System.Xml.Linq;

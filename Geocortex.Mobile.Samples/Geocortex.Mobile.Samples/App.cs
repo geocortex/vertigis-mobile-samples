@@ -1,7 +1,7 @@
 ﻿using VertiGIS.Mobile.Samples.SampleSelector;
 using VertiGIS.Mobile.Infrastructure.App;
 using VertiGIS.Mobile.Infrastructure.Configuration;
-using VertiGIS.Mobile.Infrastructure.UI;
+using VertiGIS.Mobile.Toolkit.Views;
 using System;
 using System.IO;
 using System.Reflection;
@@ -88,7 +88,8 @@ namespace VertiGIS.Mobile.Samples
 
             var tabbedPage = new TabbedPage()
             {
-                Title = sample.Name
+                Title = sample.Name,
+                BarTextColor = Color.Black
             };
 
             var description = GetDescription(readme);

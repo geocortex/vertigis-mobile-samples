@@ -1,7 +1,7 @@
 ﻿using VertiGIS.Mobile.Samples;
 using VertiGIS.Mobile.Samples.Samples.Conceptual.Logging;
 using VertiGIS.Mobile.Composition.Layout;
-using VertiGIS.Mobile.Composition.Logging;
+using VertiGIS.Mobile.Toolkit.Logging;
 using System.Threading.Tasks;
 using System.Xml.Linq;
 using Xamarin.Forms;

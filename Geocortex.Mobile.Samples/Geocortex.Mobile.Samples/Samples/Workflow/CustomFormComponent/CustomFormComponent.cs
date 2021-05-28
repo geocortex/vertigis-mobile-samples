@@ -1,4 +1,4 @@
-﻿using VertiGIS.Mobile.Infrastructure.UI;
+﻿using VertiGIS.Mobile.Toolkit.Views;
 using VertiGIS.Mobile.Workflow.Components;
 
 namespace VertiGIS.Mobile.Samples.Samples.Workflow.CustomFormComponent
