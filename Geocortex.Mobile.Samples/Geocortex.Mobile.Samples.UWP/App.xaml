@@ -7,7 +7,7 @@
         <ResourceDictionary>
             <ResourceDictionary.MergedDictionaries>
                 <ResourceDictionary Source="VertiGIS.Mobile.UWP/Resources/VertiGISResources.xaml" />
-                <ResourceDictionary Source="VertiGIS.Mobile.Toolkit.UWP/Resources/RectangleDropShadowPanel.xaml" />
+                <ResourceDictionary Source="VertiGIS.Mobile.Toolkit.UWP/Resources/ToolkitResources.xaml" />
             </ResourceDictionary.MergedDictionaries>
             <Style x:Key="DefaultButtonStyle" TargetType="Button">
                 <Setter Property="Background" Value="Blue"/>
