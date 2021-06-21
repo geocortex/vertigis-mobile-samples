@@ -3,7 +3,7 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              xmlns:d="http://xamarin.com/schemas/2014/forms/design"
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-             xmlns:ui="clr-namespace:VertiGIS.Mobile.Infrastructure.UI;assembly=VertiGIS.Mobile"
+             xmlns:ui="clr-namespace:VertiGIS.Mobile.Toolkit.Views;assembly=VertiGIS.Mobile.Toolkit"
              mc:Ignorable="d"
              x:Class="VertiGIS.Mobile.Samples.Samples.Custom.GeocortexMobileElements.GeocortexMobileElementsXamlView">
     <ContentView.Content>

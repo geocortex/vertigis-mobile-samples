@@ -1,9 +1,9 @@
 ﻿using Esri.ArcGISRuntime.Xamarin.Forms;
 using VertiGIS.Mobile.Composition;
 using VertiGIS.Mobile.Composition.Layout;
-using VertiGIS.Mobile.Composition.Utilities;
-using VertiGIS.Mobile.Composition.Views;
 using VertiGIS.Mobile.Samples.Samples.CustomSamples.Breadcrumbs;
+using VertiGIS.Mobile.Toolkit.Messaging;
+using VertiGIS.Mobile.Toolkit.Utilities;
 using System;
 using System.Collections.Generic;
 using System.Windows.Input;

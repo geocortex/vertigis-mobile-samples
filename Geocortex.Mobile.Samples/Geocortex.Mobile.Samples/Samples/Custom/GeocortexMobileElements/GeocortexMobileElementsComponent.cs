@@ -1,7 +1,7 @@
 ﻿using VertiGIS.Mobile.Samples;
 using VertiGIS.Mobile.Samples.Samples.Custom.GeocortexMobileElements;
 using VertiGIS.Mobile.Composition.Layout;
-using VertiGIS.Mobile.Infrastructure.UI;
+using VertiGIS.Mobile.Toolkit.Views;
 using System.Xml.Linq;
 using Xamarin.Forms;
 
