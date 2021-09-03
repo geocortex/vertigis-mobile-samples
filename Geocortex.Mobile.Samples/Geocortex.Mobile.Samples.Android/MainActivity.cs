@@ -18,8 +18,8 @@ namespace VertiGIS.Mobile.Samples.Droid
             TabLayoutResource = Resource.Layout.Tabbar;
             ToolbarResource = Resource.Layout.Toolbar;
 
-            AndroidInitializer.Init(this, bundle);
             Forms.Init(this, bundle);
+            AndroidInitializer.Init(this, bundle);
 
             // The app was launched with the splash screen theme, so change it to the main theme now
             base.SetTheme(Resource.Style.MainTheme);
