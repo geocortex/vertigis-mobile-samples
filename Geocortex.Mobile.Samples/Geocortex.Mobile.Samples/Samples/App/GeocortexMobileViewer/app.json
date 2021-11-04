@@ -129,7 +129,9 @@
       "$type": "map-extension",
       "id": "map1",
       "webMap": "c27fa8668647489482dd418b0d765aec",
-      "onClick": [ "tasks.identify", "highlights.pulse", "results.display" ]
+      "onClick": [ "tasks.identify", "highlights.pulse", "results.display" ],
+      "onSecondaryClick": "map.show-context-menu",
+      "contextMenu": "item://menu/context-menu"
     },
     {
       "$type": "menu",
@@ -200,6 +202,32 @@
               "url": "bingmaps:?cp={Location.Map.Center.Latitude}~{Location.Map.Center.Longitude}&lvl={Location.Map.Level}"
             }
           }
+        }
+      ]
+    },
+    {
+      "$type": "menu",
+      "id": "context-menu",
+      "items": [
+        {
+          "title": "Identify",
+          "iconId": "identify-map-point",
+          "action": [ "tasks.identify", "results.display" ]
+        },
+        {
+          "title": "Google Street View",
+          "iconId": "map-default",
+          "action": {
+            "name": "system.open-url",
+            "arguments": {
+              "url": "https://www.google.com/maps/@?api=1&map_action=pano&viewpoint={Location.Feature.Latitude},{Location.Feature.Longitude}"
+            }
+          }
+        },
+        {
+          "title": "Export Map Image",
+          "iconId": "share-map",
+          "action": [ "map.export-image", "file.open-file" ]
         }
       ]
     },

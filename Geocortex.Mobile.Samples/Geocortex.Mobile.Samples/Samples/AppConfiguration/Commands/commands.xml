@@ -67,6 +67,16 @@
             <button config="openUrlAction">system.open-url</button>
           </stack>
 
+          <text>Enable background location updates.</text>
+          <stack margin="0.5">
+            <button config="enableBackgrounding">system.enable-background-location-updates</button>
+          </stack>
+
+          <text>Disable background location updates</text>
+		  <stack margin="0.5">
+            <button config="disableBackgrounding">system.disable-background-location-updates</button>
+          </stack>
+
           <text>Opens a url using user location and feature location tokens.</text>
           <stack margin="0.5">
             <button config="openExtentInBing">system.open-url with tokens</button>
@@ -99,7 +109,10 @@
             <button config="uiAwait">ui.await</button>
           </stack>
 
-          <!--<button config="uiDisplayNotification">ui.display-notification</button>-->
+          <text>Displays a notification with the given message and notification category.</text>
+          <stack margin="0.5">
+            <button config="uiDisplayNotification">ui.display-notification</button>
+          </stack>
         </stack>
       </gxm:scroll>
     </panel>

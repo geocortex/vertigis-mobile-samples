@@ -193,6 +193,52 @@
     },
     {
       "$type": "menu-item",
+      "id": "enableBackgrounding",
+      "title": "Enable Backgrounding",
+      "iconId": "plus",
+      "action": [
+        {
+          "name": "system.enable-background-location-updates",
+          "arguments": {
+            "taskId": "manual",
+            "androidNotificationTitle": "Manually backgrounded",
+            "androidNotificationMessage": "Doing cool things in the background..."
+          }
+        },
+        {
+          "name": "ui.alert",
+          "arguments": {
+            "title": "Alert",
+            "message": "Backgrounding enabled - Location will be updated and code will continue execution in the background.",
+            "buttonText": "OK"
+          }
+        }
+      ]
+    },
+    {
+      "$type": "menu-item",
+      "id": "disableBackgrounding",
+      "title": "Disable Backgrounding",
+      "iconId": "minus",
+      "action": [
+        {
+          "name": "system.disable-background-location-updates",
+          "arguments": {
+            "taskId": "manual"
+          }
+        },
+        {
+          "name": "ui.alert",
+          "arguments": {
+            "title": "Alert",
+            "message": "Backgrounding disabled.",
+            "buttonText": "OK"
+          }
+        }
+      ]
+    },
+    {
+      "$type": "menu-item",
       "id": "uiActivate",
       "title": "ui.activate",
       "isEnabled": true,
