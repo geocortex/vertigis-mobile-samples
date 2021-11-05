@@ -67,16 +67,6 @@
             <button config="openUrlAction">system.open-url</button>
           </stack>
 
-          <text>Enable background location updates.</text>
-          <stack margin="0.5">
-            <button config="enableBackgrounding">system.enable-background-location-updates</button>
-          </stack>
-
-          <text>Disable background location updates</text>
-		  <stack margin="0.5">
-            <button config="disableBackgrounding">system.disable-background-location-updates</button>
-          </stack>
-
           <text>Opens a url using user location and feature location tokens.</text>
           <stack margin="0.5">
             <button config="openExtentInBing">system.open-url with tokens</button>
