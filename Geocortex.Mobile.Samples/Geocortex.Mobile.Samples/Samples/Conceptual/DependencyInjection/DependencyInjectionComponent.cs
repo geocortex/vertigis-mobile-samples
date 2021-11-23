@@ -9,6 +9,7 @@ using System.Text;
 using System.Xml.Linq;
 using Xamarin.Forms;
 using System.Reactive.Linq;
+using static System.FormattableString;
 
 [assembly: Component(typeof(DependencyInjectionComponent), "dependency-injection", XmlNamespace = XmlNamespaces.SamplesNamespace)]
 namespace VertiGIS.Mobile.Samples.Samples.Conceptual.DependencyInjection
@@ -58,7 +59,7 @@ namespace VertiGIS.Mobile.Samples.Samples.Conceptual.DependencyInjection
             sb.AppendLine($"Basemap Name: {mapExtension.Map.Basemap.Name}");
             sb.AppendLine($"Map Extent: {mapView.VisibleArea.Extent.ToString()}");
             var location = GeometryEngine.Project(mapView.VisibleArea.Extent.GetCenter(), SpatialReferences.Wgs84) as MapPoint;
-            sb.AppendLine($"Map Center: Latitude: {location.Y}, Longitude: {location.X}");
+            sb.AppendLine(Invariant($"Map Center: Latitude: {location.Y}, Longitude: {location.X}"));
             await _dialogController.ShowAlertAsync(sb.ToString(), "Dependency Injection Alert");
         }
     }
