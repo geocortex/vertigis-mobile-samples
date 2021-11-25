@@ -45,6 +45,11 @@
             <button config="mapHide">map.hide</button>
           </stack>
 
+          <text>Exports the map to an image.</text>
+          <stack margin="0.5">
+            <button config="mapExportImage">map.export-image</button>
+          </stack>
+
           <text>Shows the map if it is hidden.</text>
           <stack margin="0.5">
             <button config="mapShow">map.show</button>

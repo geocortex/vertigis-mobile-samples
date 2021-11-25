@@ -68,7 +68,7 @@
       <Version>12.0.3</Version>
     </PackageReference>
     <PackageReference Include="VertiGIS.Mobile">
-      <Version>5.14.2</Version>
+      <Version>5.15.1.618</Version>
     </PackageReference>
     <PackageReference Include="Xam.Forms.MarkdownView">
       <Version>0.6.1-pre</Version>

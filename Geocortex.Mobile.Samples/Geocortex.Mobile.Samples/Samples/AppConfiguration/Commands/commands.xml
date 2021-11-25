@@ -99,7 +99,10 @@
             <button config="uiAwait">ui.await</button>
           </stack>
 
-          <!--<button config="uiDisplayNotification">ui.display-notification</button>-->
+          <text>Displays a notification with the given message and notification category.</text>
+          <stack margin="0.5">
+            <button config="uiDisplayNotification">ui.display-notification</button>
+          </stack>
         </stack>
       </gxm:scroll>
     </panel>

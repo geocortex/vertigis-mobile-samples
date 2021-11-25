@@ -105,6 +105,14 @@
     },
     {
       "$type": "menu-item",
+      "id": "mapExportImage",
+      "title": "map.export-image",
+      "isEnabled": true,
+      "iconId": "share-map",
+      "action": [ "map.export-image", "file.open-file" ]
+    },
+    {
+      "$type": "menu-item",
       "id": "mapShow",
       "title": "map.show",
       "isEnabled": true,
@@ -301,7 +309,6 @@
               "name": "ui.deactivate",
               "arguments": "feature-details"
             }
-
           ]
         },
         {
