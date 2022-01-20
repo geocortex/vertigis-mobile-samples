@@ -7,7 +7,7 @@ using System.Xml.Linq;
 using Xamarin.Forms;
 
 /* NOTE: This sample component is for demonstrative purposes only.
- * This is not the recommended pattern for accessing location in a Geocortex Mobile application.
+ * This is not the recommended pattern for accessing location in a VertiGIS Studio Mobile application.
  * This component is used to demonstrate platform specific implementations and api/method calls. */
 [assembly: Component(typeof(LocationComponent), "location", XmlNamespace = XmlNamespaces.SamplesNamespace)]
 namespace VertiGIS.Mobile.Samples.Samples.CustomSamples.Location

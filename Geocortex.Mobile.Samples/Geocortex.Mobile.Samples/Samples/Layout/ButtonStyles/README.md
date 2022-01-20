@@ -1,7 +1,7 @@
 ﻿# Button Styles
 
 ### Description
-This sample demonstrates the Geocortex Mobile button styles that are available.
+This sample demonstrates the VertiGIS Studio Mobile button styles that are available.
 
 ### Tips
 - There are 6 basic styles:

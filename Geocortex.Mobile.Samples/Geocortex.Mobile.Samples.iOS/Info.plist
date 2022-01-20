@@ -29,7 +29,7 @@
 	<key>MinimumOSVersion</key>
 	<string>13.0</string>
 	<key>CFBundleDisplayName</key>
-	<string>Geocortex Mobile Samples</string>
+	<string>VertiGIS Studio Mobile Samples</string>
 	<key>CFBundleIdentifier</key>
 	<string>com.VertiGIS.MobileSamples</string>
 	<key>CFBundleVersion</key>

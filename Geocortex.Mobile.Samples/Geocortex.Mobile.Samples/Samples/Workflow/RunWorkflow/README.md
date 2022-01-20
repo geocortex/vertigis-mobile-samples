@@ -1,7 +1,7 @@
 ﻿# Run Workflow
 
 ### Description
-This sample demonstrates running a Geocortex Workflow in Geocortex Mobile.
+This sample demonstrates running a VertiGIS Studio Workflow in VertiGIS Studio Mobile.
 
 ### Tips
 - Workflows can be run from a number of places - a button, a taskbar button, or as an IWTM item.

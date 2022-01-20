@@ -8,17 +8,17 @@
              x:Class="VertiGIS.Mobile.Samples.Samples.Custom.GeocortexMobileElements.GeocortexMobileElementsXamlView">
     <ContentView.Content>
         <StackLayout>
-            <Label Text="This is a Geocortex Mobile enhanced activity indicator."
+            <Label Text="This is a VertiGIS Studio Mobile enhanced activity indicator."
                    Margin="10, 0" />
             <ui:EnhancedActivityIndicator IsRunning="True"
                                           HeightRequest="75"
                                           WidthRequest="75"
                                           Margin="10, 0, 10, 10" />
-            <ui:EnhancedButton Text="Geocortex Mobile button"
+            <ui:EnhancedButton Text="VertiGIS Studio Mobile button"
                                Margin="10" />
-            <ui:EnhancedEntry  Placeholder="This is a Geocortex Mobile enhanced entry."
+            <ui:EnhancedEntry  Placeholder="This is a VertiGIS Studio Mobile enhanced entry."
                                Margin="10"/>
-            <Label Text="This is a Geocortex Mobile enhanced switch."
+            <Label Text="This is a VertiGIS Studio Mobile enhanced switch."
                    Margin="10, 0" />
             <ui:EnhancedSwitch Margin="10, 0, 10, 10" />
         </StackLayout>
