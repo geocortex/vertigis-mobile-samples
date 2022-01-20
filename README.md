@@ -2,7 +2,7 @@
 
 ![CI](https://github.com/geocortex/vertigis-mobile-samples/workflows/CI/badge.svg)
 
-A collection of samples that demonstrates how to configure and customize [VertiGIS Studio Mobile](https://www.vertigisstudio.com/products/gxm/) apps.
+A collection of samples that demonstrates how to configure and customize [VertiGIS Studio Mobile](https://www.vertigisstudio.com/products/vertigis-studio-mobile/) apps.
 
 ## Running the Samples
 
