@@ -15,7 +15,12 @@
           <text>Try clicking a feature or selecting a search result.</text>
           <text>Feature commands are configured as "feature actions" in a feature details panel.</text>
 
-          <text> Removes highlighting from all features on the given map(s). </text>
+          <text> Shows the geometry toolbar.</text>
+          <stack margin="0.5">
+            <button config="geometryToolbarShow">geometry-toolbar.show</button>
+          </stack>
+			
+          <text> Removes highlighting from all features on the given map(s).</text>
           <stack margin="0.5">
             <button config="highlightsClear">highlights.clear</button>
           </stack>
@@ -105,6 +110,51 @@
             <button config="resultsClearDetails">results.clear-details</button>
           </stack>
 
+          <text>Rotates the map by a given value.</text>
+          <stack margin="0.5">
+            <button config="rotateBy">map.rotate-by (90 degrees)</button>
+          </stack>
+
+          <text>Rotates the map to a given value.</text>
+          <stack margin="0.5">
+            <button config="rotateTo">map.rotate-to (180 degrees)</button>
+          </stack>
+			
+          <text>Adds a measurement point at your current location.</text>
+          <stack margin="0.5">
+            <button config="addPointAtCenterAction">sketching.add-point-at-center</button>
+          </stack>
+			
+          <text>Adds a measurement point at the center of the map.</text>
+          <stack margin="0.5">
+            <button config="addPointAtCurrentLocationAction">sketching.add-point-at-current-location</button>
+          </stack>
+			
+          <text>Set sketching interaction to Center Crosshair.</text>
+          <stack margin="0.5">
+            <button config="setInteractionModeCenterCrosshair">sketching.set-interaction-mode (Crosshair)</button>
+          </stack>
+			
+          <text>Set sketching interaction to Freehand.</text>
+          <stack margin="0.5">
+            <button config="setInteractionModeFreehand">sketching.set-interaction-mode (Freehand)</button>
+          </stack>
+			
+          <text>Delete the current selected vertex.</text>
+          <stack margin="0.5">
+            <button config="deleteCommand">sketching.delete</button>
+          </stack>
+			
+          <text>Start Streaming.</text>
+          <stack margin="0.5">
+            <button config="startStreaming">sketching.start-streaming</button>
+          </stack>
+			
+          <text>Stop Streaming.</text>
+          <stack margin="0.5">
+            <button config="stopStreaming">sketching.stop-streaming</button>
+          </stack>
+
           <!--<button config="resultsDisplay">results.display</button>-->
 
         </stack>
@@ -114,6 +164,7 @@
     <gxm:taskbar grow="3">
 
       <map config="map1" slot="main">
+		<gxm:geometry-toolbar slot="top-center-visible" id="geometry-toolbar" config="geometry" margin="0.8" style="round" active="false" />
         <stack margin="0.8" slot="top-right" halign="end">
         </stack>
         <stack margin="0.5" width="10" slot="bottom-right" halign="end">

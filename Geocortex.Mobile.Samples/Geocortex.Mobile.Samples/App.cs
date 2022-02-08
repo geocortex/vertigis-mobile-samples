@@ -6,8 +6,9 @@ using System;
 using System.IO;
 using System.Reflection;
 using System.Threading.Tasks;
+using VertiGIS.Mobile.Toolkit.Views.Markdown;
 using Xamarin.Forms;
-using Xam.Forms.Markdown;
+//using Xam.Forms.Markdown;
 
 namespace VertiGIS.Mobile.Samples
 {
@@ -118,7 +119,7 @@ namespace VertiGIS.Mobile.Samples
             }
 
             // Create our markdown description.
-            var view = new MarkdownView
+            var view = new Xam.Forms.Markdown.MarkdownView
             {
                 Markdown = readmeContent
             };
