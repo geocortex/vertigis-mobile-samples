@@ -8,7 +8,6 @@ using System.Reflection;
 using System.Threading.Tasks;
 using VertiGIS.Mobile.Toolkit.Views.Markdown;
 using Xamarin.Forms;
-//using Xam.Forms.Markdown;
 
 namespace VertiGIS.Mobile.Samples
 {
@@ -90,6 +89,7 @@ namespace VertiGIS.Mobile.Samples
             var tabbedPage = new TabbedPage()
             {
                 Title = sample.Name,
+                BarBackgroundColor = Color.LightGray,
                 BarTextColor = Color.Black
             };
 
@@ -119,15 +119,17 @@ namespace VertiGIS.Mobile.Samples
             }
 
             // Create our markdown description.
-            var view = new Xam.Forms.Markdown.MarkdownView
+            var view = new MarkdownView()
             {
-                Markdown = readmeContent
+                Markdown = readmeContent,
+                LabelStyleOverrides = new Style(typeof(Label)) { Setters = { new Setter { Property = Label.TextColorProperty, Value = Color.Black } } }
             };
 
             var scrollContainer = new ScrollView() { Content = view.Content, HeightRequest = 1000, Margin = 5 };
 
             var stack = new StackLayout()
             {
+                BackgroundColor = Color.White,
                 Children =
                 {
                     scrollContainer
