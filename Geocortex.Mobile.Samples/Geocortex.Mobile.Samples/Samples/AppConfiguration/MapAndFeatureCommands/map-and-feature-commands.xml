@@ -162,9 +162,9 @@
     </panel>
 
     <gxm:taskbar grow="3">
-
+    
       <map config="map1" slot="main">
-		<gxm:geometry-toolbar slot="top-center-visible" id="geometry-toolbar" config="geometry" margin="0.8" style="round" active="false" />
+      <gxm:geometry-toolbar slot="top-center-visible" id="geometry-toolbar" config="geometry" margin="0.8" style="round" active="false" />
         <stack margin="0.8" slot="top-right" halign="end">
         </stack>
         <stack margin="0.5" width="10" slot="bottom-right" halign="end">
