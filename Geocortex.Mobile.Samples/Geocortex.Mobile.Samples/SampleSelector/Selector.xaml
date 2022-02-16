@@ -15,7 +15,7 @@
         </ResourceDictionary>
     </ContentPage.Resources>
 
-    <StackLayout Padding="10" HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand">
+    <StackLayout Padding="10" HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand" BackgroundColor="White">
         <CollectionView 
             x:Name="collectionList"
             ItemsSource="{Binding Samples}" 
@@ -67,8 +67,7 @@
 
             <CollectionView.ItemTemplate>
                 <DataTemplate>
-
-                    <StackLayout Margin="30, 0" Padding="30, 15">
+                    <StackLayout Margin="30, 0" Padding="30, 15" BackgroundColor="White">
                         <Label Text="{Binding Name}"
                                FontSize="Small"
                                FontAttributes="Bold"

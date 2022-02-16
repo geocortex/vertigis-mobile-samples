@@ -9,6 +9,10 @@
       "id": "region"
     },
     {
+      "$type": "geometry-toolbar",
+      "id": "geometry"
+    },
+    {
       "id": "coordinate",
       "transformations": [
         {
@@ -49,6 +53,16 @@
       "isDefault": true,
       "portal": {
         "url": "https://www.arcgis.com/"
+      }
+    },
+    {
+      "$type": "menu-item",
+      "id": "geometryToolbarShow",
+      "title": "geometry-toolbar.show",
+      "isEnabled": true,
+      "iconId": "geometry",
+      "action": {
+        "name": "geometry-toolbar.show"
       }
     },
     {
@@ -233,6 +247,92 @@
           "rotation": 180
         }
       }
+    },
+    {
+      "$type": "menu-item",
+      "id": "addPointAtCenterAction",
+      "title": "Add Measurement Point at Center (Crosshair Mode only)",
+      "iconId": "draw-point",
+      "action": [
+        {
+          "name": "sketching.add-point-at-center",
+          "arguments": {
+            "maps": "item://map-extension/map1"
+          }
+        }
+      ]
+    },
+    {
+      "$type": "menu-item",
+      "id": "addPointAtCurrentLocationAction",
+      "title": "Add Measurement Point at Current Location",
+      "iconId": "draw-point",
+      "action": [
+        {
+          "name": "sketching.add-point-at-current-location",
+          "arguments": {
+            "maps": "item://map-extension/map1"
+          }
+        }
+      ]
+    },
+    {
+      "$type": "menu-item",
+      "id": "setInteractionModeCenterCrosshair",
+      "title": "Set Interaction Mode: CenterCrosshair",
+      "iconId": "identifiable",
+      "action": [
+        {
+          "name": "sketching.set-interaction-mode",
+          "arguments": {
+            "maps": "item://map-extension/map1",
+            "editorInteractionMode": "CenterCrosshair"
+          }
+        }
+      ]
+    },
+    {
+      "$type": "menu-item",
+      "id": "setInteractionModeFreehand",
+      "title": "Set Interaction Mode: Freehand",
+      "iconId": "draw-freehand",
+      "action": [
+        {
+          "name": "sketching.set-interaction-mode",
+          "arguments": {
+            "maps": "item://map-extension/map1",
+            "editorInteractionMode": "Freehand"
+          }
+        }
+      ]
+    },
+    {
+      "$type": "menu-item",
+      "id": "deleteCommand",
+      "title": "Delete",
+      "iconId": "erase",
+      "action": [
+        {
+          "name": "sketching.delete",
+          "arguments": {
+            "maps": "item://map-extension/map1"
+          }
+        }
+      ]
+    },
+    {
+      "$type": "menu-item",
+      "id": "startStreaming",
+      "iconId": "draw-freehand",
+      "title": "Start Streaming",
+      "action": "sketching.start-streaming"
+    },
+    {
+      "$type": "menu-item",
+      "id": "stopStreaming",
+      "iconId": "draw-freehand",
+      "title": "Stop Streaming",
+      "action": "sketching.stop-streaming"
     },
     {
       "$type": "menu",
