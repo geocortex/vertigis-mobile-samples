@@ -12,7 +12,7 @@ Layout properties include:
 - icon
   - A resource key that can be mapped to an image for the icon. Where the icon appears (or whether it appears at all) varies with each type of component.
 - config
-  - The ID of a corresponding item in a Geocortex Mobile app that contains this component's configuration.
+  - The ID of a corresponding item in a VertiGIS Studio Mobile app that contains this component's configuration.
 - width
   - The width of the component, in em units.
 - height

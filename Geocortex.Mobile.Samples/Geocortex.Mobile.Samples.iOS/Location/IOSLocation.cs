@@ -4,7 +4,7 @@ using VertiGIS.Mobile.Samples.Location;
 using VertiGIS.Mobile.Samples.iOS.Location;
 
 /* NOTE: This sample component is for demonstrative purposes only.
- * This is not the recommended pattern for accessing location in a Geocortex Mobile application.
+ * This is not the recommended pattern for accessing location in a VertiGIS Studio Mobile application.
  * This component is used to demonstrate platform specific implementations and api/method calls. */
 [assembly: Xamarin.Forms.Dependency(typeof(IOSLocation))]
 namespace VertiGIS.Mobile.Samples.iOS.Location

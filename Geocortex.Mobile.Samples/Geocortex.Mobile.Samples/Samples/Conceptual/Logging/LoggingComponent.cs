@@ -19,7 +19,7 @@ namespace VertiGIS.Mobile.Samples.Samples.Conceptual.Logging
         {
             var loggingMessage = new Label()
             {
-                Text = "Click a button to log a message to Geocortex Mobile's logging.",
+                Text = "Click a button to log a message to VertiGIS Studio Mobile's logging.",
             };
 
             var settingMessage = new Label()

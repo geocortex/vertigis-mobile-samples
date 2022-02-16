@@ -1,7 +1,7 @@
 ﻿# Commands
 
 ### Description
-This sample demonstrates common app commands that are available in Geocortex Mobile.
+This sample demonstrates common app commands that are available in VertiGIS Studio Mobile.
 
 ### Tips
 - Commands are often configured in an app's json configuration.

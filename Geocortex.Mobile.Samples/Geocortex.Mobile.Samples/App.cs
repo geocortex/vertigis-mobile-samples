@@ -36,7 +36,7 @@ namespace VertiGIS.Mobile.Samples
 
         protected override async void OnStart()
         {
-            // Initialize Geocortex Mobile
+            // Initialize VertiGIS Studio Mobile
             await InitializeAsync();
 
             // Get our sample selection page and set it as the root.
@@ -44,7 +44,7 @@ namespace VertiGIS.Mobile.Samples
 
             Instance.MainPage = new NavigationPage(selectorPage)
             {
-                Title = "Geocortex Mobile SDK Samples",
+                Title = "VertiGIS Studio Mobile SDK Samples",
             };
         }
 
@@ -79,7 +79,7 @@ namespace VertiGIS.Mobile.Samples
             }
             else
             {
-                // Load the main Geocortex Mobile app page.
+                // Load the main VertiGIS Studio Mobile app page.
                 LoadResult = await Bootstrapper.LoadAppAysnc(app, layout);
             }
 

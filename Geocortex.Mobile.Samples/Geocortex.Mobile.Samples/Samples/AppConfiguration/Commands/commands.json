@@ -168,13 +168,13 @@
     {
       "$type": "menu-item",
       "id": "openUrlAction",
-      "title": "Open www.geocortex.com",
+      "title": "Open www.vertigisstudio.com",
       "isEnabled": true,
       "iconId": "link_external",
       "action": {
         "name": "system.open-url",
         "arguments": {
-          "url": "http://www.geocortex.com"
+          "url": "http://www.vertigisstudio.com"
         }
       }
     },
@@ -295,7 +295,7 @@
         "name": "ui.alert",
         "arguments": {
           "title": "Toggle",
-          "message": "Toggle this button visibility using commands available in the 'Geocortex Mobile Commands' panel.",
+          "message": "Toggle this button visibility using commands available in the 'VertiGIS Studio Mobile Commands' panel.",
           "buttonText": "OK"
         }
       }
