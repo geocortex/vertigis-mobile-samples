@@ -5,7 +5,7 @@ using Android.Content;
 using Android.Locations;
 
 /* NOTE: This sample component is for demonstrative purposes only.
- * This is not the recommended pattern for accessing location in a Geocortex Mobile application.
+ * This is not the recommended pattern for accessing location in a VertiGIS Studio Mobile application.
  * This component is used to demonstrate platform specific implementations and api/method calls. */
 [assembly: Xamarin.Forms.Dependency(typeof(AndroidLocation))]
 namespace VertiGIS.Mobile.Samples.Droid.Location

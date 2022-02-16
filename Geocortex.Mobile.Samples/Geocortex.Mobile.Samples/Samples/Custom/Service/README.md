@@ -1,7 +1,7 @@
 ﻿# Service
 
 ### Description
-This sample demonstrates the creation of a custom service for use in a Geocortex Mobile app.
+This sample demonstrates the creation of a custom service for use in a VertiGIS Studio Mobile app.
 
 ### Tips
 - Services don't require an element in the XML layout.

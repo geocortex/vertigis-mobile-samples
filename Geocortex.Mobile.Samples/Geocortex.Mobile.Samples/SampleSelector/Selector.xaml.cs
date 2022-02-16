@@ -50,10 +50,10 @@ namespace VertiGIS.Mobile.Samples.SampleSelector
             {
                 new Sample
                 {
-                    Name = "Geocortex Mobile App",
+                    Name = "VertiGIS Studio Mobile App",
                     App = "app.json",
                     Layout = null,
-                    Description = "A Geocortex Mobile app with common components and configurations.",
+                    Description = "A VertiGIS Studio Mobile app with common components and configurations.",
                     PathFragment = "App.GeocortexMobileViewer"
                 },
             }));
@@ -168,7 +168,7 @@ namespace VertiGIS.Mobile.Samples.SampleSelector
                     Name = "Theme",
                     App = "theme.json",
                     Layout = "theme.xml",
-                    Description = "Demonstrates using Geocortex branding.",
+                    Description = "Demonstrates using VertiGIS Studio branding.",
                     PathFragment = "AppConfiguration.Theme"
                 }
             }));
@@ -217,18 +217,18 @@ namespace VertiGIS.Mobile.Samples.SampleSelector
                 },
                 new Sample
                 {
-                    Name = "Geocortex Mobile Elements",
+                    Name = "VertiGIS Studio Mobile Elements",
                     App = "geocortex-mobile-elements.json",
                     Layout = "geocortex-mobile-elements.xml",
-                    Description = "Getting started with Geocortex Mobile enhanced elements.",
+                    Description = "Getting started with VertiGIS Studio Mobile enhanced elements.",
                     PathFragment = "Custom.GeocortexMobileElements"
                 },
                 //new Sample
                 //{
-                //    Name = "Geocortex Mobile Styles",
+                //    Name = "VertiGIS Studio Mobile Styles",
                 //    App = "gxm-styles.json",
                 //    Layout = "gxm-styles.xml",
-                //    Description = "An introduction to using Geocortex Mobile styles.",
+                //    Description = "An introduction to using VertiGIS Studio Mobile styles.",
                 //    PathFragment = "Custom.GeocortexMobileStyles"
                 //},
             }));
@@ -292,7 +292,7 @@ namespace VertiGIS.Mobile.Samples.SampleSelector
                     Name = "Dependency Injection",
                     App = "dependency-injection.json",
                     Layout = "dependency-injection.xml",
-                    Description = "An introduction to using dependency injection in Geocortex Mobile.",
+                    Description = "An introduction to using dependency injection in VertiGIS Studio Mobile.",
                     PathFragment = "Conceptual.DependencyInjection"
                 },
                 new Sample
@@ -316,7 +316,7 @@ namespace VertiGIS.Mobile.Samples.SampleSelector
                     Name = "Logging",
                     App = "logging.json",
                     Layout = "logging.xml",
-                    Description = "Using logging in a Geocortex Mobile app.",
+                    Description = "Using logging in a VertiGIS Studio Mobile app.",
                     PathFragment = "Conceptual.Logging"
                 },
                  new Sample
@@ -339,14 +339,14 @@ namespace VertiGIS.Mobile.Samples.SampleSelector
                 }
             }));
 
-            Samples.Add(new SampleGroup("Geocortex Workflow", new List<Sample>
+            Samples.Add(new SampleGroup("VertiGIS Studio Workflow", new List<Sample>
             {
                 new Sample
                 {
                     Name = "Run Workflow",
                     App = "run-workflow.json",
                     Layout = "run-workflow.xml",
-                    Description = "Running a Geocortex Workflow.",
+                    Description = "Running a VertiGIS Studio Workflow.",
                     PathFragment = "Workflow.RunWorkflow"
                 },
                 new Sample
@@ -354,7 +354,7 @@ namespace VertiGIS.Mobile.Samples.SampleSelector
                     Name = "Custom Workflow Activity",
                     App = "custom-activity.json",
                     Layout = "custom-activity.xml",
-                    Description = "Getting started with custom Geocortex Workflow activities.",
+                    Description = "Getting started with custom VertiGIS Studio Workflow activities.",
                     PathFragment = "Workflow.CustomActivity"
                 },
                 new Sample
@@ -362,7 +362,7 @@ namespace VertiGIS.Mobile.Samples.SampleSelector
                     Name = "Custom Workflow Component",
                     App = "custom-form-component.json",
                     Layout = "custom-form-component.xml",
-                    Description = "Getting started with custom Geocortex Workflow components.",
+                    Description = "Getting started with custom VertiGIS Studio Workflow components.",
                     PathFragment = "Workflow.CustomFormComponent"
                 }
             }));

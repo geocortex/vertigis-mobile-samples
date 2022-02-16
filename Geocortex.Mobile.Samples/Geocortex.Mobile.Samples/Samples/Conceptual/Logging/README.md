@@ -1,7 +1,7 @@
 ﻿# Logging
 
 ### Description
-This sample demonstrates logging in a Geocortex Mobile app.
+This sample demonstrates logging in a VertiGIS Studio Mobile app.
 
 ### Tips
 - There are four levels of logging available, in increasing severity:

@@ -18,7 +18,7 @@ namespace VertiGIS.Mobile.Samples.Samples.Custom.GeocortexMobileElements
         {
             var enhancedActivityIndicatorLabel = new Label
             {
-                Text = "This is a Geocortex Mobile enhanced activity indicator.",
+                Text = "This is a VertiGIS Studio Mobile enhanced activity indicator.",
                 Margin = new Thickness(10, 0)
             };
 
@@ -32,19 +32,19 @@ namespace VertiGIS.Mobile.Samples.Samples.Custom.GeocortexMobileElements
 
             var enhancedButton = new EnhancedButton()
             {
-                Text = "Geocortex Mobile button",
+                Text = "VertiGIS Studio Mobile button",
                 Margin = 10
             };
 
             var enhancedEntry = new EnhancedEntry()
             {
-                Placeholder = "This is a Geocortex Mobile enhanced entry.",
+                Placeholder = "This is a VertiGIS Studio Mobile enhanced entry.",
                 Margin = 10
             };
 
             var enhancedSwitchLabel = new Label
             {
-                Text = "This is a Geocortex Mobile enhanced switch.",
+                Text = "This is a VertiGIS Studio Mobile enhanced switch.",
                 Margin = new Thickness(10, 0)
             };
 

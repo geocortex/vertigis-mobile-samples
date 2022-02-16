@@ -1,7 +1,7 @@
 ﻿# Map and Feature Commands
 
 ### Description
-This sample demonstrates common feature and map commands that are available in Geocortex Mobile.
+This sample demonstrates common feature and map commands that are available in VertiGIS Studio Mobile.
 
 ### Tips
 - Try clicking a feature or selecting a search result. Many commands only take effect when a feature is selected/highlighted, etc.

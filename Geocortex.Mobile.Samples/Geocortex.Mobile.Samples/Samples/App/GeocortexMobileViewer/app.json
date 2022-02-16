@@ -182,13 +182,13 @@
           "title": "-"
         },
         {
-          "title": "Open www.geocortex.com",
+          "title": "Open www.vertigisstudio.com",
           "isEnabled": true,
           "iconId": "link_external",
           "action": {
             "name": "system.open-url",
             "arguments": {
-              "url": "http://www.geocortex.com"
+              "url": "http://www.vertigisstudio.com"
             }
           }
         },
