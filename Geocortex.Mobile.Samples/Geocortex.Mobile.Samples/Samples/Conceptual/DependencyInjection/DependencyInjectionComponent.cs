@@ -16,8 +16,8 @@ namespace VertiGIS.Mobile.Samples.Samples.Conceptual.DependencyInjection
 {
     class DependencyInjectionComponent : ComponentBase
     {
-        private MapRepository _mapRepo;
-        private IDialogController _dialogController;
+        private readonly MapRepository _mapRepo;
+        private readonly IDialogController _dialogController;
 
         private Button _infoButton;
 
@@ -57,7 +57,7 @@ namespace VertiGIS.Mobile.Samples.Samples.Conceptual.DependencyInjection
             sb.AppendLine($"Map Name: {mapExtension.Map.Item.Title}");
             sb.AppendLine($"Map URL: {mapExtension.Map.Uri}");
             sb.AppendLine($"Basemap Name: {mapExtension.Map.Basemap.Name}");
-            sb.AppendLine($"Map Extent: {mapView.VisibleArea.Extent.ToString()}");
+            sb.AppendLine($"Map Extent: {mapView.VisibleArea.Extent}");
             var location = GeometryEngine.Project(mapView.VisibleArea.Extent.GetCenter(), SpatialReferences.Wgs84) as MapPoint;
             sb.AppendLine(Invariant($"Map Center: Latitude: {location.Y}, Longitude: {location.X}"));
             await _dialogController.ShowAlertAsync(sb.ToString(), "Dependency Injection Alert");
