@@ -179,10 +179,10 @@
   </ItemGroup>
   <ItemGroup>
     <PackageReference Include="Esri.ArcGISRuntime.UWP">
-      <Version>100.13.0</Version>
+      <Version>100.13.1</Version>
     </PackageReference>
     <PackageReference Include="Esri.ArcGISRuntime.Xamarin.Forms">
-      <Version>100.13.0</Version>
+      <Version>100.13.1</Version>
     </PackageReference>
     <PackageReference Include="Microsoft.CSharp">
       <Version>4.7.0</Version>
@@ -194,7 +194,7 @@
       <Version>12.0.3</Version>
     </PackageReference>
     <PackageReference Include="VertiGIS.Mobile">
-      <Version>5.17.0-PullRequest2415.334</Version>
+      <Version>5.17.0-PullRequest2415.342</Version>
     </PackageReference>
     <PackageReference Include="Xamarin.Forms">
       <Version>5.0.0.2337</Version>
