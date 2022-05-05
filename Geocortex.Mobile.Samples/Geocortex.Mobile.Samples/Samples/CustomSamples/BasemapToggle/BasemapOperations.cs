@@ -8,7 +8,7 @@ namespace VertiGIS.Mobile.Samples.Samples.CustomSamples.BasemapToggle
 {
     public class BasemapOperations
     {
-        private IOperationRegistry _operationRegistry;
+        private readonly IOperationRegistry _operationRegistry;
 
         public IOperation<BasemapToggleCommandArgs, object> ToggleDisplay
         {

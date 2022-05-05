@@ -10,8 +10,8 @@ namespace VertiGIS.Mobile.Samples.Samples.CustomSamples.BasemapToggle
 {
     public partial class BasemapToggleView : ContentView
     {
-        private BasemapOperations _basemapOperations;
-        private ILayoutModel<MapView> _mapView;
+        private readonly BasemapOperations _basemapOperations;
+        private readonly ILayoutModel<MapView> _mapView;
         private bool mapSwitch = true;
 
         public BasemapToggleView(BasemapOperations basemapOperations, ILayoutModel<MapView> mapView)

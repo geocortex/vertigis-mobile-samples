@@ -57,7 +57,9 @@ namespace VertiGIS.Mobile.Samples.Samples.Conceptual.ActivateDeactivateChildren
         protected override Task ActivateChildAsync(ComponentBase child)
         {
             // Add children to the bottom of the list.
-            _grid.Children.AddVertical((View)child.GetView());
+            var view = (View)child.GetView();
+            _grid.Children.AddVertical(view);
+            Grid.SetRow(view, _grid.Children.Count - 1);
             return Task.CompletedTask;
         }
     }
