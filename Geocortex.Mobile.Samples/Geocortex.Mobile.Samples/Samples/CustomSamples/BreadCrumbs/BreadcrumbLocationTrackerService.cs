@@ -78,7 +78,7 @@ namespace VertiGIS.Mobile.Samples.Samples.CustomSamples.Breadcrumbs
                 // Start the data source.
                 await _fakeLocationDataSource.StartAsync();
 
-                if (_fakeLocationDataSource.IsStarted)
+                if (_fakeLocationDataSource.Status == Esri.ArcGISRuntime.Location.LocationDataSourceStatus.Started)
                 {
                     // Set the location display data source and enable location display.
                     _mapView.LocationDisplay.DataSource = _fakeLocationDataSource;
