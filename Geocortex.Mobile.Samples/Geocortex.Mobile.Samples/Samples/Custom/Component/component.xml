@@ -10,7 +10,7 @@
   <split>
     
     <panel>
-      <custom:component/>
+      <custom:component title="Custom Component"/>
     </panel>
     
     <map/>

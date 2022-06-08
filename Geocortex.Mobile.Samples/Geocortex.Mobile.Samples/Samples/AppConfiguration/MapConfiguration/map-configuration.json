@@ -39,7 +39,7 @@
       "$type": "map-extension",
       "id": "map1",
       "webMap": "c27fa8668647489482dd418b0d765aec",
-      "onClick": [ "highlights.pulse" ]
+      "onClick": [ "tasks.identify", "highlights.pulse" ]
     },
     {
       "$type": "portal-extension",

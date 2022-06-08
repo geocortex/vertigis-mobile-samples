@@ -10,7 +10,7 @@
   <split>
     
     <panel>
-      <custom:location />
+      <custom:location title="Location"/>
     </panel>
     
     <map/>

@@ -21,6 +21,7 @@ namespace VertiGIS.Mobile.Samples.UWP
         {
             this.InitializeComponent();
             this.Suspending += OnSuspending;
+            WindowsAppHandlers.InitializeBackgrounding(this);
             WindowsAppHandlers.HandleExceptions(this);
         }
 
@@ -32,6 +33,13 @@ namespace VertiGIS.Mobile.Samples.UWP
         protected override void OnLaunched(LaunchActivatedEventArgs e)
         {
             WindowsAppHandlers.HandleOnLaunched(e, typeof(MainPage), Array.Empty<Assembly>());
+        }
+
+        protected override void OnBackgroundActivated(BackgroundActivatedEventArgs args)
+        {
+            base.OnBackgroundActivated(args);
+
+            WindowsAppHandlers.HandleOnBackgroundActivated(args);
         }
 
         /// <summary>

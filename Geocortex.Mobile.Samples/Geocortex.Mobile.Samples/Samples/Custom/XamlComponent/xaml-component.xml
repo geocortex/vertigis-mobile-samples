@@ -10,7 +10,7 @@
   <split>
     
     <panel>
-      <custom:xaml-component/>
+      <custom:xaml-component title="XAML Component"/>
     </panel>
     
     <map/>

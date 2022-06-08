@@ -14,7 +14,7 @@
     </panel>
 
     <panel>
-      <custom:geocortex-mobile-elements-xaml title="Mobile Xaml" />
+      <custom:geocortex-mobile-elements-xaml title="Mobile XAML" />
     </panel>
     
   </split>

@@ -27,7 +27,7 @@
     <WarningLevel>4</WarningLevel>
     <ConsolePause>false</ConsolePause>
     <MtouchArch>x86_64</MtouchArch>
-    <MtouchLink>SdkOnly</MtouchLink>
+    <MtouchLink>None</MtouchLink>
     <MtouchDebug>true</MtouchDebug>
     <CodesignExtraArgs />
     <CodesignResourceRules />
@@ -198,7 +198,7 @@
       <Version>2.0.3</Version>
     </PackageReference>
     <PackageReference Include="VertiGIS.Mobile">
-      <Version>5.18.0-PullRequest3328.323</Version>
+      <Version>5.18.0-PullRequest3328.332</Version>
     </PackageReference>
     <PackageReference Include="Xamarin.Forms">
       <Version>5.0.0.2337</Version>

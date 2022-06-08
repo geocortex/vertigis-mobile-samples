@@ -10,7 +10,7 @@
   <split>
 
     <panel>
-      <stack halign="center" valign="center">
+      <stack title="Activate / Deactivate" halign="center" valign="center">
         <button margin="1" command="ui.activate" arguments="activate-deactivate">Activate Component</button>
         <button margin="1" command="ui.deactivate" arguments="activate-deactivate">Deactivate Component</button>
       </stack>
