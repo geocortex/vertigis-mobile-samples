@@ -6,7 +6,7 @@
     xsi:schemaLocation="https://geocortex.com/layout/v1 ../../../../../ViewerSpec/layout/layout-mobile.xsd
     https://geocortex.com/layout/v1 ../../../layout-custom.xsd">
 
-  <gxm:taskbar id="taskbar" orientation="vertical">
+  <gxm:taskbar id="taskbar">
 
     <!-- Taskbar main content -->
     <map config="map1" slot="main" />

@@ -9,7 +9,7 @@
 
   <stack>
     <map>
-      <panel slot="top-left" margin="1.5" height="20" width="20">
+      <panel slot="top-right" margin="1.5" height="20" width="20">
         <layer-list/>
       </panel>
     </map>

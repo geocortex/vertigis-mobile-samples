@@ -7,7 +7,7 @@
     https://geocortex.com/layout/v1 ../../../layout-custom.xsd"
     xmlns:custom="https://geocortex/layout/samples">
 
-  <gxm:taskbar orientation="vertical">
+  <gxm:taskbar>
 
     <panel title="Commands" icon="more" grow="1">
       <gxm:scroll>
