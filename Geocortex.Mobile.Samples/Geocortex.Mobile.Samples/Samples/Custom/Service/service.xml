@@ -9,7 +9,7 @@
 
   <map config="map1">
 
-    <button slot="top-center-visible" margin="1" config="service" />
+    <button slot="top-center-visible" margin="5" config="service" />
   </map>
 
 </layout>

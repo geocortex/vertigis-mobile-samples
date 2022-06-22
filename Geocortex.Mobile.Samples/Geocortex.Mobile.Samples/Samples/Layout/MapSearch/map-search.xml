@@ -10,12 +10,9 @@
   <split>
     <panel>
       <results-list grow="2"/>
-
     </panel>
     <map config="map1" grow="3">
-      <!--<panel slot="top-center-visible" margin="1.5" height="5" width="20">-->
         <search slot="top-center-visible" margin="1.5" height="7.5" width="20" config="search"/>
-      <!--</panel>-->
     </map>
   </split>
 

@@ -9,7 +9,7 @@
 
   <stack>
     <panel grow="2">
-      <stack>
+      <stack title="Instructions">
         <text margin="0.5">Click buttons to activate and deactivate them.</text>
         <text margin="0.5">The parent `activate-deactive-children` component handles the adding and removal of its children.</text>
         <text margin="0.5">When child components are activated, they are added to the bottom of the group.</text>
@@ -19,7 +19,7 @@
     <split grow="3">
 
       <panel>
-        <stack>
+        <stack title="Parent Component">
           <stack halign="center">
             <button margin="1" command="ui.active-toggle" arguments="button-1">Toggle Button 1</button>
             <button margin="1" command="ui.active-toggle" arguments="button-2">Toggle Button 2</button>

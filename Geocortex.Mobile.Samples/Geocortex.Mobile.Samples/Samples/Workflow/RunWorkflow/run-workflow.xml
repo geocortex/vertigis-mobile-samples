@@ -7,7 +7,7 @@
     https://geocortex.com/layout/v1 ../../../layout-custom.xsd"
     xmlns:custom="https://geocortex/layout/samples">
 
-  <gxm:taskbar id="taskbar" orientation="vertical">
+  <gxm:taskbar id="taskbar">
 
     <map config="map1" slot="main">
       <stack margin="0.8" slot="top-right" halign="end">

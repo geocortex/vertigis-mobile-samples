@@ -13,7 +13,6 @@ namespace VertiGIS.Mobile.Samples.Samples.Custom.Operation
 {
     class OperationComponent : ComponentBase
     {
-
         public OperationComponent(Operation operation)
         {
             operation.DisplayAlert.RegisterExecute(ExecuteAlert, this);
@@ -30,7 +29,7 @@ namespace VertiGIS.Mobile.Samples.Samples.Custom.Operation
                     new Label
                     {
                         Margin = 5,
-                        Text = "Click the map to execute the operation.",
+                        Text = "Click a button to execute the operation.",
                     }
                 }
             };

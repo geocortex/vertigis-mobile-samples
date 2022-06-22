@@ -30,14 +30,13 @@ namespace VertiGIS.Mobile.Samples.Samples.CustomSamples.BasemapToggle
                 {
                     if (args.ToggleOn)
                     {
-                        args.Map.Map.Basemap = Basemap.CreateNavigationVector();
+                        args.Map.Map.Basemap = new Basemap(BasemapStyle.ArcGISNavigation);
 
                     }
                     else
                     {
-                        args.Map.Map.Basemap = Basemap.CreateStreetsNightVector();
+                        args.Map.Map.Basemap = new Basemap(BasemapStyle.ArcGISStreetsNight);
                     }
-
 
                     return Task.FromResult((object)null);
                 }, this);

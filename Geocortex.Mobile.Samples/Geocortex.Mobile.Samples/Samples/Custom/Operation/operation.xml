@@ -9,7 +9,7 @@
 
 
   <map config="map1">
-    <custom:operation slot="top-center-visible"/>
+    <custom:operation slot="top-center-visible" margin="5"/>
 
     <stack slot="bottom-center-visible">
       <button margin="2" style="round" icon="info" config="displayMapInfo">Operation from json app</button>

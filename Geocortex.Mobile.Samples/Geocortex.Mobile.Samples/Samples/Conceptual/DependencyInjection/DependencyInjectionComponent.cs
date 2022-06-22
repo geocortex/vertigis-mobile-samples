@@ -57,9 +57,14 @@ namespace VertiGIS.Mobile.Samples.Samples.Conceptual.DependencyInjection
             sb.AppendLine($"Map Name: {mapExtension.Map.Item.Title}");
             sb.AppendLine($"Map URL: {mapExtension.Map.Uri}");
             sb.AppendLine($"Basemap Name: {mapExtension.Map.Basemap.Name}");
-            sb.AppendLine($"Map Extent: {mapView.VisibleArea.Extent}");
-            var location = GeometryEngine.Project(mapView.VisibleArea.Extent.GetCenter(), SpatialReferences.Wgs84) as MapPoint;
-            sb.AppendLine(Invariant($"Map Center: Latitude: {location.Y}, Longitude: {location.X}"));
+
+            if (mapView.VisibleArea != null)
+            {
+                sb.AppendLine($"Map Extent: {mapView.VisibleArea.Extent}");
+                var location = GeometryEngine.Project(mapView.VisibleArea.Extent.GetCenter(), SpatialReferences.Wgs84) as MapPoint;
+                sb.AppendLine(Invariant($"Map Center: Latitude: {location.Y}, Longitude: {location.X}"));
+            }
+
             await _dialogController.ShowAlertAsync(sb.ToString(), "Dependency Injection Alert");
         }
     }

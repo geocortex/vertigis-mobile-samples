@@ -7,8 +7,7 @@
     {
       "$type": "map-extension",
       "id": "map1",
-      "webMap": "c27fa8668647489482dd418b0d765aec",
-      "onClick": [ "custom.operation" ]
+      "webMap": "c27fa8668647489482dd418b0d765aec"
     },
     {
       "$type": "portal-extension",
