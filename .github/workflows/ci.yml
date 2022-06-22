@@ -32,7 +32,7 @@ jobs:
             - name: Use Xcode 13.2
               uses: maxim-lobanov/setup-xamarin@v1
               with:
-                  xcode-version: 13.2
+                  xcode-version: 13.2.1
 
             # The following two workaround steps can be removed when the following github issue is resolved: https://github.com/actions/virtual-environments/issues/5768
             - name: Restore Workaround Remove
