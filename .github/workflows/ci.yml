@@ -34,6 +34,15 @@ jobs:
               with:
                   xcode-version: 13.x
 
+            # The following two workaround steps can be removed when the following github issue is resolved: https://github.com/actions/virtual-environments/issues/5768
+            - name: Restore Workaround Remove
+              run: rm -rf ~/.config/NuGet/NuGet.Config
+              shell: bash
+
+            - name: Restore Workaround List
+              run: dotnet nuget list source
+              shell: bash
+
             - name: Restore NuGet packages
               run: msbuild -t:restore
               working-directory: Geocortex.Mobile.Samples/Geocortex.Mobile.Samples.iOS
