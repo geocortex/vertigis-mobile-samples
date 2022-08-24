@@ -25,6 +25,7 @@
 		<string>com.trimble.correction</string>
 		<string>com.eos-gnss.positioningsource</string>
 		<string>com.bad-elf.gps</string>
+		<string>com.leica-geosystems.zeno.gnss</string>
 	</array>
 	<key>MinimumOSVersion</key>
 	<string>13.0</string>

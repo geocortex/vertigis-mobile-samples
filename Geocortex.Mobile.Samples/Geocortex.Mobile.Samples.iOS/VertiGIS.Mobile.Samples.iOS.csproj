@@ -198,7 +198,7 @@
       <Version>2.0.3</Version>
     </PackageReference>
     <PackageReference Include="VertiGIS.Mobile">
-      <Version>5.18.0.417</Version>
+      <Version>5.19.0.353</Version>
     </PackageReference>
     <PackageReference Include="Xamarin.Forms">
       <Version>5.0.0.2337</Version>
