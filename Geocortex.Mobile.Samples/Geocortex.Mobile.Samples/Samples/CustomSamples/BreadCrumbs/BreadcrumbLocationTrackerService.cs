@@ -46,6 +46,7 @@ namespace VertiGIS.Mobile.Samples.Samples.CustomSamples.Breadcrumbs
                     else
                     {
                         // Remove the old graphics overlay
+                        _locationHistoryOverlay.Graphics.Clear();
                         _mapView.GraphicsOverlays.Remove(_locationHistoryOverlay);
                     }
 
@@ -59,6 +60,7 @@ namespace VertiGIS.Mobile.Samples.Samples.CustomSamples.Breadcrumbs
         {
             try
             {
+                _mapView.LocationDisplay.DataSource.LocationChanged -= LocationDataSourceOnLocationChanged;
                 _mapView.LocationDisplay.DataSource.LocationChanged += LocationDataSourceOnLocationChanged;
             }
             catch (Exception e)
@@ -70,6 +72,12 @@ namespace VertiGIS.Mobile.Samples.Samples.CustomSamples.Breadcrumbs
 
         public async void FakeLocationTrackingBreadcrumbs()
         {
+            if (_fakeLocationDataSource != null)
+            {
+                await _fakeLocationDataSource.StopAsync();
+                _fakeLocationDataSource.LocationChanged -= LocationDataSourceOnLocationChanged;
+            }
+
             // Create the location data source
             _fakeLocationDataSource = new FakeLocationDataSource();
 
