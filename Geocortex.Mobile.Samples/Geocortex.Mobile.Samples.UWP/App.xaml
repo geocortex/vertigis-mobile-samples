@@ -12,6 +12,10 @@
             <Style x:Key="DefaultButtonStyle" TargetType="Button">
                 <Setter Property="Background" Value="Blue"/>
             </Style>
+            <!--Remove margin around the tabbed page control.-->
+            <Style TargetType="PivotItem">
+                <Setter Property="Margin" Value="0" />
+            </Style>
         </ResourceDictionary>
     </Application.Resources>
 </Application>

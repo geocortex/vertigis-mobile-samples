@@ -5,6 +5,6 @@
                        xmlns:views="clr-namespace:VertiGIS.Mobile.Toolkit.Views;assembly=VertiGIS.Mobile.Toolkit"
                        x:Class="VertiGIS.Mobile.Samples.Samples.Workflow.CustomFormComponent.CustomFormComponent">
     <ContentView.Content>
-        <views:EnhancedActivityIndicator IsEnabled="{Binding IsEnabled}" IsRunning="True" HeightRequest="75" WidthRequest="75" Margin="10"/>
+        <views:EnhancedActivityIndicator Color="LightGreen" IsEnabled="{Binding IsEnabled}" IsRunning="True" HeightRequest="75" WidthRequest="75" Margin="10"/>
     </ContentView.Content>
 </core:ContentComponent>
