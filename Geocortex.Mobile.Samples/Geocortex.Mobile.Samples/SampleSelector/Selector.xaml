@@ -15,7 +15,7 @@
         </ResourceDictionary>
     </ContentPage.Resources>
 
-    <StackLayout Padding="10" HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand" BackgroundColor="White">
+    <StackLayout Padding="10" HorizontalOptions="CenterAndExpand" VerticalOptions="FillAndExpand" BackgroundColor="White">
         <CollectionView 
             x:Name="collectionList"
             ItemsSource="{Binding Samples}" 
@@ -23,7 +23,7 @@
             SelectionMode="Single"
             SelectionChanged="OnCollectionViewSelectionChanged"
             HorizontalOptions="CenterAndExpand"
-            VerticalOptions="CenterAndExpand">
+            VerticalOptions="FillAndExpand">
             <CollectionView.GroupHeaderTemplate>
                 <DataTemplate>
                     <Frame CornerRadius="5"

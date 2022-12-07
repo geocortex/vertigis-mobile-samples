@@ -286,7 +286,7 @@
           "name": "sketching.set-interaction-mode",
           "arguments": {
             "maps": "item://map-extension/map1",
-            "editorInteractionMode": "CenterCrosshair"
+            "editorInteractionMode": "CenterCrosshairMode"
           }
         }
       ]
@@ -301,7 +301,7 @@
           "name": "sketching.set-interaction-mode",
           "arguments": {
             "maps": "item://map-extension/map1",
-            "editorInteractionMode": "Freehand"
+            "editorInteractionMode": "PointerMode"
           }
         }
       ]
