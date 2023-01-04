@@ -30,7 +30,7 @@
       </stack>
       <stack margin="0.5" slot="bottom-left" halign="start">
         <split valign="center">
-          <button config="measureAction" icon="measure" style="round" margin="0.3"/>
+          <button config="measureAction" icon="measure" style="round" margin="0.3" show-title="false"/>
           <scalebar margin="0.3"/>
         </split>
       </stack>

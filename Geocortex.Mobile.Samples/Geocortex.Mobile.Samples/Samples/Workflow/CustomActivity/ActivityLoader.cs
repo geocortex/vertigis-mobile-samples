@@ -1,12 +1,12 @@
-﻿using VertiGIS.Mobile.Samples.Samples.Workflow.CustomActivity;
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Threading;
 using System.Threading.Tasks;
 using VertiGIS.Mobile.Composition;
-using Geocortex.Workflow.Runtime;
-using Geocortex.Workflow.Runtime.Definition;
-using Geocortex.Workflow.Runtime.Execution;
+using VertiGIS.Mobile.Samples.Samples.Workflow.CustomActivity;
+using VertiGIS.Workflow.Runtime;
+using VertiGIS.Workflow.Runtime.Definition;
+using VertiGIS.Workflow.Runtime.Execution;
 
 [assembly: Export(typeof(ActivityLoader), SingleInstance = true, AsImplementedInterfaces = true)]
 namespace VertiGIS.Mobile.Samples.Samples.Workflow.CustomActivity

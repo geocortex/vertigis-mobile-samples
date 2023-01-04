@@ -4,9 +4,9 @@ using System.Threading;
 using System.Threading.Tasks;
 using VertiGIS.Mobile.Samples.Samples.Workflow.CustomFormComponent;
 using VertiGIS.Mobile.Composition;
-using Geocortex.Workflow.Runtime;
-using Geocortex.Workflow.Runtime.Definition;
-using Geocortex.Workflow.Runtime.Execution;
+using VertiGIS.Workflow.Runtime;
+using VertiGIS.Workflow.Runtime.Definition;
+using VertiGIS.Workflow.Runtime.Execution;
 
 [assembly: Export(typeof(FormLoader), SingleInstance = true, AsImplementedInterfaces = true)]
 namespace VertiGIS.Mobile.Samples.Samples.Workflow.CustomFormComponent
