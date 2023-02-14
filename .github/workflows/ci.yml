@@ -29,10 +29,10 @@ jobs:
             - uses: actions/checkout@v2
 
             # Fixes error when using newer NuGet packages that require a minimum version of Xcode
-            - name: Use Xcode 13.2.1
+            - name: Use Xcode 14.0.1
               uses: maxim-lobanov/setup-xamarin@v1
               with:
-                  xcode-version: 13.2.1
+                  xcode-version: 14.0.1
 
             # The following two workaround steps can be removed when the following github issue is resolved: https://github.com/actions/virtual-environments/issues/5768
             - name: Restore Workaround Remove
